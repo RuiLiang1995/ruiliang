@@ -28,7 +28,7 @@
       { float: right; position: relative; top: -1em; } .no-breaks {
       white-space: nowrap; } 
     </style>
-    <link href="https://www.texmacs.org/css/web-article-colored.css" type="text/css" rel="stylesheet"></link>
+    <link href="https://www.texmacs.org/css/web-article.css" type="text/css" rel="stylesheet"></link>
   </head>
   <body>
     <p>
@@ -41,8 +41,8 @@
       <tr>
         <td><font style="font-size: 141.4%"><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
           <tr>
-            <td><font style="font-size: 237.835%"><strong>Note on Weinberg's textbooks on
-            QFT</strong></font></td>
+            <td><font style="font-size: 237.835%"><strong><font color="#008080">Note on Weinberg's textbooks
+            on QFT</font></strong></font></td>
           </tr>
         </table></font></td>
       </tr>
@@ -56,64 +56,63 @@
     <p>
       
     </p>
-    <p style="margin-top: 25%">
-      <a id="auto-1"></a><br />
-    </p>
-    <div style="margin-bottom: 10%">
-      <b><font style="font-size: 300%"><div class="center-tab">
+    <div style="margin-top: 25%; margin-bottom: 10%">
+      <font color="#008080"><a id="auto-1"></a><br /><b><font style="font-size: 300%"><div class="center-tab">
         Part I
       </div><div class="right-tab">
         <br />
-      </div></font></b>
+      </div></font></b></font>
     </div>
     <p>
-      <strong>Notation.</strong> The Latin indices such as <span class="no-breaks"><img
-      src="note_qft-1.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: -0.0134736842105263em; vertical-align: -0.0134210526315789em; height: 0.768em"></img>,</span> <span class="no-breaks"><img src="note_qft-2.png" style="margin-left: -0.134736842105263em; margin-bottom: 0.0268947368421053em; margin-right: -0.0269473684210526em; margin-top: -0.0134736842105263em; vertical-align: -0.229em; height: 0.943157894736842em"></img>,</span>
-      <span class="no-breaks"><img src="note_qft-3.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0404210526315789em; margin-top: -0.040421052631579em; vertical-align: -0.0134210526315789em; height: 0.835368421052632em"></img>,</span> etc., typically span the
-      three spatial coordinate labels, commonly denoted as 1, 2, 3. On the
-      other hand, Greek indices like <span class="no-breaks"><img src="note_qft-4.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421052em; vertical-align: -0.242473684210526em; height: 0.741052631578947em"></img>,</span>
-      <span class="no-breaks"><img src="note_qft-5.png" style="margin-left: -0.0269473684210526em; margin-bottom: -5.26315789473701e-5em; margin-right: -0.0269473684210527em; margin-top: -0.0404210526315789em; vertical-align: -0.0268947368421053em; height: 0.565894736842105em"></img>,</span> and so forth, usually range
-      over the four spacetime coordinate labels, specifically 1, 2, 3, 0,
-      where <img src="note_qft-6.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.0134210526315789em; height: 0.981315789473684em"></img> represents the time coordinate. Indices
-      that appear twice are usually summed unless specified otherwise. The
-      spacetime metric, denoted by <span class="no-breaks"><img src="note_qft-7.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: -0.341263157894737em; height: 0.839842105263158em"></img>,</span>
-      is a diagonal matrix with elements <img src="note_qft-8.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: -0.242473684210526em; height: 1.01052631578947em"></img> and <span
-      class="no-breaks"><img src="note_qft-9.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: -0.242473684210526em; height: 1.01052631578947em"></img>.</span> The d'Alembertian is represented
-      as <img src="note_qft-10.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0269473684210526em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: 0em; height: 0.633263157894737em"></img> and defined by the equation <span class="no-breaks"><img
-      src="note_qft-11.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0134210526315789em; margin-right: -0.0269473684210535em; margin-top: -0.0269473684210526em; vertical-align: -0.493947368421053em; height: 1.77389473684211em"></img>,</span> where <img src="note_qft-12.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.0134210526315789em; height: 0.981315789473684em"></img> is the
-      Laplacian given by <span class="no-breaks"><img src="note_qft-13.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0134210526315789em; margin-right: -0.0269473684210526em; margin-top: -0.0269473684210526em; vertical-align: -0.493947368421053em; height: 1.77389473684211em"></img>.</span> The
-      &lsquo; Levi-Civita tensor,&rsquo; symbolized by <span class="no-breaks"><img src="note_qft-14.png"
-      style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421052em; vertical-align: -0.0134210526315789em; height: 0.855526315789474em"></img>,</span> is an entirely antisymmetric entity with <span
-      class="no-breaks"><img src="note_qft-15.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210535em; margin-top: 0em; vertical-align: -0.0134210526315789em; height: 0.981315789473684em"></img>.</span> Spatial vectors in three
-      dimensions are marked by boldface characters. A unit vector
-      corresponding to any vector is shown with a hat, as in <span class="no-breaks"><img
-      src="note_qft-16.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: 0em; margin-top: -0.0538947368421052em; vertical-align: -0.175105263157895em; height: 1.01273684210526em"></img>.</span> A dot over a variable signifies its time
-      derivative. The Dirac matrices <img src="note_qft-17.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: -0.341263157894737em; height: 0.839842105263158em"></img> adhere to <span
-      class="no-breaks"><img src="note_qft-18.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210535em; margin-top: -0.0538947368421053em; vertical-align: -0.341263157894737em; height: 1.10931578947368em"></img>,</span> and <span class="no-breaks"><img src="note_qft-19.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0538421052631579em; margin-right: -0.0269473684210526em; margin-top: -0.0134736842105263em; vertical-align: -0.255947368421053em; height: 0.943157894736842em"></img>,</span>
-      while <span class="no-breaks"><img src="note_qft-20.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0538421052631579em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.255947368421053em; height: 1.15647368421053em"></img>.</span> The step function
-      <img src="note_qft-21.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0538421052631579em; margin-right: 0em; margin-top: 0em; vertical-align: -0.188578947368421em; height: 0.875789473684211em"></img> yields a value of +1 when <img src="note_qft-22.png" style="margin-left: -0.0269473684210526em; margin-bottom: -5.26315789473701e-5em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: -0.0268947368421053em; height: 0.835368421052632em"></img>
-      and 0 when <span class="no-breaks"><img src="note_qft-23.png" style="margin-left: -0.0269473684210526em; margin-bottom: -5.26315789473701e-5em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: -0.0268947368421053em; height: 0.835368421052632em"></img>.</span> For a matrix or
-      vector <span class="no-breaks"><img src="note_qft-24.png" style="margin-left: -0.0673684210526316em; margin-bottom: -0.0269473684210526em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: 0em; height: 0.835368421052632em"></img>,</span> the complex
-      conjugate, transpose, and Hermitian adjoint are represented by <span
-      class="no-breaks"><img src="note_qft-25.png" style="margin-left: -0.0673684210526316em; margin-bottom: -0.0269473684210526em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: 0em; height: 0.846578947368421em"></img>,</span> <span class="no-breaks"><img src="note_qft-26.png" style="margin-left: -0.0673684210526316em; margin-bottom: -0.0269473684210526em; margin-right: -0.0269473684210526em; margin-top: -0.0269473684210526em; vertical-align: 0em; height: 0.981315789473684em"></img>,</span>
-      and <img src="note_qft-27.png" style="margin-left: -0.0673684210526316em; margin-bottom: -0.0269473684210526em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: 0em; height: 0.981315789473684em"></img> respectively. The Hermitian adjoint of an
-      operator <img src="note_qft-28.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.0134210526315789em; height: 0.768em"></img> is marked as <span class="no-breaks"><img src="note_qft-29.png"
-      style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.0134210526315789em; height: 0.981315789473684em"></img>,</span> except when an asterisk emphasizes that a vector
-      or matrix of operators is not transposed. Terms like +H.c. or +c.c.
-      appended to equations indicate the addition of the Hermitian adjoint or
-      complex conjugate of preceding terms. A Dirac spinor <img src="note_qft-30.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: -0.0134210526315789em; height: 0.565894736842105em"></img>
-      with a bar over it is defined as <span class="no-breaks"><img src="note_qft-31.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.242473684210526em; height: 1.15647368421053em"></img>.</span>
-      Apart from in Chapter <a href="#Chap:1">1</a>, units are normalized such that
-      <img src="note_qft-32.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: -0.040421052631579em; vertical-align: -0.0134210526315789em; height: 0.835368421052632em"></img> and the speed of light are set to one. The fine
-      structure constant is represented as <span class="no-breaks"><img src="note_qft-33.png" style="margin-left: -0.0269473684210526em; margin-bottom: -5.26315789473701e-5em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: -0.0268947368421053em; height: 0.565894736842105em"></img>,</span>
-      calculated as <span class="no-breaks"><img src="note_qft-34.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.175105263157895em; height: 1.08910526315789em"></img>,</span> approximately
-      <span class="no-breaks"><img src="note_qft-35.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210531em; margin-top: -0.0538947368421053em; vertical-align: -0.175105263157895em; height: 0.943157894736842em"></img>,</span> where <img src="note_qft-36.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: -0.0134210526315789em; height: 0.565894736842105em"></img>
-      is the rationalized charge of the electron. Parenthetical numbers next
-      to quoted numerical figures signify the uncertainty in the last digits.
-      Unless otherwise stated, experimental data is sourced from &lsquo;Review
-      of Particle Properties,&rsquo; Phys. Rev. D50, 1173 (1994).
+      <font color="#008080"><strong>Notation.</strong></font> The Latin indices such as
+      <span class="no-breaks"><img src="note_qft-1.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: -0.0134736842105263em; vertical-align: -0.0134210526315789em; height: 0.768em"></img>,</span> <span class="no-breaks"><img src="note_qft-2.png"
+      style="margin-left: -0.134736842105263em; margin-bottom: 0.0268947368421053em; margin-right: -0.0269473684210526em; margin-top: -0.0134736842105263em; vertical-align: -0.229em; height: 0.943157894736842em"></img>,</span> <span class="no-breaks"><img src="note_qft-3.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0404210526315789em; margin-top: -0.040421052631579em; vertical-align: -0.0134210526315789em; height: 0.835368421052632em"></img>,</span> etc.,
+      typically span the three spatial coordinate labels, commonly denoted as
+      1, 2, 3. On the other hand, Greek indices like <span class="no-breaks"><img src="note_qft-4.png"
+      style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421052em; vertical-align: -0.242473684210526em; height: 0.741052631578947em"></img>,</span> <span class="no-breaks"><img src="note_qft-5.png" style="margin-left: -0.0269473684210526em; margin-bottom: -5.26315789473701e-5em; margin-right: -0.0269473684210527em; margin-top: -0.0404210526315789em; vertical-align: -0.0268947368421053em; height: 0.565894736842105em"></img>,</span> and
+      so forth, usually range over the four spacetime coordinate labels,
+      specifically 1, 2, 3, 0, where <img src="note_qft-6.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.0134210526315789em; height: 0.981315789473684em"></img> represents the
+      time coordinate. Indices that appear twice are usually summed unless
+      specified otherwise. The spacetime metric, denoted by <span class="no-breaks"><img
+      src="note_qft-7.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: -0.341263157894737em; height: 0.839842105263158em"></img>,</span> is a diagonal matrix with elements <img src="note_qft-8.png"
+      style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: -0.242473684210526em; height: 1.01052631578947em"></img> and <span class="no-breaks"><img src="note_qft-9.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: -0.242473684210526em; height: 1.01052631578947em"></img>.</span> The
+      d'Alembertian is represented as <img src="note_qft-10.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0269473684210526em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: 0em; height: 0.633263157894737em"></img> and defined by
+      the equation <span class="no-breaks"><img src="note_qft-11.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0134210526315789em; margin-right: -0.0269473684210535em; margin-top: -0.0269473684210526em; vertical-align: -0.493947368421053em; height: 1.77389473684211em"></img>,</span> where <img
+      src="note_qft-12.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.0134210526315789em; height: 0.981315789473684em"></img> is the Laplacian given by <span class="no-breaks"><img src="note_qft-13.png"
+      style="margin-left: -0.0269473684210526em; margin-bottom: 0.0134210526315789em; margin-right: -0.0269473684210526em; margin-top: -0.0269473684210526em; vertical-align: -0.493947368421053em; height: 1.77389473684211em"></img>.</span> The &lsquo; Levi-Civita tensor,&rsquo; symbolized
+      by <span class="no-breaks"><img src="note_qft-14.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421052em; vertical-align: -0.0134210526315789em; height: 0.855526315789474em"></img>,</span> is an entirely
+      antisymmetric entity with <span class="no-breaks"><img src="note_qft-15.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210535em; margin-top: 0em; vertical-align: -0.0134210526315789em; height: 0.981315789473684em"></img>.</span>
+      Spatial vectors in three dimensions are marked by boldface characters. A
+      unit vector corresponding to any vector is shown with a hat, as in <span
+      class="no-breaks"><img src="note_qft-16.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: 0em; margin-top: -0.0538947368421052em; vertical-align: -0.175105263157895em; height: 1.01273684210526em"></img>.</span> A dot over a variable signifies
+      its time derivative. The Dirac matrices <img src="note_qft-17.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: -0.341263157894737em; height: 0.839842105263158em"></img> adhere
+      to <span class="no-breaks"><img src="note_qft-18.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210535em; margin-top: -0.0538947368421053em; vertical-align: -0.341263157894737em; height: 1.10931578947368em"></img>,</span> and <span class="no-breaks"><img
+      src="note_qft-19.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0538421052631579em; margin-right: -0.0269473684210526em; margin-top: -0.0134736842105263em; vertical-align: -0.255947368421053em; height: 0.943157894736842em"></img>,</span> while <span class="no-breaks"><img src="note_qft-20.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0538421052631579em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.255947368421053em; height: 1.15647368421053em"></img>.</span>
+      The step function <img src="note_qft-21.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0538421052631579em; margin-right: 0em; margin-top: 0em; vertical-align: -0.188578947368421em; height: 0.875789473684211em"></img> yields a value of +1 when <img
+      src="note_qft-22.png" style="margin-left: -0.0269473684210526em; margin-bottom: -5.26315789473701e-5em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: -0.0268947368421053em; height: 0.835368421052632em"></img> and 0 when <span class="no-breaks"><img src="note_qft-23.png" style="margin-left: -0.0269473684210526em; margin-bottom: -5.26315789473701e-5em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: -0.0268947368421053em; height: 0.835368421052632em"></img>.</span>
+      For a matrix or vector <span class="no-breaks"><img src="note_qft-24.png" style="margin-left: -0.0673684210526316em; margin-bottom: -0.0269473684210526em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: 0em; height: 0.835368421052632em"></img>,</span> the
+      complex conjugate, transpose, and Hermitian adjoint are represented by
+      <span class="no-breaks"><img src="note_qft-25.png" style="margin-left: -0.0673684210526316em; margin-bottom: -0.0269473684210526em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: 0em; height: 0.846578947368421em"></img>,</span> <span class="no-breaks"><img src="note_qft-26.png"
+      style="margin-left: -0.0673684210526316em; margin-bottom: -0.0269473684210526em; margin-right: -0.0269473684210526em; margin-top: -0.0269473684210526em; vertical-align: 0em; height: 0.981315789473684em"></img>,</span> and <img src="note_qft-27.png" style="margin-left: -0.0673684210526316em; margin-bottom: -0.0269473684210526em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: 0em; height: 0.981315789473684em"></img> respectively. The
+      Hermitian adjoint of an operator <img src="note_qft-28.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.0134210526315789em; height: 0.768em"></img> is marked as
+      <span class="no-breaks"><img src="note_qft-29.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.0134210526315789em; height: 0.981315789473684em"></img>,</span> except when an asterisk
+      emphasizes that a vector or matrix of operators is not transposed. Terms
+      like +H.c. or +c.c. appended to equations indicate the addition of the
+      Hermitian adjoint or complex conjugate of preceding terms. A Dirac
+      spinor <img src="note_qft-30.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: -0.0134210526315789em; height: 0.565894736842105em"></img> with a bar over it is defined as <span
+      class="no-breaks"><img src="note_qft-31.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.242473684210526em; height: 1.15647368421053em"></img>.</span> Apart from in Chapter <a href="#Chap:1">1</a>,
+      units are normalized such that <img src="note_qft-32.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: -0.040421052631579em; vertical-align: -0.0134210526315789em; height: 0.835368421052632em"></img> and the speed of
+      light are set to one. The fine structure constant is represented as
+      <span class="no-breaks"><img src="note_qft-33.png" style="margin-left: -0.0269473684210526em; margin-bottom: -5.26315789473701e-5em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: -0.0268947368421053em; height: 0.565894736842105em"></img>,</span> calculated as <span class="no-breaks"><img
+      src="note_qft-34.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210526em; margin-top: 0em; vertical-align: -0.175105263157895em; height: 1.08910526315789em"></img>,</span> approximately <span class="no-breaks"><img src="note_qft-35.png" style="margin-left: -0.0269473684210526em; margin-bottom: 0.0403684210526316em; margin-right: -0.0269473684210531em; margin-top: -0.0538947368421053em; vertical-align: -0.175105263157895em; height: 0.943157894736842em"></img>,</span>
+      where <img src="note_qft-36.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: -0.0134210526315789em; height: 0.565894736842105em"></img> is the rationalized charge of the
+      electron. Parenthetical numbers next to quoted numerical figures signify
+      the uncertainty in the last digits. Unless otherwise stated,
+      experimental data is sourced from &lsquo;Review of Particle
+      Properties,&rsquo; Phys. Rev. D50, 1173 (1994).
     </p>
-    <h1 id="auto-2"><a id="Chap:1"></a>Chapter 1<br />Historical Introduction</h1>
+    <font color="#008080"><h1 id="auto-2"><a id="Chap:1"></a>Chapter 1<br />Historical
+    Introduction</h1></font>
     <p>
       Our deep engagement with contemporary physics can make it challenging to
       grasp the struggles faced by physicists in the not-so-distant past or to
@@ -183,8 +182,11 @@
       predominantly use the &lsquo;natural&rsquo; system of units, wherein
       &#x210F; and <img src="note_qft-37.png" style="margin-left: -0.0269473684210526em; margin-bottom: -0.0135263157894737em; margin-right: -0.0269473684210526em; margin-top: -0.0404210526315789em; vertical-align: -0.0134210526315789em; height: 0.565894736842105em"></img> are simply set to one.
     </p>
-    <h2 id="auto-3"><a id="Sec:1.1"></a>1.1<span style="margin-left: 1em"></span>Relativistic Wave Mechanics<span
-    style="margin-left: 1em"></span></h2>
+    <font color="#008080"><h2 id="auto-3">1.1<span style="margin-left: 1em"></span>Relativistic Wave
+    Mechanics<span style="margin-left: 1em"></span></h2></font>
+    <p>
+      <a id="Sec:1.1"></a>
+    </p>
     <p>
       Wave mechanics initially emerged as a framework based on special
       relativity, with figures like Louis de Broglie and Erwin
@@ -350,7 +352,8 @@
       (To be continue<span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span
       style="margin-left: 0.16665em"></span>)
     </p>
-    <h1 id="auto-4"><a id="Chap:2"></a>Chapter 2<br />Relativistic Quantum Mechanics</h1>
+    <font color="#008080"><h1 id="auto-4"><a id="Chap:2"></a>Chapter 2<br />Relativistic Quantum
+    Mechanics</h1></font>
     <p>
       The perspective presented argues that quantum field theory exists in its
       current form due to its unique capability to harmonize quantum mechanics
@@ -359,7 +362,10 @@
       symmetries, such as Lorentz invariance, manifest within a quantum
       context.
     </p>
-    <h2 id="auto-5"><a id="Sec:2.1"></a>2.1<span style="margin-left: 1em"></span>Quantum Mechanics<span style="margin-left: 1em"></span></h2>
+    <font color="#008080"><h2 id="auto-5">2.1<span style="margin-left: 1em"></span>Quantum Mechanics<span style="margin-left: 1em"></span></h2></font>
+    <p>
+      <a id="Sec:2.1"></a>
+    </p>
     <p>
       First, let's start with some positive information: quantum field theory
       rests on the same foundational quantum mechanics developed by
@@ -496,7 +502,10 @@
         </p>
       </li>
     </ol>
-    <h2 id="auto-6"><a id="Sec:2.2"></a>2.2<span style="margin-left: 1em"></span>Symmetries<span style="margin-left: 1em"></span></h2>
+    <font color="#008080"><h2 id="auto-6">2.2<span style="margin-left: 1em"></span>Symmetries<span style="margin-left: 1em"></span></h2></font>
+    <p>
+      <a id="Sec:2.2"></a>
+    </p>
     <p>
       A symmetry transformation can be thought of as a shift in perspective
       that does not affect the outcomes of potential experiments. If an
@@ -961,8 +970,11 @@
         <td align="right">(2.2.26)</td>
       </tr>
     </table>
-    <h2 id="auto-7"><a id="Sec:2.3"></a>2.3<span style="margin-left: 1em"></span>Quantum Lorentz
-    Transformations<span style="margin-left: 1em"></span></h2>
+    <font color="#008080"><h2 id="auto-7">2.3<span style="margin-left: 1em"></span>Quantum Lorentz
+    Transformations<span style="margin-left: 1em"></span></h2></font>
+    <p>
+      <a id="Sec:2.3"></a>
+    </p>
     <p>
       Einstein's principle of relativity asserts the equivalence of specific
       'inertial' frames of reference, setting it apart from the Galilean
@@ -1238,8 +1250,11 @@
       either the homogeneous or inhomogeneous proper orthochronous Lorentz
       group.
     </p>
-    <h2 id="auto-8"><a id="Sec:2.4"></a>2.4<span style="margin-left: 1em"></span>The Poincar&eacute; Algebra<span
-    style="margin-left: 1em"></span></h2>
+    <font color="#008080"><h2 id="auto-8">2.4<span style="margin-left: 1em"></span>The Poincar&eacute;
+    Algebra<span style="margin-left: 1em"></span></h2></font>
+    <p>
+      <a id="Sec:2.4"></a>
+    </p>
     <p>
       As discussed in Section <a href="#Sec:2.2">2.2</a>, many essential attributes of
       any Lie symmetry group are encapsulated in the properties of the
@@ -1655,7 +1670,11 @@
       eliminates the necessity for a mass superselection rule within the
       reinterpreted Galilean group.
     </p>
-    <h2 id="auto-9"><a id="Sec:2.5"></a>2.5<span style="margin-left: 1em"></span>One-Particle States<span style="margin-left: 1em"></span></h2>
+    <font color="#008080"><h2 id="auto-9">2.5<span style="margin-left: 1em"></span>One-Particle States<span
+    style="margin-left: 1em"></span></h2></font>
+    <p>
+      <a id="Sec:2.5"></a>
+    </p>
     <p>
       We turn our attention to the categorization of single-particle states
       based on their transformation properties under the inhomogeneous Lorentz
@@ -2141,7 +2160,8 @@
       particles with mass <img src="note_qft-401.png" style="margin-left: -0.0269473684210526em; margin-bottom: -5.26315789473701e-5em; margin-right: -0.0269473684210526em; margin-top: -0.0538947368421053em; vertical-align: -0.0268947368421053em; height: 0.835368421052632em"></img> and particles with zero
       mass.
     </p>
-    <h3 id="auto-11">2.5.1<span style="margin-left: 1em"></span>Mass Positive-Definite<span style="margin-left: 1em"></span></h3>
+    <font color="#008080"><h3 id="auto-11">2.5.1<span style="margin-left: 1em"></span>Mass Positive-Definite<span
+    style="margin-left: 1em"></span></h3></font>
     <p>
       In this context, the little group is represented by the
       three-dimensional rotation group. Its unitary representations can be
