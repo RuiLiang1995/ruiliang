@@ -3,7 +3,7 @@
 <style|source>
 
 <\body>
-  <assign|html-head-favicon|feyn.png>
+  <assign|html-head-favicon|../feyn.png>
 </body>
 
 <\initial>
