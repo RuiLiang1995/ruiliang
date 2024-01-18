@@ -70,11 +70,13 @@
     <item>Optimal divergence rate of the focusing Gibbs measure for
     fractional NLS on the torus, <hlink|Deterministic and Probabilistic
     Dynamics of Nonlinear Dispersive PDEs|http://www.macs.hw.ac.uk/~op4/3daysWS.html>,
-    Maxwell Institute for Mathematical Sciences Edinburgh, UK, 14 June 2023
+    Maxwell Institute for Mathematical Sciences Edinburgh, Edinburgh, UK, 14
+    June 2023
 
     <item>Gibbs measures for fractional NLS on the multi-dimensional torus,
     <hlink|Dispersive Day 2022|https://www.maths.ed.ac.uk/~toh/Files/dispersive2022>,
-    Maxwell Institute for Mathematical Sciences Edinburgh, UK, 17 June 2022
+    Maxwell Institute for Mathematical Sciences Edinburgh, Edinburgh, UK, 17
+    June 2022
   </itemize-dot>
 
   \;
@@ -84,6 +86,10 @@
   </strong>>
 
   <\itemize>
+    <item><hlink|LMS Midlands Regional Meeting and Workshop
+    2024|https://www.lboro.ac.uk/departments/maths/events/conferences-and-workshops/lms-midlands-regional-meeting-2024/>,
+    Loughborough University, Leicestershire, UK, 02-05 April 2024
+
     <item>(speaker) <hlink|Arbeitsgemeinschaft: QFT and Stochastic
     PDEs|https://www.mfo.de/occasion/2351/www_view>, Mathematisches
     Forschungsinstitut Oberwolfach, Oberwolfach, Germany, 17-22 December 2023
@@ -98,7 +104,8 @@
 
     <item>(speaker) <hlink|Deterministic and Probabilistic Dynamics of
     Nonlinear Dispersive PDEs|http://www.macs.hw.ac.uk/~op4/3daysWS.html>,
-    Maxwell Institute for Mathematical Sciences Edinburgh, UK, 14 June 2023
+    Maxwell Institute for Mathematical Sciences Edinburgh, Edinburgh, UK, 14
+    June 2023
 
     <item><hlink|Conference: Harmonic Analysis, Stochastics and PDEs in Honor
     of the 80th Birthday of Nicolai Krylov|https://www.icms.org.uk/workshops/2022/harmonic-analysis-stochastics-and-pdes-0>
@@ -111,7 +118,7 @@
 
     <item>(speaker) <hlink|One-day workshop: Dispersive Day
     2022|https://www.maths.ed.ac.uk/~toh/Files/dispersive2022>, Maxwell
-    Institute for Mathematical Sciences, UK, 17 June 2022
+    Institute for Mathematical Sciences, Edinburgh, UK, 17 June 2022
   </itemize>
 
   <with|color|dark cyan|<\strong>
@@ -133,3 +140,9 @@
     <associate|par-columns|1>
   </collection>
 </initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+  </collection>
+</references>
