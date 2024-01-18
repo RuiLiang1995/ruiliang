@@ -80,6 +80,14 @@
 
       <small|<item>><small|2022 Real Analysis (undergraduate course)>
     </itemize-dot>
+
+    <item>2020 - present: Advanced Postgraduate Courses and Reading Seminars
+
+    <\itemize-dot>
+      <small|<item>><small|Gibbs Measure and its Construction>
+
+      <small|<item>><small|Random Tensor Theory>
+    </itemize-dot>
   </itemize-dot>
 </body>
 
