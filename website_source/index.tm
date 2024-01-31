@@ -71,7 +71,7 @@
   solutions) in both deterministic and probabilistic settings, existence of
   invariant measures, study of the Gibbs measures,<nbsp>Strichartz<nbsp>estimates
   in different settings, etc. Moreover, I have broadened my interests in
-  constructive quantum field theory and the theory of regularity structures.
+  constructive quantum field theory.
 
   \;
 
