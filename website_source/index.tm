@@ -50,8 +50,9 @@
     </wide-tabular>
   </bothlined>
 
-  <no-indent>I am a PhD student at the University of Birmingham, under the
-  supervision of <hlink|Yuzhao Wang|https://web.mat.bham.ac.uk/Y.Wang/>.
+  <no-indent>I am a PhD student in the School of Mathematics at the
+  University of Birmingham, under the supervision of <hlink|Yuzhao
+  Wang|https://web.mat.bham.ac.uk/Y.Wang/>.
 
   \;
 
