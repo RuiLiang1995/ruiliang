@@ -54,7 +54,7 @@
   </strong>>
 
   <\itemize-dot>
-    <item>2020-present<space|1em>Teaching Assistant at the University of
+    <item>2020 - present<space|1em>Teaching Assistant at the University of
     Birmingham, UK
 
     <\itemize-dot>
