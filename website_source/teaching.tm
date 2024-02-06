@@ -81,7 +81,8 @@
       <small|<item>><small|2022 Real Analysis (undergraduate course)>
     </itemize-dot>
 
-    <item>2020 - present: Advanced Postgraduate Courses and Reading Seminars
+    <item>2020 - present<space|1em>Advanced Postgraduate Courses and Reading
+    Seminars
 
     <\itemize-dot>
       <small|<item>><small|Gibbs Measure and its Construction>
