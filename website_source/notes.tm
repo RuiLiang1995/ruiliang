@@ -54,8 +54,8 @@
   </strong>>
 
   <\enumerate-numeric>
-    <item><hlink|Note on quantum field theory - physics (updating
-    monthly)|./note_qft/note_qft.tm>
+    <item><hlink|Note on quantum field theory - physics
+    (updating)|./note_qft/note_qft.tm>
   </enumerate-numeric>
 </body>
 
