@@ -54,13 +54,13 @@
   </strong>>
 
   <\itemize-dot>
-    <item>The theory of random tensors and Gibbs dynamics for fractional NLS,
-    Analysis Seminar, University of Birmingham, UK, 18 March 2024
+    <item>Random averaging operator, random tensor, and FNLS, Analysis
+    Seminar, University of Birmingham, UK, 18 March 2024
 
-    <item>Hyperbolic <math|\<Phi\><rsup|k+1><rsub|2>>,
-    <hlink|Arbeitsgemeinschaft: QFT and Stochastic
-    PDEs|https://www.mfo.de/occasion/2351/www_view>, Mathematisches
-    Forschungsinstitut Oberwolfach, Oberwolfach, Germany, 21 December 2023
+    <item>Hyperbolic stochastic quantization, <hlink|Arbeitsgemeinschaft: QFT
+    and Stochastic PDEs|https://www.mfo.de/occasion/2351/www_view>,
+    Mathematisches Forschungsinstitut Oberwolfach, Oberwolfach, Germany, 21
+    December 2023
 
     <item>Optimal divergence rate of the focusing Gibbs measure for
     fractional NLS on the torus, <hlink|Workshop: Random dispersive PDEs
@@ -140,9 +140,3 @@
     <associate|par-columns|1>
   </collection>
 </initial>
-
-<\references>
-  <\collection>
-    <associate|auto-1|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-  </collection>
-</references>
