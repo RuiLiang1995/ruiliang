@@ -54,8 +54,8 @@
   </strong>>
 
   <\enumerate-numeric>
-    <item>(with Y. Wang) <with|font-shape|italic|Nonlinear half-wave equation
-    above the probabilistic scaling>.
+    <item>(with Y. Wang, H. Yue) <with|font-shape|italic|Nonlinear half-wave
+    equation above the probabilistic scaling>.
 
     <item>(with Y. Wang) <with|font-shape|italic|<hlink|Gibbs dynamics for
     the weakly dispersive nonlinear Schrödinger
