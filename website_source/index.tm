@@ -52,7 +52,8 @@
 
   <no-indent>I am a PhD student in the School of Mathematics at the
   University of Birmingham, under the supervision of <hlink|Yuzhao
-  Wang|https://web.mat.bham.ac.uk/Y.Wang/>.
+  Wang|https://web.mat.bham.ac.uk/Y.Wang/> and <hlink|Jonathan
+  Bennett|https://en.wikipedia.org/wiki/Jonathan_Bennett_(mathematician)>.
 
   \;
 
@@ -107,3 +108,9 @@
     <associate|par-columns|1>
   </collection>
 </initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|?|?>>
+  </collection>
+</references>
