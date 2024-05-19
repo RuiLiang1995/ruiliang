@@ -61,8 +61,8 @@
       <small|<item>><small|2024 Engineering Mathematics 3 (undergraduate
       course)>
 
-      <small|<item>><small|2024 J1VGLA (undergraduate course at
-      Jinan-Birmingham Joint Institute)>
+      <small|<item>><small|2024 Vectors, Geometry & Linear Algebra
+      (undergraduate course at Jinan-Birmingham Joint Institute)>
 
       <small|<item>><small|2023 Complex Analysis (undergraduate course)>
 
