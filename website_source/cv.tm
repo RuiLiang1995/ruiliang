@@ -57,13 +57,10 @@
     <tabular|<tformat|<table|<row|<cell|2020-2024>|<cell|>|<cell|Ph.D. in
     Pure Mathematics, University of Birmingham,
     UK>>|<row|<cell|>|<cell|>|<cell|Supervisors: Yuzhao Wang and Jonathan
-    Bennett>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|2017-2020>|<cell|>|<cell|MSc
-    in Mathematics, South China Normal University, Guangzhou,
-    China>>|<row|<cell|>|<cell|>|<cell|Supervisor: Jingxue
-    Yin>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|2019>|<cell|>|<cell|Visiting
+    Bennett>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|2019>|<cell|>|<cell|Visiting
     Research Student (Mathematics), University of Birmingham,
     UK>>|<row|<cell|>|<cell|>|<cell|Supervisor: Yuzhao
-    Wang>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|2013-2017>|<cell|>|<cell|B.A.
+    Wang>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|2013-2017>|<cell|>|<cell|BSc
     in Mathematics, South China Normal University, Guangzhou, China>>>>>
   </itemize-dot>
 
