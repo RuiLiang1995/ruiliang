@@ -58,8 +58,8 @@
     equation above the probabilistic scaling>.
 
     <item>(with Y. Wang) <with|font-shape|italic|<hlink|Gibbs dynamics for
-    the weakly dispersive nonlinear Schrödinger
-    equations|https://arxiv.org/abs/2306.07645>>.
+    fractional nonlinear Schrödinger equations with weak
+    dispersion|https://arxiv.org/abs/2306.07645>>.
 
     <item>(with G. Li, Y. Wang) <hlink|<with|font-shape|italic|Optimal
     divergence rate of the focusing Gibbs

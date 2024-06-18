@@ -54,6 +54,10 @@
   </strong>>
 
   <\itemize-dot>
+    <item>Random averaging operator, random tensor, and FNLS, A Workshop on
+    Harmonic Analysis and Nonlinear Dispersive Wave Equations, Henan
+    Polytechnic University, Henan, China, 23-28 June 2024
+
     <item>Random averaging operator, random tensor, and FNLS, Analysis
     Seminar, University of Birmingham, UK, 18 March 2024
 
@@ -86,6 +90,10 @@
   </strong>>
 
   <\itemize>
+    <item>(speaker) A Workshop on Harmonic Analysis and Nonlinear Dispersive
+    Wave Equations, Henan Polytechnic University, Henan, China, 23-28 June
+    2024
+
     <item><hlink|LMS Midlands Regional Meeting and Workshop
     2024|https://www.lboro.ac.uk/departments/maths/events/conferences-and-workshops/lms-midlands-regional-meeting-2024/>,
     Loughborough University, Leicestershire, UK, 02-05 April 2024
