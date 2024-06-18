@@ -56,7 +56,7 @@
   <\itemize-dot>
     <item>Random averaging operator, random tensor, and FNLS, A Workshop on
     Harmonic Analysis and Nonlinear Dispersive Wave Equations, Henan
-    Polytechnic University, Henan, China, 23-28 June 2024
+    Polytechnic University, Henan, China, 25 June 2024
 
     <item>Random averaging operator, random tensor, and FNLS, Analysis
     Seminar, University of Birmingham, UK, 18 March 2024
