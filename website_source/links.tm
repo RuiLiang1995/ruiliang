@@ -54,7 +54,7 @@
   </strong>>
 
   <\itemize>
-    <item><hlink|Andrea R. Nahmod's Homepage|people.math.umass.edu/~nahmod/>
+    <item><hlink|Andrea R. Nahmod's Homepage|https://people.math.umass.edu/~nahmod/>
 
     <item><hlink|General Relativity|https://www.youtube.com/watch?v=ewcO6x6FVqY&list=PLYL2pEY_heMKtza2YyrOvMfJV1xj8kvxK>
 
