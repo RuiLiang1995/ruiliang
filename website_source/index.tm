@@ -25,7 +25,7 @@
             Building<nbsp><next-line>University of
             Birmingham<next-line>Edgbaston<nbsp><next-line>Birmingham<nbsp><next-line>B15
             2TT<nbsp><next-line>United Kingdom<nbsp><next-line><next-line><with|font-series|bold|<with|color|dark
-            cyan|e-mail:>> rxl833 (at) student dot bham dot ac dot uk<em|>
+            cyan|e-mail:>> rxl833 (at) alumni dot bham dot ac dot uk<em|>
           </tiny>
         </cell>|<\cell>
           <image|Rui.jpg|0.39par|||>
@@ -108,9 +108,3 @@
     <associate|par-columns|1>
   </collection>
 </initial>
-
-<\references>
-  <\collection>
-    <associate|auto-1|<tuple|?|?>>
-  </collection>
-</references>

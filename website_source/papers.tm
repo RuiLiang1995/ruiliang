@@ -25,7 +25,7 @@
             Building<nbsp><next-line>University of
             Birmingham<next-line>Edgbaston<nbsp><next-line>Birmingham<nbsp><next-line>B15
             2TT<nbsp><next-line>United Kingdom<nbsp><next-line><next-line><with|font-series|bold|<with|color|dark
-            cyan|e-mail:>> rxl833 (at) student dot bham dot ac dot uk<em|>
+            cyan|e-mail:>> rxl833 (at) alumni dot bham dot ac dot uk<em|>
           </tiny>
         </cell>|<\cell>
           <image|Rui.jpg|0.39par|||>
@@ -55,7 +55,7 @@
 
   <\enumerate-numeric>
     <item>(with Y. Wang, H. Yue) <with|font-shape|italic|Nonlinear half-wave
-    equation above the probabilistic scaling>.
+    equation above probabilistic scaling>.
 
     <item>(with Y. Wang) <with|font-shape|italic|<hlink|Gibbs dynamics for
     fractional nonlinear Schrödinger equations with weak
