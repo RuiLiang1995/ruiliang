@@ -58,8 +58,8 @@
   </strong>>
 
   <\itemize-dot>
-    <tabular|<tformat|<table|<row|<cell|2024 -
-    \ \ \ \ \ \ \ \ >|<cell|>|<cell|Visiting Assistant Professor, University
+    <tabular|<tformat|<table|<row|<cell|2024 - <text|
+    \ \ \ \ \ \ \ >>|<cell|>|<cell|Visiting Assistant Professor, University
     of Massachusetts Amherst, Amherst, US>>>>>
   </itemize-dot>
 
