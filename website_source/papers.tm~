@@ -42,8 +42,8 @@
         <\very-small>
           <\padded-center>
             <\samp>
-              <hlink|About me|./index.tm><space|1em><hlink|Publications|./papers.tm><space|1em><hlink|Talks|./talks.tm><space|1em><hlink|Teaching|./teaching.tm><space|1em><hlink|<with|ornament-shape|rounded|<decorated|Brief
-              CV>>|./cv.tm><space|1em><hlink|Notes|./notes.tm><space|1em><hlink|Links|./links.tm>
+              <hlink|About me|./index.tm><space|1em><hlink|<with|ornament-shape|rounded|<decorated|Publications>>|./papers.tm><space|1em><hlink|Talks|./talks.tm><space|1em><hlink|Teaching|./teaching.tm><space|1em><hlink|Brief
+              CV|./cv.tm><space|1em><hlink|Notes|./notes.tm><space|1em><hlink|Links|./links.tm>
             </samp>
           </padded-center>
         </very-small>
@@ -51,50 +51,33 @@
     </wide-tabular>
   </bothlined>
 
-  \;
-
   <with|color|dark cyan|<\strong>
-    <no-indent>ACADEMIC POSITIONS:
+    <no-indent>PAPERS:
   </strong>>
 
-  <\itemize-dot>
-    <tabular|<tformat|<table|<row|<cell|2024 -
-    \ \ \ \ \ \ \ \ >|<cell|>|<cell|Visiting Assistant Professor, University
-    of Massachusetts Amherst, Amherst, US>>>>>
-  </itemize-dot>
+  <\enumerate-numeric>
+    <item>(with Y. Wang, H. Yue) <with|font-shape|italic|Nonlinear half-wave
+    equation above probabilistic scaling>.
 
-  <with|color|dark cyan|<\strong>
-    <no-indent>EDUCATION:
-  </strong>>
+    <item>(with Y. Wang) <with|font-shape|italic|<hlink|Gibbs dynamics for
+    fractional nonlinear Schrödinger equations with weak
+    dispersion|https://link.springer.com/article/10.1007/s00220-024-05116-1>>,
+    Comm. Math. Phys. 405 (2024), \ no. 10, Paper No. 250.
 
-  <\itemize-dot>
-    <tabular|<tformat|<table|<row|<cell|2020 - 2024>|<cell|>|<cell|Ph.D. in
-    Pure Mathematics, University of Birmingham, Birmingham,
-    UK>>|<row|<cell|>|<cell|>|<cell|Supervisors: Yuzhao Wang and Jonathan
-    Bennett>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|2017 -
-    2020>|<cell|>|<cell|MSc in Mathematics, South China Normal University,
-    Guangzhou, China>>|<row|<cell|>|<cell|>|<cell|Supervisor: Jingxue
-    Yin>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|2019>|<cell|>|<cell|Visiting
-    Research Student (Mathematics), University of Birmingham, Birmingham,
-    UK>>|<row|<cell|>|<cell|>|<cell|Supervisor: Yuzhao
-    Wang>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|2013 -
-    2017>|<cell|>|<cell|BSc in Mathematics, South China Normal University,
-    Guangzhou, China>>>>>
-  </itemize-dot>
+    <item>(with G. Li, Y. Wang) <hlink|<with|font-shape|italic|Optimal
+    divergence rate of the focusing Gibbs
+    measure>|https://arxiv.org/abs/2310.08783>.
 
-  \;
+    <item>(with Y. Wang) <with|font-shape|italic|Gibbs dynamics for the
+    radial Hartree NLS on the 3d ball>.
 
-  <with|color|dark cyan|<\strong>
-    <no-indent>REVIEWING EXPERIENCE:
-  </strong>>
+    <item>(with Y. Wang) <hlink|<with|font-shape|italic|Gibbs measure for the
+    focusing fractional NLS on the torus>|https://epubs.siam.org/doi/10.1137/21M1445946>,
+    SIAM. J. Math. Anal. 54 (2022), no. 6, 6096\U6118.
 
-  <\itemize>
-    <item>Referee for La Matematica
-
-    <item>Referee for Journal of Fourier Analysis and Applications
-  </itemize>
-
-  \;
+    <item><with|font-shape|italic|Lorentz <math|\<infty\>>-norms of Lebesgue
+    <em|&> Sobolev Spaces.>
+  </enumerate-numeric>
 
   \;
 </body>

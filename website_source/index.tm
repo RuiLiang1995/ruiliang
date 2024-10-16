@@ -21,11 +21,13 @@
           <\tiny>
             <with|color|dark cyan|<with|font-series|bold|Mailing Address>:>
 
-            <no-indent>School of Mathematics<next-line>Watson
-            Building<nbsp><next-line>University of
-            Birmingham<next-line>Edgbaston<nbsp><next-line>Birmingham<nbsp><next-line>B15
-            2TT<nbsp><next-line>United Kingdom<nbsp><next-line><next-line><with|font-series|bold|<with|color|dark
-            cyan|e-mail:>> rxl833 (at) alumni dot bham dot ac dot uk<em|>
+            <no-indent>Department of Mathematics and
+            Statistics<next-line>Lederle Graduate Research
+            Tower<nbsp><next-line>University of Massachusetts
+            Amherst<next-line>710 N. Pleasant
+            Street<nbsp><next-line>Amherst<nbsp><next-line>MA
+            01003-9305<nbsp><next-line>USA<nbsp><next-line><next-line><with|font-series|bold|<with|color|dark
+            cyan|e-mail:>> ruiliang (at) umass dot<em|>
           </tiny>
         </cell>|<\cell>
           <image|Rui.jpg|0.39par|||>
@@ -50,9 +52,12 @@
     </wide-tabular>
   </bothlined>
 
-  <no-indent>I am a PhD student in the School of Mathematics at the
-  University of Birmingham, under the supervision of <hlink|Yuzhao
-  Wang|https://web.mat.bham.ac.uk/Y.Wang/> and <hlink|Jonathan
+  <no-indent>I am a Visiting Assistant Professor in the Department of
+  Mathematics and Statistics at the University of Massachusetts Amherst,
+  working under the mentorship of <hlink|Prof. Andrea R.
+  Nahmod|https://en.wikipedia.org/wiki/Andrea_R._Nahmod>. I obtained my Ph.D.
+  at the University of Birmingham, under the supervision of <hlink|Prof.
+  Yuzhao Wang|https://web.mat.bham.ac.uk/Y.Wang/> and <hlink|Prof. Jonathan
   Bennett|https://en.wikipedia.org/wiki/Jonathan_Bennett_(mathematician)>.
 
   \;
@@ -87,16 +92,20 @@
   <no-indent>Explore my other profiles on:
 
   <\itemize-dot>
-    <item><hlink|google scholar|https://scholar.google.ca/citations?hl=en&user=FfdqwioAAAAJ&view_op=list_works&gmla=AP6z3ObEm4PBwc6zbJOJ0kdwoxW08Cvugi1C0oSGSKW2lVzgnBfn98oFgLTjt6AKd6NsRSiEeLjmXjiau9QgpGBK>\ 
-
     <item><hlink|arXiv|http://arxiv.org/a/liang_r_1>
+
+    <item><hlink|Google scholar|https://scholar.google.ca/citations?hl=en&user=FfdqwioAAAAJ&view_op=list_works&gmla=AP6z3ObEm4PBwc6zbJOJ0kdwoxW08Cvugi1C0oSGSKW2lVzgnBfn98oFgLTjt6AKd6NsRSiEeLjmXjiau9QgpGBK>
+
+    <item><hlink|Institutional page|https://www.umass.edu/mathematics-statistics/about/directory/rui-liang>
+
+    <item><hlink|MathSciNet|https://mathscinet.ams.org/mathscinet/author?authorId=1537015>
 
     <item><hlink|ORCID|https://orcid.org/0009-0000-2092-345X>
   </itemize-dot>
 
   <no-indent>Visit <hlink|my institutional
   page|https://www.birmingham.ac.uk/schools/mathematics/people/navigation.aspx?ReferenceId=199153&Name=mr-rui-liang>
-  at the School of Mathematics.
+  at the School of Mathematics at the University of Birmingham.
 </body>
 
 <\initial>

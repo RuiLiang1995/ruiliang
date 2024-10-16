@@ -21,11 +21,13 @@
           <\tiny>
             <with|color|dark cyan|<with|font-series|bold|Mailing Address>:>
 
-            <no-indent>School of Mathematics<next-line>Watson
-            Building<nbsp><next-line>University of
-            Birmingham<next-line>Edgbaston<nbsp><next-line>Birmingham<nbsp><next-line>B15
-            2TT<nbsp><next-line>United Kingdom<nbsp><next-line><next-line><with|font-series|bold|<with|color|dark
-            cyan|e-mail:>> rxl833 (at) alumni dot bham dot ac dot uk<em|>
+            <no-indent>Department of Mathematics and
+            Statistics<next-line>Lederle Graduate Research
+            Tower<nbsp><next-line>University of Massachusetts
+            Amherst<next-line>710 N. Pleasant
+            Street<nbsp><next-line>Amherst<nbsp><next-line>MA
+            01003-9305<nbsp><next-line>USA<nbsp><next-line><next-line><with|font-series|bold|<with|color|dark
+            cyan|e-mail:>> ruiliang (at) umass dot edu<em|>
           </tiny>
         </cell>|<\cell>
           <image|Rui.jpg|0.39par|||>

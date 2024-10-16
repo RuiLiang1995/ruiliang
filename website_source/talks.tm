@@ -21,11 +21,13 @@
           <\tiny>
             <with|color|dark cyan|<with|font-series|bold|Mailing Address>:>
 
-            <no-indent>School of Mathematics<next-line>Watson
-            Building<nbsp><next-line>University of
-            Birmingham<next-line>Edgbaston<nbsp><next-line>Birmingham<nbsp><next-line>B15
-            2TT<nbsp><next-line>United Kingdom<nbsp><next-line><next-line><with|font-series|bold|<with|color|dark
-            cyan|e-mail:>> rxl833 (at) alumni dot bham dot ac dot uk<em|>
+            <no-indent>Department of Mathematics and
+            Statistics<next-line>Lederle Graduate Research
+            Tower<nbsp><next-line>University of Massachusetts
+            Amherst<next-line>710 N. Pleasant
+            Street<nbsp><next-line>Amherst<nbsp><next-line>MA
+            01003-9305<nbsp><next-line>USA<nbsp><next-line><next-line><with|font-series|bold|<with|color|dark
+            cyan|e-mail:>> ruiliang (at) umass dot edu<em|>
           </tiny>
         </cell>|<\cell>
           <image|Rui.jpg|0.39par|||>
@@ -54,6 +56,10 @@
   </strong>>
 
   <\itemize-dot>
+    <item>Minicourse: Random averaging operators and Random tensors,
+    Institute of Mathematical Sciences, ShanghaiTech University, Shanghai,
+    China, 13-15, August 2024.
+
     <item>Random averaging operator, random tensor, and FNLS, A Workshop on
     Harmonic Analysis and Nonlinear Dispersive Wave Equations, Henan
     Polytechnic University, Henan, China, 25 June 2024
@@ -90,6 +96,13 @@
   </strong>>
 
   <\itemize>
+    <item><hlink|2024 Simon Collaboration on Wave Turbulence Annual
+    Meeting|https://www.simonsfoundation.org/event/simons-collaboration-on-wave-turbulence-annual-meeting-2024/>,
+    Gerald D. Fischbach Auditorium, New York, US, 05-06 December 2024.
+
+    <item>Three-day workshop, Courant Institute of Mathematical Sciences, New
+    York University, US, 02-04 December 2024.
+
     <item>(speaker) A Workshop on Harmonic Analysis and Nonlinear Dispersive
     Wave Equations, Henan Polytechnic University, Henan, China, 23-28 June
     2024
