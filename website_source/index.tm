@@ -105,7 +105,7 @@
 
   <no-indent>Visit <hlink|my institutional
   page|https://www.birmingham.ac.uk/schools/mathematics/people/navigation.aspx?ReferenceId=199153&Name=mr-rui-liang>
-  at the School of Mathematics at the University of Birmingham.
+  on the School of Mathematics webpage at the University of Birmingham.
 </body>
 
 <\initial>
