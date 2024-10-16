@@ -64,7 +64,7 @@
       course)>
     </itemize-dot>
 
-    <item>2020 - present<space|1em>Teaching Assistant at the University of
+    <item>2020 - 2024<space|1em>Teaching Assistant at the University of
     Birmingham, UK
 
     <\itemize-dot>
@@ -91,7 +91,7 @@
       <small|<item>><small|2022 Real Analysis (undergraduate course)>
     </itemize-dot>
 
-    <item>2020 - present<space|1em>Advanced Postgraduate Courses and Reading
+    <item>2020 - 2024<space|1em>Advanced Postgraduate Courses and Reading
     Seminars
 
     <\itemize-dot>
