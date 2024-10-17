@@ -58,7 +58,7 @@
   <\itemize-dot>
     <item>Minicourse: Random averaging operators and Random tensors,
     Institute of Mathematical Sciences, ShanghaiTech University, Shanghai,
-    China, 13-15, August 2024.
+    China, 13-15 August 2024.
 
     <item>Random averaging operator, random tensor, and FNLS, A Workshop on
     Harmonic Analysis and Nonlinear Dispersive Wave Equations, Henan
