@@ -27,7 +27,7 @@
             Amherst<next-line>710 N. Pleasant
             Street<nbsp><next-line>Amherst<nbsp><next-line>MA
             01003-9305<nbsp><next-line>USA<nbsp><next-line><next-line><with|font-series|bold|<with|color|dark
-            cyan|e-mail:>> ruiliang (at) umass dot<em|>
+            cyan|e-mail:>> ruiliang (at) umass dot<em|> edu
           </tiny>
         </cell>|<\cell>
           <image|Rui.jpg|0.39par|||>
