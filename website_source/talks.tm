@@ -56,7 +56,7 @@
   </strong>>
 
   <\itemize-dot>
-    <item>Minicourse: Random averaging operators and Random tensors,
+    <item>Minicourse: Random averaging operators and random tensors,
     Institute of Mathematical Sciences, ShanghaiTech University, Shanghai,
     China, 13-15 August 2024
 
