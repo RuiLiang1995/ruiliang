@@ -9,9 +9,13 @@
   structures>>>
 
   <no-indent><with|color|dark cyan|<strong|Notation.>> <with|color|dark
-  cyan|<chapter|Parabolic <math|\<Phi\><rsup|4><rsub|4-\<varepsilon\>>>><label|Chap:2>>
+  cyan|<chapter|<math|\<Phi\><rsup|4>> equation in the full sub-critical
+  regime><label|Chap:1>>
 
-  <with|color|dark cyan|<section|Preliminaries>><label|Sec:2.1>
+  In this chapter, we consider the <math|\<Phi\><rsup|4>> equation in the
+  full sub-critical regime
+
+  <with|color|dark cyan|<section|Preliminaries>><label|Sec:1.1>
 
   \;
 </body>
@@ -71,7 +75,9 @@
     <associate|2.5.6|<tuple|1.5.6|17>>
     <associate|2.5.7|<tuple|1.5.7|17>>
     <associate|2.5.8|<tuple|1.5.8|17>>
+    <associate|Chap:1|<tuple|1|?>>
     <associate|Chap:2|<tuple|1|7>>
+    <associate|Sec:1.1|<tuple|1.1|?>>
     <associate|Sec:2.1|<tuple|1.1|7>>
     <associate|Sec:2.2|<tuple|1.2|8>>
     <associate|Sec:2.3|<tuple|1.3|11>>
