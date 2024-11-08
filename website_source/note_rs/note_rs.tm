@@ -9,15 +9,34 @@
   structures>>>
 
   <no-indent><with|color|dark cyan|<strong|Notation.>> <with|color|dark
-  cyan|<chapter|<math|\<Phi\><rsup|4>> equation in the full sub-critical
+  cyan|<chapter|Phi-four equation in the full sub-critical
   regime><label|Chap:1>>
 
   In this chapter, we consider the <math|\<Phi\><rsup|4>> equation in the
-  full sub-critical regime
+  full sub-critical regime. The equation is formally given by
+
+  <\equation*>
+    <around*|(|\<partial\><rsub|t>-\<Delta\>|)>\<phi\>=-\<phi\><rsup|3>+\<infty\>\<phi\>+\<xi\>,<space|1em><around*|(|t,x|)>\<in\><around*|(|0,1|)>\<times\><around*|{|<around*|\||x|\|>\<leq\>1|}>,
+  </equation*>
+
+  where the term <math|+\<infty\>\<phi\>> represents the renormalisation (it
+  can be quadratic in <math|\<phi\>>) and the noise
+  <math|\<xi\>\<in\>C<rsup|-3+\<delta\>>> for some <math|\<delta\>\<gtr\>0>.
 
   <with|color|dark cyan|<section|Preliminaries>><label|Sec:1.1>
 
-  \;
+  We introduce following ingredients.
+
+  <\itemize-dot>
+    <item>An operator <math|<with|font|cal|I><around*|(|\<cdummy\>|)>> to
+    represent an abstract Duhamel operator for heat equation.
+
+    <item>Let <math|<with|font|cal|T><rsub|RHS><rsup|ALL>> be the smallest
+    set containing the symbols <math|<around*|{|<with|font-series|bold|1>,\<b-up-X\><rsub|1>,\<cdots\>,\<b-up-X\><rsub|d>,\<Xi\>|}>>
+    s.t. \P<math|\<tau\><rsub|1>,\<tau\><rsub|2>,\<tau\><rsub|3>\<in\><with|font|cal|T><rsup|ALL><rsub|RHS>\<Longrightarrow\><with|font|cal|I><around*|(|\<tau\><rsub|1>|)><with|font|cal|I><around*|(|\<tau\><rsub|2>|)><with|font|cal|I><around*|(|\<tau\><rsub|3>|)>\<in\><with|font|cal|T><rsup|ALL><rsub|RHS>>\Q.
+
+    <item><math|<with|font|cal|T><rsup|ALL><rsub|LHS>\<assign\><with|font|cal|I><around*|[|<with|font|cal|T><rsup|ALL><rsub|RHS>|]>>.
+  </itemize-dot>
 </body>
 
 <\initial>
