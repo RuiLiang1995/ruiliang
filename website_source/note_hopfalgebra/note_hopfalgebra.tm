@@ -3,6 +3,8 @@
 <style|<tuple|generic|termes-font|british>>
 
 <\body>
+  <hlink|GO BACK|../notes.tm>
+
   <doc-data|<doc-title|Note on Hopf Algebra>>
 
   <\folded>
@@ -215,11 +217,11 @@
   <\collection>
     <associate|DS|<tuple|3|1>>
     <associate|DT|<tuple|2|1>>
-    <associate|S-1S|<tuple|5|2>>
+    <associate|S-1S|<tuple|5|1>>
     <associate|S:1.1|<tuple|1.1|1>>
     <associate|STTS|<tuple|1|1>>
-    <associate|T-1T|<tuple|4|2>>
-    <associate|Tab|<tuple|6|2>>
+    <associate|T-1T|<tuple|4|1>>
+    <associate|Tab|<tuple|6|1>>
     <associate|Tfg|<tuple|7|2>>
     <associate|auto-1|<tuple|1|1>>
     <associate|auto-2|<tuple|1.1|1>>
