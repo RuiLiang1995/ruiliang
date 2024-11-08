@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Note on Hopf Algebra</title>
+    <meta content="TeXmacs 2.1.1" name="generator"></meta>
+    <style type="text/css">
+      body { text-align: justify } h5 { display: inline; padding-right: 1em }
+      h6 { display: inline; padding-right: 1em } table { border-collapse:
+      collapse } td { padding: 0.2em; vertical-align: baseline } dt { float:
+      left; min-width: 1.75em; text-align: right; padding-right: 0.75em;
+      font-weight: bold; } dd { margin-left: 2.75em; padding-bottom: 0.25em; }
+      dd p { padding-top: 0em; } .subsup { display: inline; vertical-align:
+      -0.2em } .subsup td { padding: 0px; text-align: left} .fraction {
+      display: inline; vertical-align: -0.8em } .fraction td { padding: 0px;
+      text-align: center } .wide { position: relative; margin-left: -0.4em }
+      .accent { position: relative; margin-left: -0.4em; top: -0.1em }
+      .title-block { width: 100%; text-align: center } .title-block p {
+      margin: 0px } .compact-block p { margin-top: 0px; margin-bottom: 0px }
+      .left-tab { text-align: left } .center-tab { text-align: center }
+      .balloon-anchor { border-bottom: 1px dotted #000000; outline: none;
+      cursor: help; position: relative; } .balloon-anchor [hidden] {
+      margin-left: -999em; position: absolute; display: none; }
+      .balloon-anchor: hover [hidden] { position: absolute; left: 1em; top:
+      2em; z-index: 99; margin-left: 0; width: 500px; display: inline-block; }
+      .balloon-body { } .ornament { border-width: 1px; border-style: solid;
+      border-color: black; display: inline-block; padding: 0.2em; } .right-tab
+      { float: right; position: relative; top: -1em; } .no-breaks {
+      white-space: nowrap; } 
+    </style>
+    <link href="https://www.texmacs.org/css/web-article.css" type="text/css" rel="stylesheet"></link>
+  </head>
+  <body>
+    <table class="title-block" style="margin-bottom: 2em">
+      <tr>
+        <td><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><font style="font-size: 168.2%"><strong>Note on Hopf Algebra</strong></font></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <div style="margin-left: 45.689664376812px">
+      <p>
+        <img src="note_hopfalgebra-1.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: 0em; height: 0.524858299595142em"></img>
+      </p>
+      <div class="toggle" style="display: none">
+        <p>
+          This note is extended from the a course called MAGIC 109 given by Dr
+          Y. Bazkov, adding some materials from the following resources:
+        </p>
+        <ul>
+          <li>
+            <p>
+              M. E. Sweedler. <i>Hopf algebras</i>, Math. Lecture Note Ser. W.
+              A. Benjamin, Inc., New York, 1969, vii+336 pp.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h2 id="auto-1">1<span style="margin-left: 1em"></span>Informal introdution<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-2"><a id="S:1.1"></a>1.1<span style="margin-left: 1em"></span>Example &ndash; Symmetries on
+    the real line<span style="margin-left: 1em"></span></h3>
+    <p>
+      We intend to study the intrinsic geometric property of the real line
+      <img src="note_hopfalgebra-2.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392713em; margin-top: -0.0414574898785425em; vertical-align: 0em; height: 0.849878542510121em"></img> by looking at how functions on the real line can
+      transform. For more algebraic setting, we only consider polynomials over
+      real variable. Let us look at the following transforms.
+    </p>
+    <p>
+      Given a real number <img src="note_hopfalgebra-3.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0104048582995951em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.0103238866396761em; height: 0.538947368421053em"></img> and <img src="note_hopfalgebra-4.png" style="margin-left: -0.155465587044534em; margin-bottom: 0.0206882591093117em; margin-right: -0.207287449392713em; margin-top: -0.0103643724696356em; vertical-align: -0.227975708502024em; height: 0.984615384615385em"></img>
+      is a function on the real line, we define the following <i>translation
+      by <img src="note_hopfalgebra-3.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0104048582995951em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.0103238866396761em; height: 0.538947368421053em"></img></i>:
+    </p>
+    <center>
+      <img src="note_hopfalgebra-5.png" style="margin-left: 0em; margin-bottom: 0.0206882591093117em; margin-right: -0.0207287449392712em; margin-top: -0.0103643724696356em; vertical-align: -0.227975708502024em; height: 0.984615384615385em"></img>
+    </center>
+    <p>
+      Define also the <i>reflection</i>
+    </p>
+    <center>
+      <img src="note_hopfalgebra-6.png" style="margin-left: 0em; margin-bottom: 0.0206882591093117em; margin-right: -0.0207287449392712em; margin-top: -0.0103643724696356em; vertical-align: -0.227975708502024em; height: 0.984615384615385em"></img>
+    </center>
+    <p>
+      and the <i>derivative</i>
+    </p>
+    <center>
+      <img src="note_hopfalgebra-7.png" style="margin-left: 0em; margin-bottom: 0.0206882591093117em; margin-right: -0.0207287449392712em; margin-top: 0em; vertical-align: -0.227975708502024em; height: 1.12971659919028em"></img>
+    </center>
+    <p>
+      The translation, reflection, derivative are not independent from each
+      other. In fact, there are some relations:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_hopfalgebra-8.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0310931174089069em; vertical-align: -0.176153846153846em; height: 0.943157894736842em" id="STTS"></img></td>
+        <td align="right">(1)</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_hopfalgebra-9.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: -0.176153846153846em; height: 0.943157894736842em" id="DT"></img></td>
+        <td align="right">(2)</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_hopfalgebra-10.png" style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.0207287449392712em; margin-top: -0.0310931174089069em; vertical-align: -0.0206882591093117em; height: 0.798056680161943em" id="DS"></img></td>
+        <td align="right">(3)</td>
+      </tr>
+    </table>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof of (<a href="#STTS">1</a>). </strong><img src="note_hopfalgebra-11.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0206882591093117em; margin-right: -0.020728744939273em; margin-top: -0.0103643724696356em; vertical-align: -0.227975708502024em; height: 0.984615384615385em"></img><span
+      style="margin-left: 1em"></span><img src="note_hopfalgebra-12.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392712em; margin-top: -0.0103643724696356em; vertical-align: 0em; height: 0.590769230769231em"></img>
+    </p>
+    <p>
+      Also,
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_hopfalgebra-13.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: -0.178825910931174em; height: 1.15578947368421em" id="T-1T"></img></td>
+        <td align="right">(4)</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_hopfalgebra-14.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: -0.165789473684211em; height: 1.14008097165992em" id="S-1S"></img></td>
+        <td align="right">(5)</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_hopfalgebra-15.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: -0.176153846153846em; height: 0.943157894736842em" id="Tab"></img></td>
+        <td align="right">(6)</td>
+      </tr>
+    </table>
+    <p>
+      Now we write down the relation (<a href="#STTS">1</a>)-(<a href="#DT">2</a>)-(<a
+      href="#DS">3</a>)-(<a href="#T-1T">4</a>)-(<a href="#S-1S">5</a>)-(<a href="#Tab">6</a>) for
+      <span class="no-breaks"><img src="note_hopfalgebra-16.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: -0.176153846153846em; height: 0.943157894736842em"></img>,</span> <span class="no-breaks"><img src="note_hopfalgebra-17.png"
+      style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.0207287449392712em; margin-top: -0.0310931174089069em; vertical-align: -0.0206882591093117em; height: 0.798056680161943em"></img>,</span> and <span class="no-breaks"><img src="note_hopfalgebra-18.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: 0em; height: 0.798056680161943em"></img>,</span>
+      so these transformations live their own lifes without the mention of the
+      functions they act on. But the algebraic structure given by (<a href="#STTS">1</a>)-(<a
+      href="#DT">2</a>)-(<a href="#DS">3</a>)-(<a href="#T-1T">4</a>)-(<a href="#S-1S">5</a>)-(<a
+      href="#Tab">6</a>) is too &ldquo;blank&rdquo;, it does not contain enough
+      information for us to effectively work with these abstract symbols as
+      symmetries of the function space on the real line. What is missing here
+      is how the operators <span class="no-breaks"><img src="note_hopfalgebra-16.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: -0.176153846153846em; height: 0.943157894736842em"></img>,</span> <span
+      class="no-breaks"><img src="note_hopfalgebra-17.png" style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.0207287449392712em; margin-top: -0.0310931174089069em; vertical-align: -0.0206882591093117em; height: 0.798056680161943em"></img>,</span> and <img src="note_hopfalgebra-18.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: 0em; height: 0.798056680161943em"></img>
+      behave when we apply them to a product of functions. Given functions
+      <img src="note_hopfalgebra-4.png" style="margin-left: -0.155465587044534em; margin-bottom: 0.0206882591093117em; margin-right: -0.207287449392713em; margin-top: -0.0103643724696356em; vertical-align: -0.227975708502024em; height: 0.984615384615385em"></img> and <span class="no-breaks"><img src="note_hopfalgebra-19.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0310526315789474em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.23834008097166em; height: 0.725506072874494em"></img>,</span>
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_hopfalgebra-20.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0310526315789474em; margin-right: -0.0207287449392712em; margin-top: -0.0103643724696356em; vertical-align: -0.23834008097166em; height: 0.984615384615385em" id="Tfg"></img></td>
+        <td align="right">(7)</td>
+      </tr>
+    </table>
+    <p>
+      To get rid of the mention of <img src="note_hopfalgebra-4.png" style="margin-left: -0.155465587044534em; margin-bottom: 0.0206882591093117em; margin-right: -0.207287449392713em; margin-top: -0.0103643724696356em; vertical-align: -0.227975708502024em; height: 0.984615384615385em"></img> and <img src="note_hopfalgebra-19.png"
+      style="margin-left: -0.0207287449392713em; margin-bottom: 0.0310526315789474em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.23834008097166em; height: 0.725506072874494em"></img> in (<a href="#Tfg">7</a>), we introduce a new symbolic notation
+      <i>coproduct</i> <span class="no-breaks"><img src="note_hopfalgebra-21.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392713em; margin-top: -0.0207287449392712em; vertical-align: 0em; height: 0.798056680161943em"></img>,</span> satisfying
+    </p>
+    <center>
+      <img src="note_hopfalgebra-22.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.176153846153846em; height: 0.943157894736842em"></img>
+    </center>
+    <p>
+      Likewise, we also require
+    </p>
+    <center>
+      <img src="note_hopfalgebra-23.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.165789473684211em; height: 0.932793522267206em"></img>
+    </center>
+    <p>
+      and the Leibniz rule
+    </p>
+    <center>
+      <img src="note_hopfalgebra-24.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0310526315789474em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.0828744939271255em; height: 0.82914979757085em"></img>
+    </center>
+    <p>
+      The meaning of <img src="note_hopfalgebra-21.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392713em; margin-top: -0.0207287449392712em; vertical-align: 0em; height: 0.798056680161943em"></img> will become clear later in this
+      note.
+    </p>
+    <h3 id="auto-3">1.2<span style="margin-left: 1em"></span>Hopf algebra &ndash; informal
+    introduction<span style="margin-left: 1em"></span></h3>
+    <p>
+      A Hopf algebra <span class="no-breaks"><img src="note_hopfalgebra-25.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0725506072874494em; margin-top: -0.0414574898785425em; vertical-align: 0em; height: 0.798056680161943em"></img>,</span> roughly
+      speeking, is a collection of operators which has 
+    </p>
+    <ul>
+      <li>
+        <p>
+          rules for multiplication (i.e., how to compose operators);
+        </p>
+      </li>
+      <li>
+        <p>
+          rules for coproduct (i.e., how an operator acts on a product of
+          functions);
+        </p>
+      </li>
+      <li>
+        <p>
+          rules for <i>The Antipode</i> (roughly an analogue of inverse in
+          group).
+        </p>
+      </li>
+    </ul>
+    <p>
+      In the example we study in Subsection <a href="#S:1.1">1.1</a>, we say that the
+      operators <span class="no-breaks"><img src="note_hopfalgebra-16.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: -0.176153846153846em; height: 0.943157894736842em"></img>,</span> <span class="no-breaks"><img
+      src="note_hopfalgebra-17.png" style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.0207287449392712em; margin-top: -0.0310931174089069em; vertical-align: -0.0206882591093117em; height: 0.798056680161943em"></img>,</span> and <img src="note_hopfalgebra-18.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: 0em; height: 0.798056680161943em"></img> generate some
+      Hopf algebra. However, these operators are known even from 19 centrary,
+      what is the point to rename them? Hopf algebras gain an advantage over
+      groups when we need symmetries of a noncommutative space. The
+      noncommuting objects upon which we want to act can be thought of as
+      &ldquo;functions&rdquo; on a mythical &ldquo;quantum group&rdquo;.
+    </p>
+    <h2 id="auto-4">2<span style="margin-left: 1em"></span>Linear algebra<span style="margin-left: 1em"></span></h2>
+    <p>
+      We consider vector space <img src="note_hopfalgebra-26.png" style="margin-left: 0em; margin-bottom: 0.0310526315789474em; margin-right: 0em; margin-top: -0.0310931174089069em; vertical-align: -0.186518218623482em; height: 0.932793522267206em"></img> over field <img src="note_hopfalgebra-27.png"
+      style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.0206882591093117em; height: 0.849878542510121em"></img> (sometimes we might use <img src="note_hopfalgebra-2.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392713em; margin-top: -0.0414574898785425em; vertical-align: 0em; height: 0.849878542510121em"></img> or <span
+      class="no-breaks"><img src="note_hopfalgebra-28.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0517813765182186em; margin-right: -0.0207287449392713em; margin-top: -0.0207287449392712em; vertical-align: -0.207246963562753em; height: 0.984615384615384em"></img>).</span> Recall that a linearly
+      independent set <img src="note_hopfalgebra-29.png" style="margin-left: -0.0518218623481781em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.0932793522267206em; margin-top: -0.0310931174089069em; vertical-align: -0.0206882591093117em; height: 0.798056680161943em"></img> is such that for any <span
+      class="no-breaks"><img src="note_hopfalgebra-30.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0310931174089069em; vertical-align: -0.176153846153846em; height: 0.943157894736842em"></img>,</span> <span class="no-breaks"><img src="note_hopfalgebra-31.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.176153846153846em; height: 0.99497975708502em"></img>,</span>
+      <img src="note_hopfalgebra-32.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.176153846153846em; height: 0.943157894736842em"></img> implies <span class="no-breaks"><img src="note_hopfalgebra-33.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.176153846153846em; height: 0.943157894736842em"></img>.</span>
+      Given a subset of <span class="no-breaks"><img src="note_hopfalgebra-34.png" style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.0932793522267207em; margin-top: -0.0414574898785425em; vertical-align: -0.0206882591093117em; height: 0.798056680161943em"></img>,</span> say <span
+      class="no-breaks"><img src="note_hopfalgebra-35.png" style="margin-left: -0.0518218623481781em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392712em; margin-top: -0.0310931174089069em; vertical-align: 0em; height: 0.798056680161943em"></img>,</span> the span of <img src="note_hopfalgebra-35.png" style="margin-left: -0.0518218623481781em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392712em; margin-top: -0.0310931174089069em; vertical-align: 0em; height: 0.798056680161943em"></img>
+      is defined by <span class="no-breaks"><img src="note_hopfalgebra-36.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.041417004048583em; margin-right: 0em; margin-top: -0.0207287449392712em; vertical-align: -0.248704453441296em; height: 1.03643724696356em"></img>.</span> A basis <img
+      src="note_hopfalgebra-37.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: 0em; height: 0.798056680161943em"></img> of <img src="note_hopfalgebra-34.png" style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.0932793522267207em; margin-top: -0.0414574898785425em; vertical-align: -0.0206882591093117em; height: 0.798056680161943em"></img> is linearly independent
+      subset of <img src="note_hopfalgebra-35.png" style="margin-left: -0.0518218623481781em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392712em; margin-top: -0.0310931174089069em; vertical-align: 0em; height: 0.798056680161943em"></img> such that <span class="no-breaks"><img src="note_hopfalgebra-38.png"
+      style="margin-left: -0.0207287449392713em; margin-bottom: 0.041417004048583em; margin-right: -0.0932793522267206em; margin-top: -0.0311336032388664em; vertical-align: -0.248704453441296em; height: 0.984615384615385em"></img>.</span> By using Zorn's lemma, one can prove that every
+      vector space has a basis. All bases of <img src="note_hopfalgebra-34.png" style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.0932793522267207em; margin-top: -0.0414574898785425em; vertical-align: -0.0206882591093117em; height: 0.798056680161943em"></img> are of
+      the same cardinality which is denoted by <span class="no-breaks"><img src="note_hopfalgebra-39.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0310526315789474em; margin-right: 0em; margin-top: -0.0103643724696356em; vertical-align: -0.186518218623482em; height: 0.932793522267206em"></img>.</span>
+      We can also argue that every set is a basis of some vector space.
+      Indeed, let <img src="note_hopfalgebra-40.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0414574898785425em; margin-top: -0.0414574898785425em; vertical-align: 0em; height: 0.798056680161943em"></img> be a set, and let
+    </p>
+    <center>
+      <img src="note_hopfalgebra-41.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0621457489878543em; margin-right: -0.0207287449392695em; margin-top: -0.0207287449392712em; vertical-align: -1.00919028340081em; height: 2.53663967611336em"></img>
+    </center>
+    <p>
+      Moreover, we can identify <img src="note_hopfalgebra-42.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0104048582995951em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.0103238866396761em; height: 0.538947368421053em"></img> in <img src="note_hopfalgebra-40.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0414574898785425em; margin-top: -0.0414574898785425em; vertical-align: 0em; height: 0.798056680161943em"></img>
+      with an element in <span class="no-breaks"><img src="note_hopfalgebra-43.png" style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.0414574898785425em; margin-top: -0.0207287449392712em; vertical-align: -0.0206882591093117em; height: 0.849878542510121em"></img>,</span> which is
+      <span class="no-breaks"><img src="note_hopfalgebra-44.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0104048582995951em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.0103238866396761em; height: 0.798056680161943em"></img>,</span> and one can check that
+      under this identification the set <img src="note_hopfalgebra-40.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0414574898785425em; margin-top: -0.0414574898785425em; vertical-align: 0em; height: 0.798056680161943em"></img> becomes a
+      basis of <span class="no-breaks"><img src="note_hopfalgebra-43.png" style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.0414574898785425em; margin-top: -0.0207287449392712em; vertical-align: -0.0206882591093117em; height: 0.849878542510121em"></img>.</span> This fits a
+      philosophy we have to adhere in this note: everything is vector space;
+      everything map is a linear map.
+    </p>
+    <p>
+      It is time to state the first result in this note, a result that we will
+      used later.
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proposition <class style="font-style: normal">1</class>. </strong><i><class style="font-style: normal"><strong>(linear
+      extension from basis) </strong></class>Let <img src="note_hopfalgebra-45.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207287449392713em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: 0em; height: 0.798056680161943em"></img> be a
+      basis of vector space <span class="no-breaks"><img src="note_hopfalgebra-46.png" style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.0932793522267207em; margin-top: -0.0414574898785425em; vertical-align: -0.0206882591093117em; height: 0.798056680161943em"></img>,</span> <img
+      src="note_hopfalgebra-47.png" style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.103643724696356em; margin-top: -0.0414574898785425em; vertical-align: -0.0206882591093117em; height: 0.798056680161943em"></img> a vector space, and <img src="note_hopfalgebra-48.png" style="margin-left: -0.0207287449392713em; margin-bottom: -4.04858299595141e-5em; margin-right: -0.103643724696356em; margin-top: -0.0310931174089069em; vertical-align: -0.0206882591093117em; height: 0.798056680161943em"></img> a
+      function. Then there exists a unique linear map <img src="note_hopfalgebra-49.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0207692307692308em; margin-right: -0.103643724696356em; margin-top: -0.0515789473684211em; vertical-align: -0.0206882591093117em; height: 0.860242914979757em"></img>
+      such that <span class="no-breaks"><img src="note_hopfalgebra-50.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103643724696356em; margin-right: -0.134736842105263em; margin-top: -0.0515789473684211em; vertical-align: -0.176194331983806em; height: 0.984615384615384em"></img>.</span></i>
+    </p>
+    <p>
+      We will need a number of constructions which allows us to create new
+      vector spaces from the existing ones. For example, direct product and
+      direct sum of vector spaces <img src="note_hopfalgebra-51.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: -0.16582995951417em; height: 0.943157894736842em"></img> means
+    </p>
+    <center>
+      <img src="note_hopfalgebra-52.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0414170040485831em; margin-right: 0em; margin-top: -0.0310931174089069em; vertical-align: -1.27384615384615em; height: 2.32068825910931em"></img>
+    </center>
+    <p>
+      and
+    </p>
+    <center>
+      <img src="note_hopfalgebra-53.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0414170040485831em; margin-right: 0em; margin-top: -0.045748987854251em; vertical-align: -1.27384615384615em; height: 2.77603238866397em"></img>
+    </center>
+    <p>
+      respectively. Let us note that for any <span class="no-breaks"><img src="note_hopfalgebra-54.png" style="margin-left: -0.0207287449392713em; margin-bottom: -0.0104048582995951em; margin-right: -0.0207287449392712em; margin-top: -0.0207287449392712em; vertical-align: -0.0103238866396761em; height: 0.538947368421053em"></img>,</span>
+      <img src="note_hopfalgebra-55.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0103238866396761em; margin-right: -0.0207287449392712em; margin-top: -0.0414574898785425em; vertical-align: -0.176153846153846em; height: 0.943157894736842em"></img> is a subspace of <span class="no-breaks"><img src="note_hopfalgebra-56.png" style="margin-left: -0.0207287449392713em; margin-bottom: 0.0414170040485829em; margin-right: -0.0207287449392712em; margin-top: -0.00518218623481781em; vertical-align: -0.336761133603239em; height: 1.07267206477733em"></img>.</span>
+      Let us also remark that direct product and direct sum can be defined for
+      an uncountable family of vector spaces. However, we only consider
+      countable familys in this note.
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
