@@ -49,7 +49,9 @@
     <item>Define functions <math|m<rsub|<with|font-series|bold|1>>,m<rsub|\<b-up-X\><rsub|i>>,m<rsub|\<Xi\>>:<with|font|cal|T><rsup|ALL><rsub|RHS>\<longrightarrow\>\<bbb-Z\><rsub|\<geq\>0>>
     which counts, on any given tree, the number of occurrences of
     <math|<with|font-series|bold|1>,\<b-up-X\><rsub|i>>, and <math|\<Xi\>> as
-    leaves in the tree.
+    leaves in the tree. Denote also by <math|m<rsub|\<b-up-X\>><around*|(|\<tau\>|)>=<big|sum><rsub|i=1><rsup|d>m<rsub|\<b-up-X\><rsub|i>><around*|(|\<tau\>|)>>.
+
+    <item><math|<around*|\||\<tau\>|\|>=-3+m<rsub|\<Xi\>><around*|(|\<tau\>|)>\<delta\>+m<rsub|<with|font-series|bold|1>><around*|(|\<tau\>|)>+2m<rsub|\<b-up-X\>><around*|(|\<tau\>|)>>.
 
     <item><math|<with|font|cal|W>=<around*|{|\<tau\>\<in\><with|font|cal|T><rsup|ALL><rsub|RHS>;<around*|\||\<tau\>|\|>\<less\>-2|}>>,
     <math|<with|font|cal|W><rsub|PROD>=<with|font|cal|W>\\<around*|{|\<Xi\>|}>>,
