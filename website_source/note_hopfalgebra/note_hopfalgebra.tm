@@ -7,17 +7,13 @@
 
   <doc-data|<doc-title|Note on basic Hopf Algebra>>
 
-  <\folded>
-    \;
-  <|folded>
-    This note is extended from the a course called MAGIC 109 given by Dr Y.
-    Bazkov, adding some materials from the following resources:
+  This note is extended from the a course called MAGIC 109 given by Dr Y.
+  Bazkov, adding some materials from the following resources:
 
-    <\itemize-dot>
-      <item>M. E. Sweedler. <with|font-shape|italic|Hopf algebras>, Math.
-      Lecture Note Ser. W. A. Benjamin, Inc., New York, 1969, vii+336 pp.
-    </itemize-dot>
-  </folded>
+  <\itemize-dot>
+    <item>M. E. Sweedler. <with|font-shape|italic|Hopf algebras>, Math.
+    Lecture Note Ser. W. A. Benjamin, Inc., New York, 1969, vii+336 pp.
+  </itemize-dot>
 
   <section|Informal introdution>
 
