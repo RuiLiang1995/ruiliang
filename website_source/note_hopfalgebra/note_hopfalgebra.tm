@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|generic|termes-font|british>>
 
@@ -151,7 +151,7 @@
   <math|\<lambda\><rsub|1>a<rsub|1>+\<cdots\>+\<lambda\><rsub|n>a<rsub|n>=0>
   implies <math|\<lambda\><rsub|1>=\<cdots\>=\<lambda\><rsub|n>=0>. Given a
   subset of <math|V>, say <math|A>, the span of <math|A> is defined by
-  <math|span<around*|(|A|)>=<around*|{|\<lambda\><rsub|1>a<rsub|1>+\<cdots\>+\<lambda\><rsub|n>a<rsub|n>;n\<geq\>0,a<rsub|1>,\<ldots\>,a<rsub|n>\<in\>A,\<lambda\><rsub|1>,\<ldots\>,\<lambda\><rsub|n>\<in\>\<bbb-C\>|}>>.
+  <math|span<around*|(|A|)>=<around*|{|\<lambda\><rsub|1>a<rsub|1>+\<cdots\>+\<lambda\><rsub|n>a<rsub|n>;n\<geqslant\>0,a<rsub|1>,\<ldots\>,a<rsub|n>\<in\>A,\<lambda\><rsub|1>,\<ldots\>,\<lambda\><rsub|n>\<in\>\<bbb-C\>|}>>.
   A basis <math|B> of <math|V> is linearly independent subset of <math|A>
   such that <math|span<around*|(|B|)>=V>. By using Zorn's lemma, one can
   prove that every vector space has a basis. All bases of <math|V> are of the
@@ -161,7 +161,7 @@
 
   <\eqnarray*>
     <tformat|<table|<row|<cell|\<bbb-C\>X>|<cell|=>|<cell|<around*|{|<text|formal
-    linear combinations of elements of >X|}>>>|<row|<cell|>|<cell|=>|<cell|<around*|{|\<alpha\><rsub|1>x<rsub|1>+\<cdots\>+\<alpha\><rsub|n>x<rsub|n>;n\<geq\>0,x<rsub|1>,\<ldots\>,x<rsub|n>\<in\>X,\<alpha\><rsub|1>,\<ldots\>,\<alpha\><rsub|n>\<in\>\<bbb-C\>|}>.>>>>
+    linear combinations of elements of >X|}>>>|<row|<cell|>|<cell|=>|<cell|<around*|{|\<alpha\><rsub|1>x<rsub|1>+\<cdots\>+\<alpha\><rsub|n>x<rsub|n>;n\<geqslant\>0,x<rsub|1>,\<ldots\>,x<rsub|n>\<in\>X,\<alpha\><rsub|1>,\<ldots\>,\<alpha\><rsub|n>\<in\>\<bbb-C\>|}>.>>>>
   </eqnarray*>
 
   Moreover, we can identify <math|x> in <math|X> with an element in
@@ -186,21 +186,22 @@
   of vector spaces <math|V<rsub|1>,V<rsub|2>,\<ldots\>> means
 
   <\equation*>
-    <big|prod><rsub|k\<geq\>1>V<rsub|k>=<around*|{|<around*|(|v<rsub|1>,v<rsub|2>,\<ldots\>|)>:v<rsub|k>\<in\>V<rsub|k><text|
+    <big|prod><rsub|k\<geqslant\>1>V<rsub|k>=<around*|{|<around*|(|v<rsub|1>,v<rsub|2>,\<ldots\>|)>:v<rsub|k>\<in\>V<rsub|k><text|
     for all >k|}>
   </equation*>
 
   and
 
   <\equation*>
-    <big|oplus><rsub|k\<geq\>1>V<rsub|k>=<around*|{|<around*|(|v<rsub|1>,v<rsub|2>,\<ldots\>|)>\<in\><big|prod><rsub|k\<geq\>1>V<rsub|k>:v<rsub|k>=0<text|
+    <big|oplus><rsub|k\<geqslant\>1>V<rsub|k>=<around*|{|<around*|(|v<rsub|1>,v<rsub|2>,\<ldots\>|)>\<in\><big|prod><rsub|k\<geqslant\>1>V<rsub|k>:v<rsub|k>=0<text|
     for all but finitely many >k|}>
   </equation*>
 
   respectively. Let us note that for any <math|n>, <math|V<rsub|n>> is a
-  subspace of <math|<big|oplus><rsub|k\<geq\>1>V<rsub|k>>. Let us also remark
-  that direct product and direct sum can be defined for an uncountable family
-  of vector spaces. However, we only consider countable familys in this note.
+  subspace of <math|<big|oplus><rsub|k\<geqslant\>1>V<rsub|k>>. Let us also
+  remark that direct product and direct sum can be defined for an uncountable
+  family of vector spaces. However, we only consider countable familys in
+  this note.
 
   \;
 </body>
@@ -217,11 +218,11 @@
   <\collection>
     <associate|DS|<tuple|3|1>>
     <associate|DT|<tuple|2|1>>
-    <associate|S-1S|<tuple|5|1>>
+    <associate|S-1S|<tuple|5|2>>
     <associate|S:1.1|<tuple|1.1|1>>
     <associate|STTS|<tuple|1|1>>
-    <associate|T-1T|<tuple|4|1>>
-    <associate|Tab|<tuple|6|1>>
+    <associate|T-1T|<tuple|4|2>>
+    <associate|Tab|<tuple|6|2>>
     <associate|Tfg|<tuple|7|2>>
     <associate|auto-1|<tuple|1|1>>
     <associate|auto-2|<tuple|1.1|1>>
