@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|book|termes-font|number-long-article|stylefileqft|std-frame|maxima>>
 
@@ -63,7 +63,39 @@
     consists of <math|\<tau\>=<with|font|cal|I><around*|(|\<tau\><rsub|1>|)><with|font|cal|I><around*|(|\<tau\><rsub|2>|)><with|font|cal|I><around*|(|\<tau\><rsub|3>|)>>
     s.t. <math|<around*|{|\<tau\><rsub|1>,\<tau\><rsub|2>,\<tau\><rsub|3>|}>\<cap\><around*|{|\<b-up-X\><rsub|1>,\<cdots\>,\<b-up-X\><rsub|d>|}>=\<varnothing\>>
     and <math|<with|font-series|bold|1>\<in\><around*|{|\<tau\><rsub|1>,\<tau\><rsub|2>,\<tau\><rsub|3>|}>>.
+
+    <item><math|<with|font|cal|V><rsub|\<gtr\>1>=<around*|{|\<tau\>\<in\><with|font|cal|V><rsub|PROD>;-1\<less\><around*|\||\<tau\>|\|>\<less\>0|}>>.
+
+    <item><math|<with|font|cal|T><rsub|\<Delta\>>\<assign\><with|font|cal|T><rsub|RHS>\<cup\><with|font|cal|T><rsub|LHS>\<cup\><around*|{|<with|font|cal|I><rsub|i><rsup|+>;1\<leq\>i\<leq\>d,\<tau\>\<in\><with|font|cal|V><rsub|\<gtr\>1>\<cup\><around*|{|\<b-up-X\><rsub|i>|}>|}>>.
+
+    <item><math|<with|font|cal|T><rsub|cen>\<assign\><with|font|cal|I><around*|[|<with|font|cal|V>|]>\<cup\><around*|{|<with|font|cal|I><rsub|i><rsup|+><around*|(|\<tau\>|)>;\<tau\>\<in\><with|font|cal|V><rsub|\<gtr\>1>\<cup\><around*|{|\<b-up-X\><rsub|i>|}>,1\<leq\>i\<leq\>d|}>>.
+
+    <item><math|\<Delta\>:<with|font|cal|T><rsub|\<Delta\>>\<longrightarrow\>Vec<around*|(|<with|font|cal|T><rsub|\<Delta\>>|)>\<otimes\>Alg<around*|(|<with|font|cal|T><rsub|cen>|)>>.
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<Delta\><with|font|cal|I><around*|(|<with|font-series|bold|1>|)>>|<cell|=>|<cell|<with|font|cal|I><around*|(|<with|font-series|bold|1>|)>\<otimes\><with|font|cal|I><around*|(|<with|font-series|bold|1>|)>;>>|<row|<cell|\<Delta\><with|font|cal|I><around*|(|\<b-up-X\><rsub|i>|)>>|<cell|=>|<cell|<with|font|cal|I><around*|(|<with|font-series|bold|1>|)>\<otimes\><with|font|cal|I><around*|(|\<b-up-X\><rsub|i>|)>+<with|font|cal|I><around*|(|\<b-up-X\><rsub|i>|)>\<otimes\><with|font|cal|I><rsup|+><rsub|i><around*|(|\<b-up-X\><rsub|i>|)>;>>|<row|<cell|\<Delta\><with|font|cal|I><rsup|+><rsub|i><around*|(|\<b-up-X\><rsub|i>|)>>|<cell|=>|<cell|<with|font|cal|I><rsub|i><rsup|+><around*|(|\<b-up-X\><rsub|i>|)>\<otimes\><with|font|cal|I><rsup|+><rsub|i><around*|(|\<b-up-X\><rsub|i>|)>;>>|<row|<cell|\<Delta\>w>|<cell|=>|<cell|w\<otimes\>1,>>|<row|<cell|\<Delta\><with|font|cal|I><around*|(|w|)>>|<cell|=>|<cell|<with|font|cal|I><around*|(|w|)>\<otimes\>1,<space|1em>w\<in\><with|font|cal|W>;>>|<row|<cell|\<Delta\><with|font|cal|I><around*|(|\<tau\>|)>>|<cell|=>|<cell|<with|font|cal|I><around*|(|<with|font-series|bold|1>|)>\<otimes\><with|font|cal|I><around*|(|\<tau\>|)>+<with|font|cal|I><around*|(|\<b-up-X\><rsub|i>|)>\<otimes\><with|font|cal|I><rsup|+><rsub|i><around*|(|\<tau\>|)>+<around*|(|<with|font|cal|I>\<otimes\>Id|)>\<Delta\>\<tau\>,<space|1em>\<tau\>\<in\><with|font|cal|V><rsub|PROD>;>>|<row|<cell|\<Delta\><with|font|cal|I><rsup|+><rsub|i><around*|(|\<tau\>|)>>|<cell|=>|<cell|<with|font|cal|I><rsup|+><rsub|i><around*|(|\<b-up-X\><rsub|i>|)>\<otimes\><with|font|cal|I><rsup|+><rsub|i><around*|(|\<b-up-X\><rsub|i>|)>+<around*|(|<with|font|cal|I><rsup|+><rsub|i>\<otimes\>Id|)>\<Delta\>\<tau\>,<space|1em>\<tau\>\<in\><with|font|cal|V><rsub|\<gtr\>1>;>>|<row|<cell|\<Delta\><around*|(|<with|font|cal|I><around*|(|\<tau\><rsub|1>|)><with|font|cal|I><around*|(|\<tau\><rsub|2>|)><with|font|cal|I><around*|(|\<tau\><rsub|3>|)>|)>>|<cell|=>|<cell|\<Delta\><around*|(|<with|font|cal|I><around*|(|\<tau\><rsub|1>|)>|)>\<Delta\><around*|(|<with|font|cal|I><around*|(|\<tau\><rsub|2>|)>|)>\<Delta\><around*|(|<with|font|cal|I><around*|(|\<tau\><rsub|3>|)>|)>,<space|1em><with|font|cal|I><around*|(|\<tau\><rsub|1>|)><with|font|cal|I><around*|(|\<tau\><rsub|2>|)><with|font|cal|I><around*|(|\<tau\><rsub|3>|)>\<in\><with|font|cal|V><rsub|PROD>.>>>>
+    </eqnarray*>
   </itemize-dot>
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
 </body>
 
 <\initial>
