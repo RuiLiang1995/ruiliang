@@ -62,7 +62,8 @@
     <item><hlink|Note on the theory of regularity structures
     (updating)|./note_rs/note_rs.tm>
 
-    <item><hlink|Note on Hopf algebra (updating)|./note_hopfalgebra/note_hopfalgebra.tm>
+    <item><hlink|Note on basic Hopf algebra
+    (updating)|./note_hopfalgebra/note_hopfalgebra.tm>
   </enumerate-numeric>
 </body>
 
