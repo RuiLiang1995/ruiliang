@@ -64,9 +64,6 @@
     s.t. <math|<around*|{|\<tau\><rsub|1>,\<tau\><rsub|2>,\<tau\><rsub|3>|}>\<cap\><around*|{|\<b-up-X\><rsub|1>,\<cdots\>,\<b-up-X\><rsub|d>|}>=\<varnothing\>>
     and <math|<with|font-series|bold|1>\<in\><around*|{|\<tau\><rsub|1>,\<tau\><rsub|2>,\<tau\><rsub|3>|}>>.
   </itemize-dot>
-
-  <with|color|dark cyan|<chapter|Phi-four equation in the full sub-critical
-  regime><label|Chap:1>>
 </body>
 
 <\initial>
@@ -79,6 +76,7 @@
 <\references>
   <\collection>
     <associate|Chap:1|<tuple|2|?>>
+    <associate|Chap:2|<tuple|2|?>>
     <associate|Sec:1.1|<tuple|1.1|?>>
     <associate|auto-1|<tuple|1|7>>
     <associate|auto-2|<tuple|1.1|7>>
