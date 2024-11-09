@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -56,9 +56,11 @@
   </strong>>
 
   <\itemize>
-    <item><hlink|Andrea R. Nahmod's Homepage|https://people.math.umass.edu/~nahmod/>
+    <item><hlink|Andrea R. Nahmod's Homepage|https://people.math.umass.edu/~nahmod>
 
     <item><hlink|General Relativity|https://www.youtube.com/watch?v=ewcO6x6FVqY&list=PLYL2pEY_heMKtza2YyrOvMfJV1xj8kvxK>
+
+    <item><hlink|GNU TeXmacs|https://www.texmacs.org>
 
     <item><hlink|Journal Ranking|https://www.austms.org.au/Rankings/AustMS_final_ranked.html>
 
