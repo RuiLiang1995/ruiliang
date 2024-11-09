@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|book|termes-font|number-long-article|stylefileqft|std-frame|maxima>>
 
@@ -63,6 +63,14 @@
     consists of <math|\<tau\>=<with|font|cal|I><around*|(|\<tau\><rsub|1>|)><with|font|cal|I><around*|(|\<tau\><rsub|2>|)><with|font|cal|I><around*|(|\<tau\><rsub|3>|)>>
     s.t. <math|<around*|{|\<tau\><rsub|1>,\<tau\><rsub|2>,\<tau\><rsub|3>|}>\<cap\><around*|{|\<b-up-X\><rsub|1>,\<cdots\>,\<b-up-X\><rsub|d>|}>=\<varnothing\>>
     and <math|<with|font-series|bold|1>\<in\><around*|{|\<tau\><rsub|1>,\<tau\><rsub|2>,\<tau\><rsub|3>|}>>.
+
+    <item><math|<with|font|cal|V><rsub|\<gtr\>1>=<around*|{|\<tau\>\<in\><with|font|cal|V><rsub|PROD>;-1\<less\><around*|\||\<tau\>|\|>\<less\>0|}>>.
+
+    <item><math|<with|font|cal|T><rsub|\<Delta\>>\<assign\><with|font|cal|T><rsub|RHS>\<cup\><with|font|cal|T><rsub|LHS>\<cup\><around*|{|<with|font|cal|I><rsub|i><rsup|+>;1\<leq\>i\<leq\>d,\<tau\>\<in\><with|font|cal|V><rsub|\<gtr\>1>\<cup\><around*|{|X<rsub|i>|}>|}>>.
+
+    <item><math|<with|font|cal|T><rsub|cen>\<assign\><with|font|cal|I><around*|[|<with|font|cal|V>|]>\<cup\><around*|{|<with|font|cal|I><rsub|i><rsup|+><around*|(|\<tau\>|)>;\<tau\>\<in\><with|font|cal|V><rsub|\<gtr\>1>\<cup\><around*|{||}>|}>>
+
+    \;
   </itemize-dot>
 </body>
 
@@ -75,12 +83,10 @@
 
 <\references>
   <\collection>
-    <associate|Chap:1|<tuple|2|?>>
-    <associate|Chap:2|<tuple|2|?>>
+    <associate|Chap:1|<tuple|1|?>>
     <associate|Sec:1.1|<tuple|1.1|?>>
     <associate|auto-1|<tuple|1|7>>
     <associate|auto-2|<tuple|1.1|7>>
-    <associate|auto-3|<tuple|2|?>>
   </collection>
 </references>
 
