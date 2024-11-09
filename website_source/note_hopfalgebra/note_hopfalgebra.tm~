@@ -7,9 +7,9 @@
 
   <doc-data|<doc-title|Note on basic Hopf Algebra>>
 
-  <\folded>
+  <\unfolded>
     \;
-  <|folded>
+  <|unfolded>
     This note is extended from the a course called MAGIC 109 given by Dr Y.
     Bazkov, adding some materials from the following resources:
 
@@ -17,7 +17,7 @@
       <item>M. E. Sweedler. <with|font-shape|italic|Hopf algebras>, Math.
       Lecture Note Ser. W. A. Benjamin, Inc., New York, 1969, vii+336 pp.
     </itemize-dot>
-  </folded>
+  </unfolded>
 
   <section|Informal introdution>
 
