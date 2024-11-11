@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -61,9 +61,6 @@
 
     <item><hlink|Note on the theory of regularity structures
     (updating)|./note_rs/note_rs.tm>
-
-    <item><hlink|Note on basic Hopf algebra
-    (updating)|./note_hopfalgebra/note_hopfalgebra.tm>
   </enumerate-numeric>
 </body>
 
