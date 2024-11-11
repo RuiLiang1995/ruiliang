@@ -8,15 +8,49 @@
   <doc-data|<doc-title|<with|color|dark cyan|Note on the theory of regularity
   structures>>>
 
-  <no-indent><with|color|dark cyan|<strong|Notation.>> <with|color|dark
-  cyan|<chapter|Phi-four equation in the full sub-critical
-  regime><label|Chap:1>>
+  <\with|color|dark cyan>
+    <chapter|Algebraic renormalisation of regularity
+    structures<label|Chap:ar>>
+  </with>
+
+  This chapter is taken from the paper [Y. Bruned, M. Hairer, L. Zambotti,
+  Invent. Math. 215 (2019), no. 3, 1039\U1156].
+
+  <with|color|dark cyan|<section|Rooted forest><label|Sec:ar.1>>
+
+  <\itemize-dot>
+    <item>A rooted tree <math|T> is a finite connected simple graph without
+    circles with a distinguished vertex <math|\<varrho\><rsub|T>>, called
+    <with|font-shape|italic|the root>. We assume that our trees are
+    combinatorial, i.e. there is no particular order imposed on edges leaving
+    any given vertex.
+
+    <item>Vertices of <math|T> is also called <with|font-shape|italic|nodes>.
+    The set of nodes of the tree <math|T> is denoted by <math|N<rsub|T>>, and
+    set of edges the tree <math|T> is denoted by
+    <math|E<rsub|T>\<subset\>N<rsup|2><rsub|T>>. We endow <math|N<rsub|T>>
+    with the partial order <math|\<leqslant\>> where <math|w\<leqslant\>v>
+    iff <math|w> is on the unique path connecting <math|v> to the root, and
+    we orient edges in <math|E<rsub|T>> so that if
+    <math|<around*|(|x,y|)>=<around*|(|x\<rightarrow\>y|)>\<in\>E<rsub|T>>,
+    then <math|x\<leqslant\>y>. In this way, we can always view a tree as a
+    directed graph.
+
+    <item>
+  </itemize-dot>
+
+  <\with|color|dark cyan>
+    \;
+
+    <chapter|Phi-four equation in the full sub-critical
+    regime><label|Chap:phi4>
+  </with>
 
   In this chapter, we consider the <math|\<Phi\><rsup|4>> equation in the
   full sub-critical regime. The equation is formally given by
 
   <\equation*>
-    <around*|(|\<partial\><rsub|t>-\<Delta\>|)>\<phi\>=-\<phi\><rsup|3>+\<infty\>\<phi\>+\<xi\>,<space|1em><around*|(|t,x|)>\<in\><around*|(|0,1|)>\<times\><around*|{|<around*|\||x|\|>\<leq\>1|}>,
+    <around*|(|\<partial\><rsub|t>-\<Delta\>|)>\<phi\>=-\<phi\><rsup|3>+\<infty\>\<phi\>+\<xi\>,<space|1em><around*|(|t,x|)>\<in\><around*|(|0,1|)>\<times\><around*|{|<around*|\||x|\|>\<leqslant\>1|}>,
   </equation*>
 
   where the term <math|+\<infty\>\<phi\>> represents the renormalisation (it
@@ -25,7 +59,7 @@
   This chapter is a note taken from the paper [A. Chandra, A. Moinat, H.
   Weber, Arch. Ration. Mech. Anal. 247 (2023), no. 3, Paper No. 48].
 
-  <with|color|dark cyan|<section|Preliminaries>><label|Sec:1.1>
+  <with|color|dark cyan|<section|Preliminaries>><label|Sec:phi4.1>
 
   We introduce the following ingredients.
 
@@ -46,7 +80,7 @@
 
     <item><math|Poly\<assign\><around*|{|<with|font-series|bold|1>,\<b-up-X\><rsub|1>,\<cdots\>,\<b-up-X\><rsub|d>|}>>.
 
-    <item>Define functions <math|m<rsub|<with|font-series|bold|1>>,m<rsub|\<b-up-X\><rsub|i>>,m<rsub|\<Xi\>>:<with|font|cal|T><rsup|ALL><rsub|RHS>\<longrightarrow\>\<bbb-Z\><rsub|\<geq\>0>>
+    <item>Define functions <math|m<rsub|<with|font-series|bold|1>>,m<rsub|\<b-up-X\><rsub|i>>,m<rsub|\<Xi\>>:<with|font|cal|T><rsup|ALL><rsub|RHS>\<longrightarrow\>\<bbb-Z\><rsub|\<geqslant\>0>>
     which counts, on any given tree, the number of occurrences of
     <math|<with|font-series|bold|1>,\<b-up-X\><rsub|i>>, and <math|\<Xi\>> as
     leaves in the tree. Denote also by <math|m<rsub|\<b-up-X\>><around*|(|\<tau\>|)>=<big|sum><rsub|i=1><rsup|d>m<rsub|\<b-up-X\><rsub|i>><around*|(|\<tau\>|)>>.
@@ -55,7 +89,7 @@
 
     <item><math|<with|font|cal|W>=<around*|{|\<tau\>\<in\><with|font|cal|T><rsup|ALL><rsub|RHS>;<around*|\||\<tau\>|\|>\<less\>-2|}>>,
     <math|<with|font|cal|W><rsub|PROD>=<with|font|cal|W>\\<around*|{|\<Xi\>|}>>,
-    <math|<with|font|cal|V>=<around*|{|\<tau\>\<in\><with|font|cal|><with|font|cal|T><rsup|ALL><rsub|RHS>;-2\<leq\><around*|\||\<tau\>|\|>\<leq\>0|}>>,
+    <math|<with|font|cal|V>=<around*|{|\<tau\>\<in\><with|font|cal|><with|font|cal|T><rsup|ALL><rsub|RHS>;-2\<leqslant\><around*|\||\<tau\>|\|>\<leqslant\>0|}>>,
     <math|<with|font|cal|V><rsub|PROD>=<with|font|cal|V>\\Poly>.
 
     <item><math|<with|font|cal|T><rsub|RHS>=<with|font|cal|W>\<cup\><with|font|cal|V><rsub|PROD>>,
@@ -68,9 +102,9 @@
 
     <item><math|<with|font|cal|V><rsub|\<gtr\>1>=<around*|{|\<tau\>\<in\><with|font|cal|V><rsub|PROD>;-1\<less\><around*|\||\<tau\>|\|>\<less\>0|}>>.
 
-    <item><math|<with|font|cal|T><rsub|\<Delta\>>\<assign\><with|font|cal|T><rsub|RHS>\<cup\><with|font|cal|T><rsub|LHS>\<cup\><around*|{|<with|font|cal|I><rsub|i><rsup|+>;1\<leq\>i\<leq\>d,\<tau\>\<in\><with|font|cal|V><rsub|\<gtr\>1>\<cup\><around*|{|\<b-up-X\><rsub|i>|}>|}>>.
+    <item><math|<with|font|cal|T><rsub|\<Delta\>>\<assign\><with|font|cal|T><rsub|RHS>\<cup\><with|font|cal|T><rsub|LHS>\<cup\><around*|{|<with|font|cal|I><rsub|i><rsup|+>;1\<leqslant\>i\<leqslant\>d,\<tau\>\<in\><with|font|cal|V><rsub|\<gtr\>1>\<cup\><around*|{|\<b-up-X\><rsub|i>|}>|}>>.
 
-    <item><math|<with|font|cal|T><rsub|cen>\<assign\><with|font|cal|I><around*|[|<with|font|cal|V>|]>\<cup\><around*|{|<with|font|cal|I><rsub|i><rsup|+><around*|(|\<tau\>|)>;\<tau\>\<in\><with|font|cal|V><rsub|\<gtr\>1>\<cup\><around*|{|\<b-up-X\><rsub|i>|}>,1\<leq\>i\<leq\>d|}>>.
+    <item><math|<with|font|cal|T><rsub|cen>\<assign\><with|font|cal|I><around*|[|<with|font|cal|V>|]>\<cup\><around*|{|<with|font|cal|I><rsub|i><rsup|+><around*|(|\<tau\>|)>;\<tau\>\<in\><with|font|cal|V><rsub|\<gtr\>1>\<cup\><around*|{|\<b-up-X\><rsub|i>|}>,1\<leqslant\>i\<leqslant\>d|}>>.
 
     <item><math|\<Delta\>:<with|font|cal|T><rsub|\<Delta\>>\<longrightarrow\>Vec<around*|(|<with|font|cal|T><rsub|\<Delta\>>|)>\<otimes\>Alg<around*|(|<with|font|cal|T><rsub|cen>|)>>.
 
@@ -110,9 +144,15 @@
 <\references>
   <\collection>
     <associate|Chap:1|<tuple|1|?>>
+    <associate|Chap:ar|<tuple|1|?>>
+    <associate|Chap:phi4|<tuple|2|?>>
     <associate|Sec:1.1|<tuple|1.1|?>>
+    <associate|Sec:ar.1|<tuple|1.1|?>>
+    <associate|Sec:phi4.1|<tuple|2.1|?>>
     <associate|auto-1|<tuple|1|7>>
     <associate|auto-2|<tuple|1.1|7>>
+    <associate|auto-3|<tuple|2|?>>
+    <associate|auto-4|<tuple|2.1|?>>
   </collection>
 </references>
 

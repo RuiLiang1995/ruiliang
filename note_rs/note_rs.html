@@ -58,28 +58,66 @@
     <p>
       
     </p>
+    <font color="#008080"><h1 id="auto-1">Chapter 1<br />Algebraic renormalisation of
+    regularity structures<a id="Chap:ar"></a></h1></font>
     <p>
-      <font color="#008080"><strong>Notation.</strong></font> 
+      This chapter is taken from the paper [Y. Bruned, M. Hairer, L. Zambotti,
+      Invent. Math. 215 (2019), no. 3, 1039&ndash;1156].
     </p>
-    <font color="#008080"><h1 id="auto-1"><a id="Chap:1"></a>Chapter 1<br />Phi-four equation in the
-    full sub-critical regime</h1></font>
+    <font color="#008080"><h2 id="auto-2"><a id="Sec:ar.1"></a>1.1<span style="margin-left: 1em"></span>Rooted forest<span
+    style="margin-left: 1em"></span></h2></font>
+    <ul>
+      <li>
+        <p>
+          A rooted tree <img src="note_rs-1.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> is a finite connected simple
+          graph without circles with a distinguished vertex <span class="no-breaks"><img
+          src="note_rs-2.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0682666666666667em; margin-top: -0.00620606060606066em; vertical-align: -0.210981818181818em; height: 0.651636363636364em"></img>,</span> called <i>the root</i>. We assume that
+          our trees are combinatorial, i.e. there is no particular order
+          imposed on edges leaving any given vertex.
+        </p>
+      </li>
+      <li>
+        <p>
+          Vertices of <img src="note_rs-1.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> is also called <i>nodes</i>. The
+          set of nodes of the tree <img src="note_rs-1.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> is denoted by <span
+          class="no-breaks"><img src="note_rs-3.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0682666666666667em; margin-top: -0.0124121212121212em; vertical-align: -0.153066666666667em; height: 0.835733333333333em"></img>,</span> and set of edges the tree
+          <img src="note_rs-1.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> is denoted by <span class="no-breaks"><img src="note_rs-4.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0124121212121211em; margin-top: 0em; vertical-align: -0.172727272727273em; height: 1.07156363636364em"></img>.</span>
+          We endow <img src="note_rs-3.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0682666666666667em; margin-top: -0.0124121212121212em; vertical-align: -0.153066666666667em; height: 0.835733333333333em"></img> with the partial order <img src="note_rs-5.png"
+          style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: -0.0124121212121212em; margin-top: 0em; vertical-align: -0.111684848484848em; height: 0.71369696969697em"></img> where <img src="note_rs-6.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: -0.0124121212121213em; margin-top: 0em; vertical-align: -0.111684848484848em; height: 0.71369696969697em"></img> iff <img src="note_rs-7.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: -0.00620606060606066em; vertical-align: -0.0123878787878788em; height: 0.477866666666667em"></img>
+          is on the unique path connecting <img src="note_rs-8.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121213em; margin-top: -0.00620606060606066em; vertical-align: -0.0123878787878788em; height: 0.477866666666667em"></img> to the
+          root, and we orient edges in <img src="note_rs-9.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0682666666666667em; margin-top: -0.0124121212121212em; vertical-align: -0.153066666666667em; height: 0.835733333333333em"></img> so that if
+          <span class="no-breaks"><img src="note_rs-10.png" style="margin-left: 0em; margin-bottom: 0.0248em; margin-right: -0.0682666666666671em; margin-top: 0em; vertical-align: -0.210981818181818em; height: 0.868848484848485em"></img>,</span> then <span class="no-breaks"><img
+          src="note_rs-11.png" style="margin-left: -0.031030303030303em; margin-bottom: 0.0248em; margin-right: -0.0124121212121213em; margin-top: 0em; vertical-align: -0.210981818181818em; height: 0.806787878787879em"></img>.</span> In this way, we can always view a tree as
+          a directed graph.
+        </p>
+      </li>
+      <li>
+        <p>
+          <span style="margin-left: 1pt"></span>
+        </p>
+      </li>
+    </ul>
+    <font color="#008080"><p>
+      
+    </p><h1 id="auto-3"><a id="Chap:phi4"></a>Chapter 2<br />Phi-four equation in the full
+    sub-critical regime</h1></font>
     <p>
-      In this chapter, we consider the <img src="note_rs-1.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121213em; margin-top: 0em; vertical-align: 0em; height: 0.891587878787879em"></img> equation in the
+      In this chapter, we consider the <img src="note_rs-12.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121213em; margin-top: 0em; vertical-align: 0em; height: 0.891587878787879em"></img> equation in the
       full sub-critical regime. The equation is formally given by
     </p>
     <center>
-      <img src="note_rs-2.png" style="margin-left: 0em; margin-bottom: 0.0372121212121212em; margin-right: -0.0124121212121224em; margin-top: 0em; vertical-align: -0.223393939393939em; height: 1.06535757575758em"></img>
+      <img src="note_rs-13.png" style="margin-left: 0em; margin-bottom: 0.0372121212121212em; margin-right: -0.0124121212121189em; margin-top: 0em; vertical-align: -0.223393939393939em; height: 1.06535757575758em"></img>
     </center>
     <p>
-      where the term <img src="note_rs-3.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0372121212121212em; margin-right: -0.0124121212121211em; margin-top: -0.0248242424242425em; vertical-align: -0.223393939393939em; height: 0.868848484848485em"></img> represents the renormalisation
-      (it can be quadratic in <span class="no-breaks"><img src="note_rs-4.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0372121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0248242424242425em; vertical-align: -0.223393939393939em; height: 0.868848484848485em"></img>)</span> and
-      the noise <img src="note_rs-5.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121215em; margin-top: 0em; vertical-align: -0.210981818181818em; height: 1.06535757575758em"></img> for some <span class="no-breaks"><img src="note_rs-6.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121213em; margin-top: -0.0186181818181818em; vertical-align: -0.0248em; height: 0.726109090909091em"></img>.</span>
+      where the term <img src="note_rs-14.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0372121212121212em; margin-right: -0.0124121212121211em; margin-top: -0.0248242424242425em; vertical-align: -0.223393939393939em; height: 0.868848484848485em"></img> represents the renormalisation
+      (it can be quadratic in <span class="no-breaks"><img src="note_rs-15.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0372121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0248242424242425em; vertical-align: -0.223393939393939em; height: 0.868848484848485em"></img>)</span> and
+      the noise <img src="note_rs-16.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121215em; margin-top: 0em; vertical-align: -0.210981818181818em; height: 1.06535757575758em"></img> for some <span class="no-breaks"><img src="note_rs-17.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121213em; margin-top: -0.0186181818181818em; vertical-align: -0.0248em; height: 0.726109090909091em"></img>.</span>
       This chapter is a note taken from the paper [A. Chandra, A. Moinat, H.
       Weber, Arch. Ration. Mech. Anal. 247 (2023), no. 3, Paper No. 48].
     </p>
-    <font color="#008080"><h2 id="auto-2">1.1<span style="margin-left: 1em"></span>Preliminaries<span style="margin-left: 1em"></span></h2></font>
+    <font color="#008080"><h2 id="auto-4">2.1<span style="margin-left: 1em"></span>Preliminaries<span style="margin-left: 1em"></span></h2></font>
     <p>
-      <a id="Sec:1.1"></a>
+      <a id="Sec:phi4.1"></a>
     </p>
     <p>
       We introduce the following ingredients.
@@ -87,83 +125,83 @@
     <ul>
       <li>
         <p>
-          An operator <img src="note_rs-7.png" style="margin-left: -0.0434424242424242em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0131151515151515em; vertical-align: -0.173769696969697em; height: 0.875078787878788em"></img> to represent an abstract Duhamel
+          An operator <img src="note_rs-18.png" style="margin-left: -0.0434424242424242em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0131151515151515em; vertical-align: -0.173769696969697em; height: 0.875078787878788em"></img> to represent an abstract Duhamel
           operator for heat equation.
         </p>
       </li>
       <li>
         <p>
-          Let <img src="note_rs-8.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121211em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img> be the smallest set containing the
-          symbols <img src="note_rs-9.png" style="margin-left: 0em; margin-bottom: 0.0103030303030303em; margin-right: 0em; margin-top: -0.00620606060606055em; vertical-align: -0.165454545454545em; height: 0.868848484848485em"></img> s.t. &ldquo;<span class="no-breaks"><img src="note_rs-10.png"
+          Let <img src="note_rs-19.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121211em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img> be the smallest set containing the
+          symbols <img src="note_rs-20.png" style="margin-left: 0em; margin-bottom: 0.0103030303030303em; margin-right: 0em; margin-top: -0.00620606060606055em; vertical-align: -0.165454545454545em; height: 0.868848484848485em"></img> s.t. &ldquo;<span class="no-breaks"><img src="note_rs-21.png"
           style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121224em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img>&rdquo;.</span>
         </p>
       </li>
       <li>
         <p>
-          <span class="no-breaks"><img src="note_rs-11.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: 0em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img>.</span> We use <img src="note_rs-12.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: -0.0248242424242424em; vertical-align: -0.0123878787878788em; height: 0.50889696969697em"></img>
-          to indicate elements in <span class="no-breaks"><img src="note_rs-13.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121211em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img>.</span>
-          We call the elements in <img src="note_rs-14.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121207em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img> trees. In a given
-          tree, <img src="note_rs-15.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121215em; margin-top: -0.00620606060606055em; vertical-align: -0.165454545454545em; height: 0.866763636363636em"></img> occur in that tree are called leaves
+          <span class="no-breaks"><img src="note_rs-22.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: 0em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img>.</span> We use <img src="note_rs-23.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: -0.0248242424242424em; vertical-align: -0.0123878787878788em; height: 0.50889696969697em"></img>
+          to indicate elements in <span class="no-breaks"><img src="note_rs-24.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121211em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img>.</span>
+          We call the elements in <img src="note_rs-25.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121207em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img> trees. In a given
+          tree, <img src="note_rs-26.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121215em; margin-top: -0.00620606060606055em; vertical-align: -0.165454545454545em; height: 0.866763636363636em"></img> occur in that tree are called leaves
           in the tree.
         </p>
       </li>
       <li>
         <p>
-          <span class="no-breaks"><img src="note_rs-16.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.00620606060606055em; vertical-align: -0.223393939393939em; height: 0.930909090909091em"></img>.</span>
+          <span class="no-breaks"><img src="note_rs-27.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.00620606060606055em; vertical-align: -0.223393939393939em; height: 0.930909090909091em"></img>.</span>
         </p>
       </li>
       <li>
         <p>
-          Define functions <img src="note_rs-17.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121207em; margin-top: 0em; vertical-align: -0.273018181818182em; height: 1.16838787878788em"></img> which counts, on any given
-          tree, the number of occurrences of <span class="no-breaks"><img src="note_rs-18.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121211em; margin-top: -0.00620606060606055em; vertical-align: -0.165454545454545em; height: 0.866763636363636em"></img>,</span>
-          and <img src="note_rs-19.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: 0em; vertical-align: 0em; height: 0.695078787878788em"></img> as leaves in the tree. Denote also by
-          <span class="no-breaks"><img src="note_rs-20.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: 0em; margin-top: 0em; vertical-align: -0.324727272727273em; height: 1.32104242424242em"></img>.</span>
+          Define functions <img src="note_rs-28.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121207em; margin-top: 0em; vertical-align: -0.273018181818182em; height: 1.16838787878788em"></img> which counts, on any given
+          tree, the number of occurrences of <span class="no-breaks"><img src="note_rs-29.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121211em; margin-top: -0.00620606060606055em; vertical-align: -0.165454545454545em; height: 0.866763636363636em"></img>,</span>
+          and <img src="note_rs-30.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: 0em; vertical-align: 0em; height: 0.695078787878788em"></img> as leaves in the tree. Denote also by
+          <span class="no-breaks"><img src="note_rs-31.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: 0em; margin-top: 0em; vertical-align: -0.324727272727273em; height: 1.32104242424242em"></img>.</span>
         </p>
       </li>
       <li>
         <p>
-          <span class="no-breaks"><img src="note_rs-21.png" style="margin-left: 0em; margin-bottom: 0.00826666666666667em; margin-right: 0em; margin-top: -0.0186181818181818em; vertical-align: -0.173745454545455em; height: 0.879175757575758em"></img>.</span>
+          <span class="no-breaks"><img src="note_rs-32.png" style="margin-left: 0em; margin-bottom: 0.00826666666666667em; margin-right: 0em; margin-top: -0.0186181818181818em; vertical-align: -0.173745454545455em; height: 0.879175757575758em"></img>.</span>
         </p>
       </li>
       <li>
         <p>
-          <span class="no-breaks"><img src="note_rs-22.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: 0em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img>,</span> <span class="no-breaks"><img src="note_rs-23.png"
-          style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.0131151515151515em; vertical-align: -0.161357575757576em; height: 0.875078787878788em"></img>,</span> <span class="no-breaks"><img src="note_rs-24.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: 0em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img>,</span>
-          <span class="no-breaks"><img src="note_rs-25.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: -0.0124121212121215em; margin-top: -0.0124121212121212em; vertical-align: -0.223393939393939em; height: 0.937115151515152em"></img>.</span>
+          <span class="no-breaks"><img src="note_rs-33.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: 0em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img>,</span> <span class="no-breaks"><img src="note_rs-34.png"
+          style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.0131151515151515em; vertical-align: -0.161357575757576em; height: 0.875078787878788em"></img>,</span> <span class="no-breaks"><img src="note_rs-35.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: 0em; margin-top: 0em; vertical-align: -0.213406060606061em; height: 1.09636363636364em"></img>,</span>
+          <span class="no-breaks"><img src="note_rs-36.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: -0.0124121212121215em; margin-top: -0.0124121212121212em; vertical-align: -0.223393939393939em; height: 0.937115151515152em"></img>.</span>
         </p>
       </li>
       <li>
         <p>
-          <span class="no-breaks"><img src="note_rs-26.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121215em; margin-top: -0.0503515151515152em; vertical-align: -0.173236363636364em; height: 0.905575757575758em"></img>,</span> <img src="note_rs-27.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: -0.0124121212121207em; margin-top: -0.0496484848484848em; vertical-align: -0.223393939393939em; height: 0.974351515151515em"></img>
+          <span class="no-breaks"><img src="note_rs-37.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121215em; margin-top: -0.0503515151515152em; vertical-align: -0.173236363636364em; height: 0.905575757575758em"></img>,</span> <img src="note_rs-38.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: -0.0124121212121207em; margin-top: -0.0496484848484848em; vertical-align: -0.223393939393939em; height: 0.974351515151515em"></img>
         </p>
       </li>
       <li>
         <p>
-          <img src="note_rs-28.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121207em; margin-top: -0.0379393939393939em; vertical-align: -0.160824242424242em; height: 0.893163636363636em"></img> consists of <img src="note_rs-29.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0131151515151515em; vertical-align: -0.173769696969697em; height: 0.875078787878788em"></img> s.t.
-          <img src="note_rs-30.png" style="margin-left: 0em; margin-bottom: 0.0103030303030303em; margin-right: -0.0124121212121207em; margin-top: -0.0248242424242424em; vertical-align: -0.165454545454545em; height: 0.961939393939394em"></img> and <span class="no-breaks"><img src="note_rs-31.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0103030303030303em; margin-right: 0em; margin-top: -0.00620606060606055em; vertical-align: -0.165454545454545em; height: 0.868848484848485em"></img>.</span>
+          <img src="note_rs-39.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121207em; margin-top: -0.0379393939393939em; vertical-align: -0.160824242424242em; height: 0.893163636363636em"></img> consists of <img src="note_rs-40.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0131151515151515em; vertical-align: -0.173769696969697em; height: 0.875078787878788em"></img> s.t.
+          <img src="note_rs-41.png" style="margin-left: 0em; margin-bottom: 0.0103030303030303em; margin-right: -0.0124121212121207em; margin-top: -0.0248242424242424em; vertical-align: -0.165454545454545em; height: 0.961939393939394em"></img> and <span class="no-breaks"><img src="note_rs-42.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0103030303030303em; margin-right: 0em; margin-top: -0.00620606060606055em; vertical-align: -0.165454545454545em; height: 0.868848484848485em"></img>.</span>
         </p>
       </li>
       <li>
         <p>
-          <span class="no-breaks"><img src="note_rs-32.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.0131151515151515em; vertical-align: -0.161357575757576em; height: 0.875078787878788em"></img>.</span>
+          <span class="no-breaks"><img src="note_rs-43.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.0131151515151515em; vertical-align: -0.161357575757576em; height: 0.875078787878788em"></img>.</span>
         </p>
       </li>
       <li>
         <p>
-          <span class="no-breaks"><img src="note_rs-33.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: 0em; margin-top: 0em; vertical-align: -0.198327272727273em; height: 0.966909090909091em"></img>.</span>
+          <span class="no-breaks"><img src="note_rs-44.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: 0em; margin-top: 0em; vertical-align: -0.198327272727273em; height: 0.966909090909091em"></img>.</span>
         </p>
       </li>
       <li>
         <p>
-          <span class="no-breaks"><img src="note_rs-34.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: 0em; margin-top: 0em; vertical-align: -0.198327272727273em; height: 0.966909090909091em"></img>.</span>
+          <span class="no-breaks"><img src="note_rs-45.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: 0em; margin-top: 0em; vertical-align: -0.198327272727273em; height: 0.966909090909091em"></img>.</span>
         </p>
       </li>
       <li>
         <p>
-          <span class="no-breaks"><img src="note_rs-35.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.0496484848484848em; vertical-align: -0.223393939393939em; height: 0.974351515151515em"></img>.</span>
+          <span class="no-breaks"><img src="note_rs-46.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.0496484848484848em; vertical-align: -0.223393939393939em; height: 0.974351515151515em"></img>.</span>
         </p>
         <center>
-          <img src="note_rs-36.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0558060606060602em; margin-right: -0.0124121212121224em; margin-top: -0.0124121212121207em; vertical-align: -4.3745696969697em; height: 9.22705454545455em"></img>
+          <img src="note_rs-47.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0558060606060602em; margin-right: -0.0124121212121224em; margin-top: -0.0124121212121207em; vertical-align: -4.3745696969697em; height: 9.22705454545455em"></img>
         </center>
       </li>
     </ul>
