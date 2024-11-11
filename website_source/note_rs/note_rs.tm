@@ -116,7 +116,7 @@
     </eqnarray*>
   </itemize-dot>
 
-  <with|color|dark cyan|<chapter|Basic Hopf algebras><label|Chap:bha>>
+  <with|color|dark cyan|<appendix|Basic Hopf algebras><label|Chap:bha>>
 
   This note is extended from the a course called MAGIC 109 given by Dr Y.
   Bazkov, adding some materials from the following resources:
@@ -341,46 +341,74 @@
 
 <\references>
   <\collection>
-    <associate|Chap:1|<tuple|1|?>>
     <associate|Chap:ar|<tuple|1|?>>
-    <associate|Chap:bha|<tuple|3|?>>
+    <associate|Chap:bha|<tuple|A|?>>
     <associate|Chap:phi4|<tuple|2|?>>
-    <associate|DS|<tuple|3.1.3|?>>
-    <associate|DT|<tuple|3.1.2|?>>
-    <associate|S-1S|<tuple|3.1.5|?>>
-    <associate|S:1.1|<tuple|3.1.1|?>>
-    <associate|STTS|<tuple|3.1.1|?>>
-    <associate|Sec:1.1|<tuple|1.1|?>>
-    <associate|Sec:ar.1|<tuple|1.2|?>>
+    <associate|DS|<tuple|A.1.3|?>>
+    <associate|DT|<tuple|A.1.2|?>>
+    <associate|S-1S|<tuple|A.1.5|?>>
+    <associate|STTS|<tuple|A.1.1|?>>
+    <associate|Sec:ar.1|<tuple|1.1|?>>
     <associate|Sec:ar.2|<tuple|1.2|?>>
-    <associate|Sec:ha.1|<tuple|3.1.1|?>>
+    <associate|Sec:ha.1|<tuple|A.1.1|?>>
     <associate|Sec:phi4.1|<tuple|2.1|?>>
-    <associate|T-1T|<tuple|3.1.4|?>>
-    <associate|Tab|<tuple|3.1.6|?>>
-    <associate|Tfg|<tuple|3.1.7|?>>
+    <associate|T-1T|<tuple|A.1.4|?>>
+    <associate|Tab|<tuple|A.1.6|?>>
+    <associate|Tfg|<tuple|A.1.7|?>>
     <associate|auto-1|<tuple|1|7>>
-    <associate|auto-10|<tuple|3.2|?>>
+    <associate|auto-10|<tuple|A.2|?>>
     <associate|auto-2|<tuple|1.1|7>>
     <associate|auto-3|<tuple|1.2|?>>
     <associate|auto-4|<tuple|2|?>>
     <associate|auto-5|<tuple|2.1|?>>
-    <associate|auto-6|<tuple|3|?>>
-    <associate|auto-7|<tuple|3.1|?>>
-    <associate|auto-8|<tuple|3.1.1|?>>
-    <associate|auto-9|<tuple|3.1.2|?>>
+    <associate|auto-6|<tuple|A|?>>
+    <associate|auto-7|<tuple|A.1|?>>
+    <associate|auto-8|<tuple|A.1.1|?>>
+    <associate|auto-9|<tuple|A.1.2|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Phi-four
-      equation in the full sub-critical regime>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Algebraic
+      renormalisation of regularity structures>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
 
-      1.1<space|2spc>Preliminaries <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      1.1<space|2spc>Rooted forest <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>
+
+      1.2<space|2spc>Bigraded spaces and triangular maps
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Phi-four
+      equation in the full sub-critical regime>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4><vspace|0.5fn>
+
+      2.1<space|2spc>Preliminaries <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>Basic
+      Hopf algebras> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6><vspace|0.5fn>
+
+      3.1<space|2spc>Informal introdution
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7>
+
+      <with|par-left|<quote|1tab>|3.1.1<space|2spc>Example \U Symmetries on
+      the real line <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-8>>
+
+      <with|par-left|<quote|1tab>|3.1.2<space|2spc>Hopf algebra \U informal
+      introduction <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-9>>
+
+      3.2<space|2spc>Linear algebra <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10>
     </associate>
   </collection>
 </auxiliary>
