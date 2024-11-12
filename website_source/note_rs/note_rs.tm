@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.1>
 
 <style|<tuple|book|termes-font|number-long-article|stylefileqft|std-frame|maxima>>
 
@@ -41,6 +41,53 @@
 
   <with|color|dark cyan|<section|Bigraded spaces and triangular
   maps><label|Sec:ar.2>>
+
+  <\itemize-dot>
+    <item>Given a sequence of vector space
+    <math|<around*|{|V<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsup|2>>>, denote by
+
+    <\equation*>
+      V=<below|<really-huge|\<#229E\>>|n\<in\>\<bbb-N\><rsup|2>>V<rsub|n>=<around*|{|v;v=<big|sum><rsub|n=<around*|(|n<rsub|1>,n<rsub|2>|)>\<in\>\<bbb-N\><rsup|2>>v<rsub|n>,v<rsub|n>\<in\>V<rsub|n>,n\<in\>\<bbb-N\><rsup|2>,\<exists\>k,\<ni\>v<rsub|n>=0
+      \<forall\>n<rsub|2>\<gtr\>k|}>,
+    </equation*>
+
+    called a bigraded space. Given two bigraded spaces <math|V> and <math|W>,
+    define
+
+    <\equation*>
+      V<wide|\<otimes\>|^>W\<assign\><below|<really-huge|\<#229E\>>|n\<in\>\<bbb-N\><rsup|2>><around*|[|<big|oplus><rsub|m+l=n>V<rsub|m>\<otimes\>W<rsub|l>|]>.
+    </equation*>
+
+    <item><math|<around*|{|A<rsub|m n>|}><rsub|m,n\<in\>\<bbb-N\><rsup|2>>>
+    is s.t. <math|A<rsub|m n>=0> unless <math|m\<geq\>n> (i.e.
+    <math|m<rsub|1>\<geqslant\>n<rsub|1>> &
+    <math|m<rsub|2>\<leqslant\>n<rsub|2>>). Given two bigraded spaces
+    <math|V> and <math|<wide|V|\<bar\>>>, we define
+    <math|A:V\<longrightarrow\><wide|V|\<bar\>>> s.t.
+
+    <\equation*>
+      A v=<big|sum><rsub|m><around*|(|<big|sum><rsub|n>A<rsub|m
+      n>v<rsub|n>|)>\<in\><below|<really-huge|\<#229E\>>|m\<in\>\<bbb-N\><rsup|2>><wide|V|\<bar\>><rsub|m>.
+    </equation*>
+
+    <item><math|\<frak-F\>> can be view as a bigraded space with
+
+    <\equation*>
+      <around*|\||<around*|(|F,<wide|F|^>|)><rsup|\<frak-n\>,\<frak-o\>><rsub|\<frak-e\>>|\|><rsub|bi>=<around*|(|<around*|\||\<frak-e\>|\|>,<around*|\||F\\<around*|(|<wide|F|^>\<cup\>\<varrho\><rsub|F>|)>|\|>|)>.
+    </equation*>
+
+    <item>Let <math|A\<subseteq\>\<frak-F\>>. Define
+
+    <\equation*>
+      <around*|\<langle\>|A|\<rangle\>>=<below|<really-huge|\<#229E\>>|n\<in\>\<bbb-N\><rsup|2>>Vec<around*|(|<around*|{|\<#1D4D5\>\<in\>A;<around*|\||\<#1D4D5\>|\|><rsub|bi>=n|}>|)>.
+    </equation*>
+
+    \ 
+
+    \;
+
+    \ 
+  </itemize-dot>
 
   <with|color|dark cyan|<section|Incidence coalgebras of
   forests><label|Sec:ar.3>>
