@@ -160,7 +160,7 @@
       <item>
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|\<Delta\><rsub|i><around*|(|F,<wide|F|^>,\<frak-n\>,\<frak-o\>,\<frak-e\>|)>>|<cell|=>|<cell|<big|sum><rsub|A\<in\>\<frak-A\><rsub|i><around*|(|F,<wide|F|^>|)>><big|sum><rsub|\<varepsilon\><rsup|F><rsub|A>,\<frak-n\><rsub|A>><frac|1|\<varepsilon\><rsup|F><rsub|A>!><around*|(|<stack|<tformat|<table|<row|<cell|\<frak-n\>>>|<row|<cell|\<frak-n\><rsub|A>>>>>>|)>>>|<row|<cell|>|<cell|>|<cell|>>>>
+        <tformat|<table|<row|<cell|\<Delta\><rsub|i><around*|(|F,<wide|F|^>,\<frak-n\>,\<frak-o\>,\<frak-e\>|)>>|<cell|=>|<cell|<big|sum><rsub|A\<in\>\<frak-A\><rsub|i><around*|(|F,<wide|F|^>|)>><big|sum><rsub|\<varepsilon\><rsup|F><rsub|A>,\<frak-n\><rsub|A>><frac|1|\<varepsilon\><rsup|F><rsub|A>!><around*|(|<stack|<tformat|<table|<row|<cell|\<frak-n\>>>|<row|<cell|\<frak-n\><rsub|A>>>>>>|)>>>|<row|<cell|>|<cell|>|<cell|<space|2em><around*|(|A,<wide|F|^>\<upharpoonright\><rsub|A>,\<frak-n\><rsub|A>+\<mathpi\>\<varepsilon\><rsup|F><rsub|A>,\<frak-o\>\<upharpoonright\><rsub|N<rsub|A>>,\<frak-e\>\<upharpoonright\><rsub|E<rsub|A>>|)>\<otimes\><around*|(|F,<wide|F|^>\<cup\><rsub|i>A,\<frak-n\>-\<frak-n\><rsub|A>,\<frak-o\>+\<frak-n\><rsub|A>+\<mathpi\><around*|(|\<varepsilon\><rsup|F><rsub|A>-\<frak-e\><rsup|A><rsub|\<varnothing\>>|)>,\<varepsilon\><rsup|F><rsub|A>+\<frak-e\><rsup|F><rsub|A>|)>.>>>>
       </eqnarray*>
     </itemize-dot>
   </itemize-dot>
