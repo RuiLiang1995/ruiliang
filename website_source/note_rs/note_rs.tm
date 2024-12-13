@@ -81,12 +81,6 @@
     <\equation*>
       <around*|\<langle\>|A|\<rangle\>>=<below|<really-huge|\<#229E\>>|n\<in\>\<bbb-N\><rsup|2>>Vec<around*|(|<around*|{|\<#1D4D5\>\<in\>A;<around*|\||\<#1D4D5\>|\|><rsub|bi>=n|}>|)>.
     </equation*>
-
-    \ 
-
-    \;
-
-    \ 
   </itemize-dot>
 
   <with|color|dark cyan|<section|Incidence coalgebras of
