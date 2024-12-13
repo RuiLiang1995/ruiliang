@@ -56,8 +56,8 @@
   </strong>>
 
   <\enumerate-numeric>
-    <item>(with Y. Wang, H. Yue) <with|font-shape|italic|DNY ansatz for
-    dispersive equation>.
+    <item>(with Y. Wang, H. Yue) <with|font-shape|italic|DNY ansatz and Gibbs
+    dynamics for dispersive equation>.
 
     <item>(with Y. Wang) <with|font-shape|italic|<hlink|Gibbs dynamics for
     fractional nonlinear Schrödinger equations with weak
