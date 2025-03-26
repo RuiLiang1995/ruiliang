@@ -57,7 +57,7 @@
 
   <\itemize-dot>
     <item>2024 - present<space|1em>Visiting Assistant Professor at the
-    University of Massachusetts Amherst, US
+    University of Massachusetts Amherst, USA
 
     <\itemize-dot>
       <small|<item>2025 Math 132 Calculus 2 (undergraduate course)>
