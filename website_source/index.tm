@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -85,10 +85,6 @@
 
   \;
 
-  \;
-
-  \;
-
   <no-indent>Explore my other profiles on:
 
   <\itemize-dot>
@@ -96,16 +92,16 @@
 
     <item><hlink|Google scholar|https://scholar.google.ca/citations?hl=en&user=FfdqwioAAAAJ&view_op=list_works&gmla=AP6z3ObEm4PBwc6zbJOJ0kdwoxW08Cvugi1C0oSGSKW2lVzgnBfn98oFgLTjt6AKd6NsRSiEeLjmXjiau9QgpGBK>
 
-    <item><hlink|Institutional page|https://www.umass.edu/mathematics-statistics/about/directory/rui-liang>
-
     <item><hlink|MathSciNet|https://mathscinet.ams.org/mathscinet/author?authorId=1537015>
 
     <item><hlink|ORCID|https://orcid.org/0009-0000-2092-345X>
-  </itemize-dot>
 
-  <no-indent>Visit <hlink|my institutional
-  page|https://www.birmingham.ac.uk/schools/mathematics/people/navigation.aspx?ReferenceId=199153&Name=mr-rui-liang>
-  on the School of Mathematics webpage at the University of Birmingham.
+    <item><hlink|Institutional page (Univerisity of Massachusetts
+    Amherst)|https://www.umass.edu/mathematics-statistics/about/directory/rui-liang>
+
+    <item><hlink|Institutional page (University of
+    Birmingham)|https://www.birmingham.ac.uk/schools/mathematics/people/navigation.aspx?ReferenceId=199153&Name=mr-rui-liang>
+  </itemize-dot>
 </body>
 
 <\initial>

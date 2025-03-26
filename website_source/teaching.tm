@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -60,7 +60,9 @@
     University of Massachusetts Amherst, US
 
     <\itemize-dot>
-      <small|<item>><small|2024 Math 233 Multivariate Calculus (undergraduate
+      <small|<item>2025 Math 132 Calculus 2 (undergraduate course)>
+
+      <small|<item>2024 Math 233 Multivariate Calculus (undergraduate
       course)>
     </itemize-dot>
 
@@ -97,7 +99,7 @@
     <\itemize-dot>
       <small|<item>><small|Gibbs Measure and its Construction>
 
-      <small|<item>><small|Random Tensor Theory>
+      <small|<item>><small|The Theory of Random Tensor>
     </itemize-dot>
   </itemize-dot>
 </body>

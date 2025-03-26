@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -60,7 +60,7 @@
   <\itemize-dot>
     <tabular|<tformat|<table|<row|<cell|2024 -
     present>|<cell|>|<cell|Visiting Assistant Professor, University of
-    Massachusetts Amherst, Amherst, US>>>>>
+    Massachusetts Amherst, Amherst, USA>>>>>
   </itemize-dot>
 
   <with|color|dark cyan|<\strong>

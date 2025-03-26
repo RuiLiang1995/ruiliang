@@ -60,8 +60,6 @@
 
     <item><hlink|General Relativity|https://www.youtube.com/watch?v=ewcO6x6FVqY&list=PLYL2pEY_heMKtza2YyrOvMfJV1xj8kvxK>
 
-    <item><hlink|GNU TeXmacs|https://www.texmacs.org>
-
     <item><hlink|Journal Ranking|https://www.austms.org.au/Rankings/AustMS_final_ranked.html>
 
     <item><hlink|Martin Hairer's Homepage|https://www.hairer.org>
