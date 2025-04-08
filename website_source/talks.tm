@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.2>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -63,7 +63,9 @@
     Analysis Seminar, University of Massachusetts Amherst, Amherst,
     Massachusetts, USA, 12 March 2025
 
-    <item>Minicourse: Random averaging operators and random tensors,
+    <item><hlink|Minicourse: Random averaging operators and random
+    tensors|<hlink|Mini-Course: Random averaging operators and random
+    tensors|https://ims.shanghaitech.edu.cn/2024/0829/c4185a1100462/page.htm>>,
     Institute of Mathematical Sciences, ShanghaiTech University, Shanghai,
     China, 13-15 August 2024
 
