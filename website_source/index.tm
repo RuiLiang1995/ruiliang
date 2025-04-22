@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.2>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -85,7 +85,7 @@
 
   \;
 
-  <no-indent>Explore my other profiles on:
+  <no-indent>Explore my other profiles on:\ 
 
   <\itemize-dot>
     <item><hlink|arXiv|http://arxiv.org/a/liang_r_1>

@@ -102,7 +102,7 @@
     <\itemize-dot>
       <small|<item>><small|Gibbs Measure and its Construction>
 
-      <small|<item>><small|The Theory of Random Tensor>
+      <small|<item>><small|The Theory of Random Tensor>\ 
     </itemize-dot>
   </itemize-dot>
 </body>

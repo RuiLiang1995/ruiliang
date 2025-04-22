@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.2>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -57,7 +57,7 @@
 
   <\enumerate-numeric>
     <item><hlink|Note on quantum field theory - physics
-    (updating)|./note_qft/note_qft.tm>
+    (updating)|./note_qft/note_qft.tm>\ 
   </enumerate-numeric>
 </body>
 
