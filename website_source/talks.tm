@@ -157,7 +157,7 @@
   <\itemize>
     <item><hlink|Mathematics of Random Systems Summer School
     2022|https://www.randomsystems-cdt.ac.uk/summer-school>, St Hugh's
-    College, St Margaret's Rd, Oxford, UK, 25-31 September 2022\ 
+    College, St Margaret's Rd, Oxford, UK, 25-31 September 2022
   </itemize>
 </body>
 

@@ -76,7 +76,7 @@
     SIAM. J. Math. Anal. 54 (2022), no. 6, 6096\U6118.
 
     <item><with|font-shape|italic|Lorentz <math|\<infty\>>-norms of Lebesgue
-    <em|&> Sobolev Spaces.>\ 
+    <em|&> Sobolev Spaces.>
   </enumerate-numeric>
 
   \;

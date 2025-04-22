@@ -91,7 +91,7 @@
   <\itemize>
     <item>Referee for La Matematica
 
-    <item>Referee for Journal of Fourier Analysis and Applications\ 
+    <item>Referee for Journal of Fourier Analysis and Applications
   </itemize>
 
   \;

@@ -69,7 +69,7 @@
     <item><hlink|Stochastic Quantisation|https://www.iam.uni-bonn.de/abteilung-gubinelli/sq-lectures-milan-ws2021>
 
     <item><hlink|Terence Tao|https://www.math.ucla.edu/~tao/>, <hlink|What's
-    New|https://terrytao.wordpress.com>\ 
+    New|https://terrytao.wordpress.com>
   </itemize>
 
   \;
