@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.2>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -58,9 +58,6 @@
   <\enumerate-numeric>
     <item><hlink|Note on quantum field theory - physics
     (updating)|./note_qft/note_qft.tm>
-
-    <item><hlink|Note on the theory of regularity structures
-    (updating)|./note_rs/note_rs.tm>
   </enumerate-numeric>
 </body>
 

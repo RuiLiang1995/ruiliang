@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -57,7 +57,11 @@
 
   <\enumerate-numeric>
     <item>(with Y. Wang, H. Yue) <with|font-shape|italic|DNY ansatz for
+<<<<<<< HEAD
     dispersive equation>.
+=======
+    general dispersive equation>.
+>>>>>>> a992335f37f81e93d93bfc4945988cd5f13ff275
 
     <item>(with Y. Wang) <with|font-shape|italic|<hlink|Gibbs dynamics for
     fractional nonlinear Schrödinger equations with weak

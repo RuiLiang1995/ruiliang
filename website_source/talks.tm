@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -56,16 +56,24 @@
   </strong>>
 
   <\itemize-dot>
-    <item>Minicourse: Random averaging operators and random tensors,
+    <item><hlink|Random averaging operator, random tensor, and
+    FNLS|<hlink|Rui Liang, Random averaging operator, random tensor, and
+    fractional NLS : Department of Mathematics and Statistics : UMass
+    Amherst|https://www.umass.edu/mathematics-statistics/events/rui-liang-random-averaging-operator-random-tensor-and-fractional-nls>>,
+    Analysis Seminar, University of Massachusetts Amherst, Amherst,
+    Massachusetts, USA, 12 March 2025
+
+    <item><hlink|Minicourse: Random averaging operators and random
+    tensors|https://ims.shanghaitech.edu.cn/2024/0829/c4185a1100462/page.htm>,
     Institute of Mathematical Sciences, ShanghaiTech University, Shanghai,
     China, 13-15 August 2024
 
     <item>Random averaging operator, random tensor, and FNLS, A Workshop on
     Harmonic Analysis and Nonlinear Dispersive Wave Equations, Henan
-    Polytechnic University, Henan, China, 25 June 2024
+    Polytechnic University, Jiaozuo, Henan, China, 25 June 2024
 
     <item>Random averaging operator, random tensor, and FNLS, Analysis
-    Seminar, University of Birmingham, UK, 18 March 2024
+    Seminar, University of Birmingham, Birmingham, UK, 18 March 2024
 
     <item>Hyperbolic stochastic quantization, <hlink|Arbeitsgemeinschaft: QFT
     and Stochastic PDEs|https://www.mfo.de/occasion/2351/www_view>,
@@ -75,7 +83,7 @@
     <item>Optimal divergence rate of the focusing Gibbs measure for
     fractional NLS on the torus, <hlink|Workshop: Random dispersive PDEs
     2023|https://web.mat.bham.ac.uk/Y.Wang/workshop2023/workshop2023.html>,
-    University of Birmingham, UK, 21 July 2023
+    University of Birmingham, Birmingham, 21 July 2023
 
     <item>Optimal divergence rate of the focusing Gibbs measure for
     fractional NLS on the torus, <hlink|Deterministic and Probabilistic
@@ -98,14 +106,14 @@
   <\itemize>
     <item><hlink|2024 Simon Collaboration on Wave Turbulence Annual
     Meeting|https://www.simonsfoundation.org/event/simons-collaboration-on-wave-turbulence-annual-meeting-2024/>,
-    Gerald D. Fischbach Auditorium, New York, US, 05-06 December 2024.
+    Gerald D. Fischbach Auditorium, New York, US, 05-06 December 2024
 
     <item>Three-day workshop, Courant Institute of Mathematical Sciences, New
-    York University, US, 02-04 December 2024.
+    York University, New York, USA, 02-04 December 2024
 
     <item>(speaker) A Workshop on Harmonic Analysis and Nonlinear Dispersive
-    Wave Equations, Henan Polytechnic University, Henan, China, 23-28 June
-    2024
+    Wave Equations, Henan Polytechnic University, Jiaozuo, Henan, China,
+    23-28 June 2024
 
     <item><hlink|LMS Midlands Regional Meeting and Workshop
     2024|https://www.lboro.ac.uk/departments/maths/events/conferences-and-workshops/lms-midlands-regional-meeting-2024/>,
@@ -149,7 +157,7 @@
   <\itemize>
     <item><hlink|Mathematics of Random Systems Summer School
     2022|https://www.randomsystems-cdt.ac.uk/summer-school>, St Hugh's
-    College, St Margaret's Rd, Oxford, OX2 6LE, UK, 25-31 September 2022
+    College, St Margaret's Rd, Oxford, UK, 25-31 September 2022
   </itemize>
 </body>
 

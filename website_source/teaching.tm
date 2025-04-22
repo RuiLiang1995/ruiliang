@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -57,11 +57,16 @@
 
   <\itemize-dot>
     <item>2024 - present<space|1em>Visiting Assistant Professor at the
-    University of Massachusetts Amherst, US
+    University of Massachusetts Amherst, USA
 
     <\itemize-dot>
-      <small|<item>><small|2024 Math 233 Multivariate Calculus (undergraduate
-      course)>
+      <small|<item><hlink|2025 Math 132 Calculus 2 (undergraduate
+      course)|<hlink|MATH 132 - Calculus II at the University of
+      Massachusetts Amherst \| Coursicle UMass|https://www.coursicle.com/umass/courses/MATH/132/>>>
+
+      <small|<item><hlink|2024 Math 233 Multivariate Calculus (undergraduate
+      course)|<hlink|MATH 233 - Multivariate Calculus at the University of
+      Massachusetts Amherst \| Coursicle UMass|https://www.coursicle.com/umass/courses/MATH/233/>>>
     </itemize-dot>
 
     <item>2020 - 2024<space|1em>Teaching Assistant at the University of
@@ -97,7 +102,7 @@
     <\itemize-dot>
       <small|<item>><small|Gibbs Measure and its Construction>
 
-      <small|<item>><small|Random Tensor Theory>
+      <small|<item>><small|The Theory of Random Tensor>
     </itemize-dot>
   </itemize-dot>
 </body>
