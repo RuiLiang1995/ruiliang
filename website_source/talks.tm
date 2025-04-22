@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -57,9 +57,7 @@
 
   <\itemize-dot>
     <item><hlink|Random averaging operator, random tensor, and
-    FNLS|<hlink|Rui Liang, Random averaging operator, random tensor, and
-    fractional NLS : Department of Mathematics and Statistics : UMass
-    Amherst|https://www.umass.edu/mathematics-statistics/events/rui-liang-random-averaging-operator-random-tensor-and-fractional-nls>>,
+    FNLS|https://www.umass.edu/mathematics-statistics/events/rui-liang-random-averaging-operator-random-tensor-and-fractional-nls>,
     Analysis Seminar, University of Massachusetts Amherst, Amherst,
     Massachusetts, USA, 12 March 2025
 

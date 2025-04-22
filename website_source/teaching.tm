@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -61,12 +61,11 @@
 
     <\itemize-dot>
       <small|<item><hlink|2025 Math 132 Calculus 2 (undergraduate
-      course)|<hlink|MATH 132 - Calculus II at the University of
-      Massachusetts Amherst \| Coursicle UMass|https://www.coursicle.com/umass/courses/MATH/132/>>>
+      course)|https://people.umass.edu/correia/math132SP25.html>>
 
-      <small|<item><hlink|2024 Math 233 Multivariate Calculus (undergraduate
-      course)|<hlink|MATH 233 - Multivariate Calculus at the University of
-      Massachusetts Amherst \| Coursicle UMass|https://www.coursicle.com/umass/courses/MATH/233/>>>
+      <small|<item><hlink|2024 Math 233 Multivariate
+      Calculus|https://www.umass.edu/honors/class/37041/multivariate-calculus-honors>
+      (undergraduate course)>
     </itemize-dot>
 
     <item>2020 - 2024<space|1em>Teaching Assistant at the University of
