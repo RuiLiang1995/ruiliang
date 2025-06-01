@@ -3,6 +3,8 @@
 <style|<tuple|article|pagella-font|stylefile>>
 
 <\body>
+  \;
+
   <\underlined>
     <\wide-tabular>
       <tformat|<cwith|1|1|1|1|cell-halign|c>|<cwith|1|1|1|1|cell-valign|t>|<table|<row|<\cell>
@@ -56,6 +58,12 @@
   </strong>>
 
   <\itemize-dot>
+    <item>Random averaging operator, random tensor, and
+    FNLS<hlink||https://sites.google.com/view/probabilisticnls>,
+    <hlink|Probabilistic Study of Nonlinear Dispersive
+    PDEs|https://sites.google.com/view/probabilisticnls>, University of
+    Birmingham, Birmingham, UK, 2 June 2025
+
     <item><hlink|Random averaging operator, random tensor, and
     FNLS|https://www.umass.edu/mathematics-statistics/events/rui-liang-random-averaging-operator-random-tensor-and-fractional-nls>,
     Analysis Seminar, University of Massachusetts Amherst, Amherst,
@@ -102,6 +110,10 @@
   </strong>>
 
   <\itemize>
+    <item>(speaker) <hlink|Probabilistic Study of Nonlinear Dispersive
+    PDEs|https://sites.google.com/view/probabilisticnls>, University of
+    Birmingham, Birmingham, UK, 2-3 June 2025
+
     <item><hlink|2024 Simon Collaboration on Wave Turbulence Annual
     Meeting|https://www.simonsfoundation.org/event/simons-collaboration-on-wave-turbulence-annual-meeting-2024/>,
     Gerald D. Fischbach Auditorium, New York, US, 05-06 December 2024
@@ -167,3 +179,10 @@
     <associate|par-columns|1>
   </collection>
 </initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|h.knfgbg65z9i9|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+  </collection>
+</references>
