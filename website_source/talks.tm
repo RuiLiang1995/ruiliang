@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -58,6 +58,11 @@
   </strong>>
 
   <\itemize-dot>
+    <item>Random tensors and fractional NLS, <hlink|Harmonic Analysis and
+    Differential Equations Seminar|https://wp.math.berkeley.edu/hades/2025/09/25/random-tensors-and-fractional-nls/>,
+    Univerisity of California, Berkeley, Berkeley, California, USA, 30
+    September 2025
+
     <item>Random averaging operator, random tensor, and
     FNLS<hlink||https://sites.google.com/view/probabilisticnls>,
     <hlink|Probabilistic Study of Nonlinear Dispersive
@@ -110,6 +115,30 @@
   </strong>>
 
   <\itemize>
+    <item><hlink|Recent Trends in Stochastic Partial Differential
+    Equations|https://www.slmath.org/workshops/1148>, MSRI/SLMath, Berkeley,
+    USA, 17-21 November 2025
+
+    <item><hlink|Kinetic Theory: Novel Statistical, Stochastic and Analytical
+    Methods|https://www.slmath.org/workshops/1152>, MSRI/SLMath, Berkeley,
+    USA, 20-24 October 2025
+
+    <item><hlink|Lean for PDEs, an ICARM & SLMath
+    collaboration|https://www.slmath.org/workshops/1180>, MSRI/SLMath,
+    Berkeley, California, USA, 6-9 October 2025
+
+    <item><hlink|Introductory Workshop: Kinetic Theory & Stochastic Partial
+    Differential Equations|https://www.slmath.org/workshops/1117>,
+    MSRI/SLMath, Berkeley, California, USA, 6-9 October 2025
+
+    <item><hlink|Pathways Workshop: Kinetic Theory & Stochastic Partial
+    Differential Equations|https://www.slmath.org/workshops/1116>,
+    MSRI/SLMath, Berkeley, California, USA, 25-29, August 2025
+
+    <item>Academic Symposium on Theories and Applications of Partial
+    Differential Equations, Jilin University, Changchun, Jilin, China, 11-13
+    August 2025
+
     <item>(speaker) <hlink|Probabilistic Study of Nonlinear Dispersive
     PDEs|https://sites.google.com/view/probabilisticnls>, University of
     Birmingham, Birmingham, UK, 2-3 June 2025
@@ -183,6 +212,5 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|h.knfgbg65z9i9|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>

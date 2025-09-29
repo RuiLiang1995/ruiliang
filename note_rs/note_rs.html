@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Note on the theory of regularity structures</title>
+    <meta charset="utf-8" content="TeXmacs 2.1.4" name="generator"></meta>
+    <style type="text/css">
+      body { text-align: justify } h5 { display: inline; padding-right: 1em }
+      h6 { display: inline; padding-right: 1em } table { border-collapse:
+      collapse } td { padding: 0.2em; vertical-align: baseline } dt { float:
+      left; min-width: 1.75em; text-align: right; padding-right: 0.75em;
+      font-weight: bold; } dd { margin-left: 2.75em; padding-bottom: 0.25em; }
+      dd p { padding-top: 0em; } .subsup { display: inline; vertical-align:
+      -0.2em } .subsup td { padding: 0px; text-align: left} .fraction {
+      display: inline; vertical-align: -0.8em } .fraction td { padding: 0px;
+      text-align: center } .wide { position: relative; margin-left: -0.4em }
+      .accent { position: relative; margin-left: -0.4em; top: -0.1em }
+      .title-block { width: 100%; text-align: center } .title-block p {
+      margin: 0px } .compact-block p { margin-top: 0px; margin-bottom: 0px }
+      .left-tab { text-align: left } .center-tab { text-align: center }
+      .balloon-anchor { border-bottom: 1px dotted #000000; outline: none;
+      cursor: help; position: relative; } .balloon-anchor [hidden] {
+      margin-left: -999em; position: absolute; display: none; }
+      .balloon-anchor: hover [hidden] { position: absolute; left: 1em; top:
+      2em; z-index: 99; margin-left: 0; width: 500px; display: inline-block; }
+      .balloon-body { } .ornament { border-width: 1px; border-style: solid;
+      border-color: black; display: inline-block; padding: 0.2em; } .right-tab
+      { float: right; position: relative; top: -1em; } .no-breaks {
+      white-space: nowrap; } .underline { text-decoration: underline; }
+      .overline { text-decoration: overline; } .strike-through {
+      text-decoration: line-through; } del { text-decoration: line-through
+      wavy red; } .fill-out { text-decoration: underline dotted; } 
+    </style>
+  </head>
+  <body>
+    <p>
+      <a href="../notes.html">GO BACK</a>
+    </p>
+    <p style="margin-bottom: 25%">
+      
+    </p>
+    <table class="title-block">
+      <tr>
+        <td><font style="font-size: 141.4%"><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><font style="font-size: 237.835%"><strong><font color="#008080">Note on the theory of
+            regularity structures</font></strong></font></td>
+          </tr>
+        </table></font></td>
+      </tr>
+    </table>
+    <p>
+      
+    </p>
+    <p style="margin-bottom: 15%">
+      
+    </p>
+    <p>
+      
+    </p>
+    <font color="#008080"><h1 id="auto-1">Chapter 1<br />Algebraic renormalisation of
+    regularity structures<a id="Chap:ar"></a></h1></font>
+    <p>
+      This chapter is taken from the paper [Y. Bruned, M. Hairer, L. Zambotti,
+      Invent. Math. 215 (2019), no. 3, 1039&ndash;1156].
+    </p>
+    <font color="#008080"><h2 id="auto-2"><a id="Sec:ar.1"></a>1.1<span style="margin-left: 1em"></span>Rooted forest<span
+    style="margin-left: 1em"></span></h2></font>
+    <ul>
+      <li>
+        <p>
+          A rooted tree <img src="note_rs-1.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> is a finite connected simple
+          graph without circles with a distinguished vertex <span class="no-breaks"><img
+          src="note_rs-2.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0682666666666667em; margin-top: -0.00620606060606066em; vertical-align: -0.210981818181818em; height: 0.651636363636364em"></img>,</span> called <i>the root</i>. We assume that
+          our trees are combinatorial, i.e. there is no particular order
+          imposed on edges leaving any given vertex.
+        </p>
+      </li>
+      <li>
+        <p>
+          Vertices of <img src="note_rs-1.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> is also called <i>nodes</i>. The
+          set of nodes of the tree <img src="note_rs-1.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> is denoted by <span
+          class="no-breaks"><img src="note_rs-3.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0682666666666667em; margin-top: -0.0124121212121212em; vertical-align: -0.153066666666667em; height: 0.835733333333333em"></img>,</span> and set of edges the tree
+          <img src="note_rs-1.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> is denoted by <span class="no-breaks"><img src="note_rs-4.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0124121212121211em; margin-top: 0em; vertical-align: -0.172727272727273em; height: 1.07156363636364em"></img>.</span>
+          We endow <img src="note_rs-3.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0682666666666667em; margin-top: -0.0124121212121212em; vertical-align: -0.153066666666667em; height: 0.835733333333333em"></img> with the partial order <img src="note_rs-5.png"
+          style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: -0.0124121212121212em; margin-top: 0em; vertical-align: -0.111684848484848em; height: 0.71369696969697em"></img> where <img src="note_rs-6.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: -0.0124121212121215em; margin-top: 0em; vertical-align: -0.111684848484848em; height: 0.71369696969697em"></img> iff <img src="note_rs-7.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: -0.00620606060606066em; vertical-align: -0.0123878787878788em; height: 0.477866666666667em"></img>
+          is on the unique path connecting <img src="note_rs-8.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121213em; margin-top: -0.00620606060606066em; vertical-align: -0.0123878787878788em; height: 0.477866666666667em"></img> to the
+          root, and we orient edges in <img src="note_rs-9.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0682666666666667em; margin-top: -0.0124121212121212em; vertical-align: -0.153066666666667em; height: 0.835733333333333em"></img> so that if
+          <span class="no-breaks"><img src="note_rs-10.png" style="margin-left: 0em; margin-bottom: 0.0248em; margin-right: -0.068266666666668em; margin-top: 0em; vertical-align: -0.210981818181818em; height: 0.868848484848485em"></img>,</span> then <span class="no-breaks"><img
+          src="note_rs-11.png" style="margin-left: -0.031030303030303em; margin-bottom: 0.0248em; margin-right: -0.0124121212121213em; margin-top: 0em; vertical-align: -0.210981818181818em; height: 0.806787878787879em"></img>.</span> In this way, we can always view a tree as
+          a directed graph.
+        </p>
+      </li>
+      <li>
+        <p>
+          <span style="margin-left: 1pt"></span>
+        </p>
+      </li>
+    </ul>
+    <font color="#008080"><h2 id="auto-3"><a id="Sec:ar.2"></a>1.2<span style="margin-left: 1em"></span>Bigraded spaces and
+    triangular maps<span style="margin-left: 1em"></span></h2></font>
+    <ul>
+      <li>
+        <p>
+          Given a sequence of vector space <span class="no-breaks"><img src="note_rs-12.png" style="margin-left: 0em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121215em; margin-top: 0em; vertical-align: -0.192387878787879em; height: 0.862666666666667em"></img>,</span>
+          denote by
+        </p>
+        <center>
+          <img src="note_rs-13.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0220606060606061em; margin-right: -0.0124121212121224em; margin-top: -0.0389818181818182em; vertical-align: -1.32547878787879em; height: 2.73614545454545em"></img>
+        </center>
+        <p>
+          called a bigraded space. Given two bigraded spaces <img src="note_rs-14.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: -0.0123878787878788em; height: 0.695078787878788em"></img>
+          and <span class="no-breaks"><img src="note_rs-15.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0744727272727274em; margin-top: -0.0124121212121212em; vertical-align: -0.0123878787878788em; height: 0.695078787878788em"></img>,</span> define
+        </p>
+        <center>
+          <img src="note_rs-16.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878787em; margin-right: -0.0124121212121207em; margin-top: -0.0186181818181819em; vertical-align: -1.01151515151515em; height: 2.19585454545455em"></img>
+        </center>
+      </li>
+      <li>
+        <p>
+          <img src="note_rs-17.png" style="margin-left: 0em; margin-bottom: 0.0372121212121212em; margin-right: -0.0124121212121215em; margin-top: -0.0186181818181818em; vertical-align: -0.279272727272727em; height: 0.955757575757576em"></img> is s.t. <img src="note_rs-18.png" style="margin-left: -0.0620606060606061em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121211em; margin-top: -0.0186181818181818em; vertical-align: -0.165454545454545em; height: 0.866763636363636em"></img> unless <img
+          src="note_rs-19.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0310060606060606em; margin-right: -0.0124121212121211em; margin-top: -0.0248242424242424em; vertical-align: -0.0620363636363636em; height: 0.651636363636364em"></img> (i.e. <img src="note_rs-20.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0124121212121215em; margin-top: 0em; vertical-align: -0.153066666666667em; height: 0.773672727272727em"></img> &amp; <span class="no-breaks"><img
+          src="note_rs-21.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0124121212121215em; margin-top: 0em; vertical-align: -0.153066666666667em; height: 0.773672727272727em"></img>).</span> Given two bigraded spaces <img src="note_rs-14.png"
+          style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: -0.0123878787878788em; height: 0.695078787878788em"></img> and <span class="no-breaks"><img src="note_rs-22.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0806787878787879em; margin-top: -0.00620606060606066em; vertical-align: -0.0123878787878788em; height: 0.926763636363637em"></img>,</span> we
+          define <img src="note_rs-23.png" style="margin-left: -0.0620606060606061em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0806787878787878em; margin-top: -0.00620606060606066em; vertical-align: -0.0123878787878788em; height: 0.926763636363637em"></img> s.t.
+        </p>
+        <center>
+          <img src="note_rs-24.png" style="margin-left: -0.0620606060606061em; margin-bottom: 0.0232000000000001em; margin-right: -0.0124121212121207em; margin-top: -0.0390060606060607em; vertical-align: -1.14518787878788em; height: 2.5536em"></img>
+        </center>
+      </li>
+      <li>
+        <p>
+          <img src="note_rs-25.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: -0.0124121212121212em; margin-top: 0em; vertical-align: -0.173745454545455em; height: 0.837818181818182em"></img> can be view as a bigraded space with
+        </p>
+        <center>
+          <img src="note_rs-26.png" style="margin-left: 0em; margin-bottom: 0.0248em; margin-right: -0.0124121212121207em; margin-top: -0.0186181818181819em; vertical-align: -0.232145454545455em; height: 1.18375757575758em"></img>
+        </center>
+      </li>
+      <li>
+        <p>
+          Let <span class="no-breaks"><img src="note_rs-27.png" style="margin-left: -0.0620606060606061em; margin-bottom: 0.0185939393939394em; margin-right: -0.0124121212121211em; margin-top: -0.0186181818181818em; vertical-align: -0.173745454545455em; height: 0.868848484848485em"></img>.</span> Define
+        </p>
+        <center>
+          <img src="note_rs-28.png" style="margin-left: 0em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121207em; margin-top: -0.0124121212121211em; vertical-align: -0.8088em; height: 1.85144242424242em"></img>
+        </center>
+        <p>
+          
+        </p>
+        <p>
+          
+        </p>
+        <p>
+          
+        </p>
+      </li>
+    </ul>
+    <font color="#008080"><h2 id="auto-4"><a id="Sec:ar.3"></a>1.3<span style="margin-left: 1em"></span>Incidence
+    coalgebras of forests<span style="margin-left: 1em"></span></h2></font>
+    <ul>
+      <ul>
+        <li>
+          <p>
+            <span class="no-breaks"><img src="note_rs-29.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0331151515151515em; vertical-align: -0.235806060606061em; height: 0.974351515151515em"></img>.</span> Denote by <img src="note_rs-30.png"
+            style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: -0.0124121212121215em; margin-top: -0.0269090909090909em; vertical-align: -0.173769696969697em; height: 1.07158787878788em"></img> the free vector space generated by <span class="no-breaks"><img
+            src="note_rs-31.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0372363636363636em; margin-right: -0.0324848484848486em; margin-top: -0.0331151515151515em; vertical-align: 0em; height: 0.794375757575758em"></img>.</span> <img src="note_rs-32.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: 0em; vertical-align: 0em; height: 0.695078787878788em"></img><img src="note_rs-33.png" style="margin-left: 0em; margin-bottom: 0.0185939393939394em; margin-right: -0.0324848484848479em; margin-top: -0.0331151515151515em; vertical-align: -0.173745454545455em; height: 0.912290909090909em"></img>
+            we are given a (finite) collection <img src="note_rs-34.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: 0em; vertical-align: -0.173745454545455em; height: 0.837818181818182em"></img> of
+            subforests <img src="note_rs-35.png" style="margin-left: -0.0620606060606061em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0186181818181818em; vertical-align: 0em; height: 0.726109090909091em"></img> of <img src="note_rs-36.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0496484848484849em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> s.t.
+            <span class="no-breaks"><img src="note_rs-37.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0496484848484844em; margin-top: -0.0186181818181818em; vertical-align: -0.0868606060606061em; height: 0.775757575757576em"></img>.</span> Define <img src="note_rs-38.png"
+            style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0331151515151515em; vertical-align: -0.173769696969697em; height: 0.912315151515152em"></img> by
+          </p>
+          <center>
+            <img src="note_rs-39.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0310060606060607em; margin-right: -0.0124121212121207em; margin-top: -0.0248242424242424em; vertical-align: -1.24608484848485em; height: 2.20804848484848em"></img>
+          </center>
+          <p>
+            Define the linear functional <img src="note_rs-40.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: -0.0124121212121207em; margin-top: -0.0248242424242424em; vertical-align: -0.173769696969697em; height: 0.912315151515152em"></img> by <span
+            class="no-breaks"><img src="note_rs-41.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0310060606060606em; margin-right: -0.0124121212121207em; margin-top: -0.00620606060606055em; vertical-align: -0.283709090909091em; height: 0.9664em"></img>.</span> If <img src="note_rs-34.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: 0em; vertical-align: -0.173745454545455em; height: 0.837818181818182em"></img>
+            is equal to all subforests <img src="note_rs-35.png" style="margin-left: -0.0620606060606061em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0186181818181818em; vertical-align: 0em; height: 0.726109090909091em"></img> of <img src="note_rs-36.png"
+            style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0496484848484849em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> containing <span class="no-breaks"><img src="note_rs-42.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: 0em; vertical-align: -0.0123878787878788em; height: 0.695078787878788em"></img>,</span>
+            then <img src="note_rs-43.png" style="margin-left: 0em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0331151515151515em; vertical-align: -0.173769696969697em; height: 0.912315151515152em"></img> is a coalgebra. Since the inclusion
+            <img src="note_rs-44.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121212em; margin-top: -0.0248242424242424em; vertical-align: -0.0868606060606061em; height: 0.682666666666667em"></img> endows the set of typed forests with
+            partial order, <img src="note_rs-43.png" style="margin-left: 0em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0331151515151515em; vertical-align: -0.173769696969697em; height: 0.912315151515152em"></img> is an example of an
+            <i>incidence coalgebra</i>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Given a typed forest <span class="no-breaks"><img src="note_rs-36.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0496484848484849em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img>,</span>
+            consider a several disjoint subforest <span class="no-breaks"><img src="note_rs-45.png"
+            style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0124121212121213em; margin-top: 0em; vertical-align: -0.153066666666667em; height: 0.835733333333333em"></img>,</span> <span class="no-breaks"><img src="note_rs-46.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0124121212121213em; margin-top: 0em; vertical-align: -0.153066666666667em; height: 0.835733333333333em"></img>,</span><span
+            class="no-breaks"><img src="note_rs-47.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121213em; margin-top: 0.00162424242424242em; vertical-align: -0.0123878787878788em; height: 0.470036363636364em"></img>,</span> <img src="note_rs-48.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121213em; margin-top: 0em; vertical-align: -0.165454545454545em; height: 0.835733333333333em"></img> of
+            <span class="no-breaks"><img src="note_rs-36.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0496484848484849em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img>.</span> A natural way to code
+            <img src="note_rs-49.png" style="margin-left: 0em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: 0em; vertical-align: -0.173745454545455em; height: 0.837818181818182em"></img> is to use a coloured forest <img src="note_rs-50.png"
+            style="margin-left: 0em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0186181818181819em; vertical-align: -0.173769696969697em; height: 1.13158787878788em"></img> where
+          </p>
+          <center>
+            <img src="note_rs-51.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121207em; margin-top: -0.0248242424242424em; vertical-align: -1.13563636363636em; height: 2.11621818181818em"></img>
+          </center>
+          <p>
+            Then we have <img src="note_rs-52.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121211em; margin-top: -0.0186181818181819em; vertical-align: -0.165454545454545em; height: 1.12947878787879em"></img> for <img src="note_rs-53.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121213em; margin-top: -0.0186181818181818em; vertical-align: -0.0248em; height: 0.726109090909091em"></img>
+            and <span class="no-breaks"><img src="note_rs-54.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0186181818181819em; vertical-align: -0.173745454545455em; height: 1.13156363636364em"></img>.</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Assumption 1.</b> Let <span class="no-breaks"><img src="note_rs-53.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121213em; margin-top: -0.0186181818181818em; vertical-align: -0.0248em; height: 0.726109090909091em"></img>.</span>
+            For each colour forest <span class="no-breaks"><img src="note_rs-55.png" style="margin-left: 0em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0186181818181819em; vertical-align: -0.173769696969697em; height: 1.13158787878788em"></img>,</span>
+            we are given a collection <img src="note_rs-56.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0186181818181819em; vertical-align: -0.173769696969697em; height: 1.13158787878788em"></img> of subforests of
+            <img src="note_rs-36.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0496484848484849em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> s.t. <img src="note_rs-57.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0186181818181819em; vertical-align: -0.173769696969697em; height: 1.13158787878788em"></img>
+          </p>
+          <ol>
+            <li>
+              <p>
+                <img src="note_rs-58.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121211em; margin-top: -0.0186181818181819em; vertical-align: -0.165454545454545em; height: 1.12947878787879em"></img> &amp; <img src="note_rs-59.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0372121212121212em; margin-right: -0.0124121212121215em; margin-top: -0.0186181818181819em; vertical-align: -0.3144em; height: 1.2536em"></img>
+                &forall;<span class="no-breaks"><img src="note_rs-60.png" style="margin-left: -0.124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0248242424242424em; margin-top: -0.0124121212121212em; vertical-align: -0.210981818181818em; height: 0.868848484848485em"></img>,</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="no-breaks"><img src="note_rs-61.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0248242424242422em; margin-top: -0.0186181818181818em; vertical-align: -0.210981818181818em; height: 0.899878787878788em"></img>,</span> <img src="note_rs-32.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: 0em; vertical-align: 0em; height: 0.695078787878788em"></img>
+                connected component <img src="note_rs-1.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> of <span class="no-breaks"><img
+                src="note_rs-62.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0372121212121212em; margin-right: -0.0186181818181819em; margin-top: -0.0186181818181819em; vertical-align: -0.3144em; height: 1.2536em"></img>,</span> one has either <img src="note_rs-63.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121215em; margin-top: -0.0186181818181818em; vertical-align: 0em; height: 0.726109090909091em"></img>
+                or <span class="no-breaks"><img src="note_rs-64.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: -0.0124121212121211em; margin-top: -0.0248242424242424em; vertical-align: -0.0992727272727273em; height: 0.899878787878788em"></img>.</span>
+              </p>
+            </li>
+          </ol>
+          <p>
+            We also assume that <img src="note_rs-65.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121212em; margin-top: 0em; vertical-align: -0.165454545454545em; height: 0.835733333333333em"></img> is compatible with
+            forest isomorphisms described above in the sense that
+          </p>
+          <center>
+            <img src="note_rs-66.png" style="margin-left: -0.0620606060606061em; margin-bottom: 0.0185939393939394em; margin-right: -0.0124121212121153em; margin-top: -0.0186181818181819em; vertical-align: -0.235806060606061em; height: 1.20603636363636em"></img>
+          </center>
+        </li>
+      </ul>
+    </ul>
+    <font color="#008080"><p>
+      
+    </p><h1 id="auto-5"><a id="Chap:phi4"></a>Chapter 2<br />Phi-four equation in the full
+    sub-critical regime</h1></font>
+    <p>
+      In this chapter, we consider the <img src="note_rs-67.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121213em; margin-top: 0em; vertical-align: 0em; height: 0.891587878787879em"></img> equation in the
+      full sub-critical regime. The equation is formally given by
+    </p>
+    <center>
+      <img src="note_rs-68.png" style="margin-left: 0em; margin-bottom: 0.0372121212121212em; margin-right: -0.0124121212121224em; margin-top: 0em; vertical-align: -0.223393939393939em; height: 1.06535757575758em"></img>
+    </center>
+    <p>
+      where the term <img src="note_rs-69.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0372121212121212em; margin-right: -0.0124121212121211em; margin-top: -0.0248242424242425em; vertical-align: -0.223393939393939em; height: 0.868848484848485em"></img> represents the renormalisation
+      (it can be quadratic in <span class="no-breaks"><img src="note_rs-70.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0372121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0248242424242425em; vertical-align: -0.223393939393939em; height: 0.868848484848485em"></img>)</span> and
+      the noise <img src="note_rs-71.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121215em; margin-top: 0em; vertical-align: -0.210981818181818em; height: 1.06535757575758em"></img> for some <span class="no-breaks"><img src="note_rs-72.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121211em; margin-top: -0.0186181818181818em; vertical-align: -0.0248em; height: 0.726109090909091em"></img>.</span>
+      This chapter is a note taken from the paper [A. Chandra, A. Moinat, H.
+      Weber, Arch. Ration. Mech. Anal. 247 (2023), no. 3, Paper No. 48].
+    </p>
+    <font color="#008080"><h2 id="auto-6">2.1<span style="margin-left: 1em"></span>Preliminaries<span style="margin-left: 1em"></span></h2></font>
+    <p>
+      <a id="Sec:phi4.1"></a>
+    </p>
+    <p>
+      We introduce the following ingredients.
+    </p>
+    <ul>
+      <li>
+        <p>
+          An operator <img src="note_rs-73.png" style="margin-left: -0.0372363636363636em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0131151515151515em; vertical-align: -0.173769696969697em; height: 0.875078787878788em"></img> to represent an abstract Duhamel
+          operator for heat equation.
+        </p>
+      </li>
+      <li>
+        <p>
+          Let <img src="note_rs-74.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121211em; margin-top: 0em; vertical-align: -0.213430303030303em; height: 1.09636363636364em"></img> be the smallest set containing the
+          symbols <img src="note_rs-75.png" style="margin-left: 0em; margin-bottom: 0.0103030303030303em; margin-right: 0em; margin-top: -0.00620606060606055em; vertical-align: -0.165454545454545em; height: 0.868848484848485em"></img> s.t. &ldquo;<span class="no-breaks"><img src="note_rs-76.png"
+          style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121189em; margin-top: 0em; vertical-align: -0.213430303030303em; height: 1.09636363636364em"></img>&rdquo;.</span>
+        </p>
+      </li>
+      <li>
+        <p>
+          <span class="no-breaks"><img src="note_rs-77.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: 0em; margin-top: 0em; vertical-align: -0.213430303030303em; height: 1.09636363636364em"></img>.</span> We use <img src="note_rs-78.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: -0.0248242424242424em; vertical-align: -0.0123878787878788em; height: 0.50889696969697em"></img>
+          to indicate elements in <span class="no-breaks"><img src="note_rs-79.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121211em; margin-top: 0em; vertical-align: -0.213430303030303em; height: 1.09636363636364em"></img>.</span>
+          We call the elements in <img src="note_rs-80.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121215em; margin-top: 0em; vertical-align: -0.213430303030303em; height: 1.09636363636364em"></img> trees. In a given
+          tree, <img src="note_rs-81.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121207em; margin-top: -0.00620606060606055em; vertical-align: -0.165454545454545em; height: 0.866763636363636em"></img> occur in that tree are called leaves
+          in the tree.
+        </p>
+      </li>
+      <li>
+        <p>
+          <span class="no-breaks"><img src="note_rs-82.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.00620606060606055em; vertical-align: -0.223393939393939em; height: 0.930909090909091em"></img>.</span>
+        </p>
+      </li>
+      <li>
+        <p>
+          Define functions <img src="note_rs-83.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121207em; margin-top: 0em; vertical-align: -0.273018181818182em; height: 1.16836363636364em"></img> which counts, on any given
+          tree, the number of occurrences of <span class="no-breaks"><img src="note_rs-84.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121213em; margin-top: -0.00620606060606055em; vertical-align: -0.165454545454545em; height: 0.866763636363636em"></img>,</span>
+          and <img src="note_rs-85.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: 0em; vertical-align: 0em; height: 0.695078787878788em"></img> as leaves in the tree. Denote also by
+          <span class="no-breaks"><img src="note_rs-86.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: 0em; margin-top: 0em; vertical-align: -0.324727272727273em; height: 1.32104242424242em"></img>.</span>
+        </p>
+      </li>
+      <li>
+        <p>
+          <span class="no-breaks"><img src="note_rs-87.png" style="margin-left: 0em; margin-bottom: 0.00826666666666667em; margin-right: 0em; margin-top: -0.0186181818181818em; vertical-align: -0.173745454545455em; height: 0.879175757575758em"></img>.</span>
+        </p>
+      </li>
+      <li>
+        <p>
+          <span class="no-breaks"><img src="note_rs-88.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: 0em; margin-top: 0em; vertical-align: -0.213430303030303em; height: 1.09636363636364em"></img>,</span> <span class="no-breaks"><img src="note_rs-89.png"
+          style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.0131151515151515em; vertical-align: -0.161357575757576em; height: 0.875078787878788em"></img>,</span> <span class="no-breaks"><img src="note_rs-90.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: 0em; margin-top: 0em; vertical-align: -0.213430303030303em; height: 1.09636363636364em"></img>,</span>
+          <span class="no-breaks"><img src="note_rs-91.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: -0.0124121212121215em; margin-top: -0.0124121212121212em; vertical-align: -0.223393939393939em; height: 0.937115151515152em"></img>.</span>
+        </p>
+      </li>
+      <li>
+        <p>
+          <span class="no-breaks"><img src="note_rs-92.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121207em; margin-top: -0.0441454545454545em; vertical-align: -0.173187878787879em; height: 0.899321212121212em"></img>,</span> <img src="note_rs-93.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: -0.0124121212121224em; margin-top: -0.0434424242424242em; vertical-align: -0.223393939393939em; height: 0.968145454545455em"></img>
+        </p>
+      </li>
+      <li>
+        <p>
+          <img src="note_rs-94.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121207em; margin-top: -0.0317333333333333em; vertical-align: -0.160775757575758em; height: 0.886909090909091em"></img> consists of <img src="note_rs-95.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.0131151515151515em; vertical-align: -0.173769696969697em; height: 0.875078787878788em"></img> s.t.
+          <img src="note_rs-96.png" style="margin-left: 0em; margin-bottom: 0.0103030303030303em; margin-right: -0.0124121212121224em; margin-top: -0.0248242424242424em; vertical-align: -0.165454545454545em; height: 0.961939393939394em"></img> and <span class="no-breaks"><img src="note_rs-97.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0103030303030303em; margin-right: 0em; margin-top: -0.00620606060606055em; vertical-align: -0.165454545454545em; height: 0.868848484848485em"></img>.</span>
+        </p>
+      </li>
+      <li>
+        <p>
+          <span class="no-breaks"><img src="note_rs-98.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.0131151515151515em; vertical-align: -0.161357575757576em; height: 0.875078787878788em"></img>.</span>
+        </p>
+      </li>
+      <li>
+        <p>
+          <span class="no-breaks"><img src="note_rs-99.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: 0em; margin-top: 0em; vertical-align: -0.198351515151515em; height: 0.966909090909091em"></img>.</span>
+        </p>
+      </li>
+      <li>
+        <p>
+          <span class="no-breaks"><img src="note_rs-100.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: 0em; margin-top: 0em; vertical-align: -0.198351515151515em; height: 0.966909090909091em"></img>.</span>
+        </p>
+      </li>
+      <li>
+        <p>
+          <span class="no-breaks"><img src="note_rs-101.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.0434424242424242em; vertical-align: -0.223393939393939em; height: 0.968145454545455em"></img>.</span>
+        </p>
+        <center>
+          <img src="note_rs-102.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0558060606060611em; margin-right: -0.0124121212121224em; margin-top: -0.0124121212121215em; vertical-align: -4.37452121212121em; height: 9.22695757575758em"></img>
+        </center>
+      </li>
+    </ul>
+    <font color="#008080"><h1 id="auto-7"><a id="Chap:bha"></a>Appendix A<br />Basic Hopf
+    algebras</h1></font>
+    <p>
+      This note is extended from the a course called MAGIC 109 given by Dr Y.
+      Bazkov, adding some materials from the following resources:
+    </p>
+    <ul>
+      <li>
+        <p>
+          M. E. Sweedler. <i>Hopf algebras</i>, Math. Lecture Note Ser. W. A.
+          Benjamin, Inc., New York, 1969, vii+336 pp.
+        </p>
+      </li>
+    </ul>
+    <font color="#008080"><h2 id="auto-8">A.1<span style="margin-left: 1em"></span>Informal introdution<span
+    style="margin-left: 1em"></span></h2></font>
+    <font color="#008080"><h3 id="auto-9">A.1.1<span style="margin-left: 1em"></span>Example &ndash; Symmetries
+    on the real line<span style="margin-left: 1em"></span></h3></font>
+    <p>
+      <a id="Sec:ha.1"></a>
+    </p>
+    <p>
+      We intend to study the intrinsic geometric property of the real line
+      <img src="note_rs-103.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.757139393939394em"></img> by looking at how functions on the real line can
+      transform. For more algebraic setting, we only consider polynomials over
+      real variable. Let us look at the following transforms.
+    </p>
+    <p>
+      Given a real number <img src="note_rs-104.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: -0.00620606060606066em; vertical-align: -0.0123878787878788em; height: 0.477866666666667em"></img> and <img src="note_rs-105.png" style="margin-left: -0.155151515151515em; margin-bottom: 0.0248em; margin-right: -0.148945454545455em; margin-top: -0.00620606060606055em; vertical-align: -0.210981818181818em; height: 0.899878787878788em"></img>
+      is a function on the real line, we define the following <i>translation
+      by <img src="note_rs-104.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: -0.00620606060606066em; vertical-align: -0.0123878787878788em; height: 0.477866666666667em"></img></i>:
+    </p>
+    <center>
+      <img src="note_rs-106.png" style="margin-left: 0em; margin-bottom: 0.0248em; margin-right: -0.0124121212121215em; margin-top: -0.00620606060606055em; vertical-align: -0.210981818181818em; height: 0.899878787878788em"></img>
+    </center>
+    <p>
+      Define also the <i>reflection</i>
+    </p>
+    <center>
+      <img src="note_rs-107.png" style="margin-left: 0em; margin-bottom: 0.0248em; margin-right: -0.0124121212121215em; margin-top: -0.00620606060606055em; vertical-align: -0.210981818181818em; height: 0.899878787878788em"></img>
+    </center>
+    <p>
+      and the <i>derivative</i>
+    </p>
+    <center>
+      <img src="note_rs-108.png" style="margin-left: 0em; margin-bottom: 0.0248em; margin-right: -0.0124121212121207em; margin-top: 0em; vertical-align: -0.210981818181818em; height: 1.03122424242424em"></img>
+    </center>
+    <p>
+      The translation, reflection, derivative are not independent from each
+      other. In fact, there are some relations:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_rs-109.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121215em; margin-top: -0.0186181818181818em; vertical-align: -0.165454545454545em; height: 0.866763636363636em" id="STTS"></img></td>
+        <td align="right">(A.1.1)</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_rs-110.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121207em; margin-top: -0.0124121212121212em; vertical-align: -0.165454545454545em; height: 0.835733333333333em" id="DT"></img></td>
+        <td align="right">(A.1.2)</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_rs-111.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121215em; margin-top: -0.0186181818181818em; vertical-align: -0.0123878787878788em; height: 0.726109090909091em" id="DS"></img></td>
+        <td align="right">(A.1.3)</td>
+      </tr>
+    </table>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof of (<a href="#STTS">A.1.1</a>). </strong><img src="note_rs-112.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121189em; margin-top: -0.00620606060606055em; vertical-align: -0.210981818181818em; height: 0.899878787878788em"></img><span
+      style="margin-left: 1em"></span><img src="note_rs-113.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.00620606060606055em; vertical-align: 0em; height: 0.539927272727273em"></img>
+    </p>
+    <p>
+      Also,
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_rs-114.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121215em; margin-top: 0em; vertical-align: -0.170109090909091em; height: 1.04155151515152em" id="T-1T"></img></td>
+        <td align="right">(A.1.4)</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_rs-115.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121211em; margin-top: 0em; vertical-align: -0.148921212121212em; height: 1.00329696969697em" id="S-1S"></img></td>
+        <td align="right">(A.1.5)</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_rs-116.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121215em; margin-top: -0.0124121212121212em; vertical-align: -0.165454545454545em; height: 0.835733333333333em" id="Tab"></img></td>
+        <td align="right">(A.1.6)</td>
+      </tr>
+    </table>
+    <p>
+      Now we write down the relation (<a href="#STTS">A.1.1</a>)-(<a href="#DT">A.1.2</a>)-(<a
+      href="#DS">A.1.3</a>)-(<a href="#T-1T">A.1.4</a>)-(<a href="#S-1S">A.1.5</a>)-(<a href="#Tab">A.1.6</a>)
+      for <span class="no-breaks"><img src="note_rs-117.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121212em; margin-top: -0.0124121212121212em; vertical-align: -0.165454545454545em; height: 0.835733333333333em"></img>,</span> <span class="no-breaks"><img src="note_rs-118.png"
+      style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: -0.0186181818181818em; vertical-align: -0.0123878787878788em; height: 0.726109090909091em"></img>,</span> and <span class="no-breaks"><img src="note_rs-119.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img>,</span>
+      so these transformations live their own lifes without the mention of the
+      functions they act on. But the algebraic structure given by (<a href="#STTS">A.1.1</a>)-(<a
+      href="#DT">A.1.2</a>)-(<a href="#DS">A.1.3</a>)-(<a href="#T-1T">A.1.4</a>)-(<a href="#S-1S">A.1.5</a>)-(<a
+      href="#Tab">A.1.6</a>) is too &ldquo;blank&rdquo;, it does not contain enough
+      information for us to effectively work with these abstract symbols as
+      symmetries of the function space on the real line. What is missing here
+      is how the operators <span class="no-breaks"><img src="note_rs-117.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121212em; margin-top: -0.0124121212121212em; vertical-align: -0.165454545454545em; height: 0.835733333333333em"></img>,</span> <span
+      class="no-breaks"><img src="note_rs-118.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: -0.0186181818181818em; vertical-align: -0.0123878787878788em; height: 0.726109090909091em"></img>,</span> and <img src="note_rs-119.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img>
+      behave when we apply them to a product of functions. Given functions
+      <img src="note_rs-105.png" style="margin-left: -0.155151515151515em; margin-bottom: 0.0248em; margin-right: -0.148945454545455em; margin-top: -0.00620606060606055em; vertical-align: -0.210981818181818em; height: 0.899878787878788em"></img> and <span class="no-breaks"><img src="note_rs-120.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121212em; margin-top: -0.00620606060606066em; vertical-align: -0.210981818181818em; height: 0.651636363636364em"></img>,</span>
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="note_rs-121.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121207em; margin-top: -0.00620606060606055em; vertical-align: -0.210981818181818em; height: 0.899878787878788em" id="Tfg"></img></td>
+        <td align="right">(A.1.7)</td>
+      </tr>
+    </table>
+    <p>
+      To get rid of the mention of <img src="note_rs-105.png" style="margin-left: -0.155151515151515em; margin-bottom: 0.0248em; margin-right: -0.148945454545455em; margin-top: -0.00620606060606055em; vertical-align: -0.210981818181818em; height: 0.899878787878788em"></img> and <img src="note_rs-120.png"
+      style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121212em; margin-top: -0.00620606060606066em; vertical-align: -0.210981818181818em; height: 0.651636363636364em"></img> in (<a href="#Tfg">A.1.7</a>), we introduce a new symbolic
+      notation <i>coproduct</i> <span class="no-breaks"><img src="note_rs-122.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0186181818181818em; vertical-align: 0em; height: 0.726109090909091em"></img>,</span>
+      satisfying
+    </p>
+    <center>
+      <img src="note_rs-123.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121215em; margin-top: -0.0186181818181818em; vertical-align: -0.165454545454545em; height: 0.866763636363636em"></img>
+    </center>
+    <p>
+      Likewise, we also require
+    </p>
+    <center>
+      <img src="note_rs-124.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0248em; margin-right: -0.0124121212121215em; margin-top: -0.0186181818181818em; vertical-align: -0.148921212121212em; height: 0.837818181818182em"></img>
+    </center>
+    <p>
+      and the Leibniz rule
+    </p>
+    <center>
+      <img src="note_rs-125.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0434181818181818em; margin-right: -0.0124121212121207em; margin-top: -0.0186181818181818em; vertical-align: -0.0744484848484849em; height: 0.744727272727273em"></img>
+    </center>
+    <p>
+      The meaning of <img src="note_rs-122.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0186181818181818em; vertical-align: 0em; height: 0.726109090909091em"></img> will become clear later in this
+      note.
+    </p>
+    <font color="#008080"><h3 id="auto-10">A.1.2<span style="margin-left: 1em"></span>Hopf algebra &ndash;
+    informal introduction<span style="margin-left: 1em"></span></h3></font>
+    <p>
+      A Hopf algebra <span class="no-breaks"><img src="note_rs-126.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.062060606060606em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img>,</span> roughly
+      speeking, is a collection of operators which has 
+    </p>
+    <ul>
+      <li>
+        <p>
+          rules for multiplication (i.e., how to compose operators);
+        </p>
+      </li>
+      <li>
+        <p>
+          rules for coproduct (i.e., how an operator acts on a product of
+          functions);
+        </p>
+      </li>
+      <li>
+        <p>
+          rules for <i>The Antipode</i> (roughly an analogue of inverse in
+          group).
+        </p>
+      </li>
+    </ul>
+    <p>
+      In the example we study in Subsection <a href="#Sec:ha.1">A.1.1</a>, we say that
+      the operators <span class="no-breaks"><img src="note_rs-117.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121212em; margin-top: -0.0124121212121212em; vertical-align: -0.165454545454545em; height: 0.835733333333333em"></img>,</span> <span class="no-breaks"><img
+      src="note_rs-118.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: -0.0186181818181818em; vertical-align: -0.0123878787878788em; height: 0.726109090909091em"></img>,</span> and <img src="note_rs-119.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> generate some
+      Hopf algebra. However, these operators are known even from 19 centrary,
+      what is the point to rename them? Hopf algebras gain an advantage over
+      groups when we need symmetries of a noncommutative space. The
+      noncommuting objects upon which we want to act can be thought of as
+      &ldquo;functions&rdquo; on a mythical &ldquo;quantum group&rdquo;.
+    </p>
+    <font color="#008080"><h2 id="auto-11">A.2<span style="margin-left: 1em"></span>Linear algebra<span style="margin-left: 1em"></span></h2></font>
+    <p>
+      We consider vector space <img src="note_rs-127.png" style="margin-left: 0em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: 0em; vertical-align: -0.173745454545455em; height: 0.837818181818182em"></img> over field <img src="note_rs-128.png"
+      style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: -0.0186181818181818em; vertical-align: -0.0123878787878788em; height: 0.788169696969697em"></img> (sometimes we might use <img src="note_rs-103.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.757139393939394em"></img> or <span
+      class="no-breaks"><img src="note_rs-129.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0310060606060606em; margin-right: -0.0124121212121212em; margin-top: 0em; vertical-align: -0.186157575757576em; height: 0.899878787878788em"></img>).</span> Recall that a linearly
+      independent set <img src="note_rs-130.png" style="margin-left: -0.0620606060606061em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0806787878787878em; margin-top: -0.0186181818181818em; vertical-align: -0.0123878787878788em; height: 0.726109090909091em"></img> is such that for any <span
+      class="no-breaks"><img src="note_rs-131.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121207em; margin-top: -0.0186181818181818em; vertical-align: -0.165454545454545em; height: 0.866763636363636em"></img>,</span> <span class="no-breaks"><img src="note_rs-132.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121215em; margin-top: -0.0186181818181818em; vertical-align: -0.165454545454545em; height: 0.928824242424242em"></img>,</span>
+      <img src="note_rs-133.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121207em; margin-top: -0.0186181818181818em; vertical-align: -0.165454545454545em; height: 0.866763636363636em"></img> implies <span class="no-breaks"><img src="note_rs-134.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121215em; margin-top: -0.0186181818181818em; vertical-align: -0.165454545454545em; height: 0.866763636363636em"></img>.</span>
+      Given a subset of <span class="no-breaks"><img src="note_rs-14.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: -0.0123878787878788em; height: 0.695078787878788em"></img>,</span> say <span
+      class="no-breaks"><img src="note_rs-35.png" style="margin-left: -0.0620606060606061em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0186181818181818em; vertical-align: 0em; height: 0.726109090909091em"></img>,</span> the span of <img src="note_rs-35.png" style="margin-left: -0.0620606060606061em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0186181818181818em; vertical-align: 0em; height: 0.726109090909091em"></img>
+      is defined by <span class="no-breaks"><img src="note_rs-135.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: 0em; margin-top: -0.0186181818181818em; vertical-align: -0.223393939393939em; height: 0.992969696969697em"></img>.</span> A basis <img
+      src="note_rs-136.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> of <img src="note_rs-14.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: -0.0123878787878788em; height: 0.695078787878788em"></img> is linearly independent
+      subset of <img src="note_rs-35.png" style="margin-left: -0.0620606060606061em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0186181818181818em; vertical-align: 0em; height: 0.726109090909091em"></img> such that <span class="no-breaks"><img src="note_rs-137.png"
+      style="margin-left: -0.0124121212121212em; margin-bottom: 0.00618181818181818em; margin-right: -0.0806787878787887em; margin-top: -2.42424242424821e-5em; vertical-align: -0.223393939393939em; height: 0.899878787878788em"></img>.</span> By using Zorn's lemma, one can prove that every
+      vector space has a basis. All bases of <img src="note_rs-14.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: -0.0123878787878788em; height: 0.695078787878788em"></img> are of
+      the same cardinality which is denoted by <span class="no-breaks"><img src="note_rs-138.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0185939393939394em; margin-right: 0em; margin-top: -0.00620606060606055em; vertical-align: -0.173745454545455em; height: 0.868848484848485em"></img>.</span>
+      We can also argue that every set is a basis of some vector space.
+      Indeed, let <img src="note_rs-139.png" style="margin-left: -0.031030303030303em; margin-bottom: -0.0124121212121212em; margin-right: -0.0496484848484849em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> be a set, and let
+    </p>
+    <center>
+      <img src="note_rs-140.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0558303030303031em; margin-right: -0.0124121212121224em; margin-top: -0.0186181818181819em; vertical-align: -0.872412121212121em; height: 2.22892121212121em"></img>
+    </center>
+    <p>
+      Moreover, we can identify <img src="note_rs-141.png" style="margin-left: -0.031030303030303em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121213em; margin-top: -0.00620606060606066em; vertical-align: -0.0123878787878788em; height: 0.477866666666667em"></img> in <img src="note_rs-139.png" style="margin-left: -0.031030303030303em; margin-bottom: -0.0124121212121212em; margin-right: -0.0496484848484849em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img>
+      with an element in <span class="no-breaks"><img src="note_rs-142.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0496484848484848em; margin-top: -0.0186181818181818em; vertical-align: -0.0123878787878788em; height: 0.788169696969697em"></img>,</span> which is
+      <span class="no-breaks"><img src="note_rs-143.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121211em; margin-top: -0.0186181818181818em; vertical-align: -0.0123878787878788em; height: 0.726109090909091em"></img>,</span> and one can check that
+      under this identification the set <img src="note_rs-139.png" style="margin-left: -0.031030303030303em; margin-bottom: -0.0124121212121212em; margin-right: -0.0496484848484849em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> becomes a
+      basis of <span class="no-breaks"><img src="note_rs-142.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0496484848484848em; margin-top: -0.0186181818181818em; vertical-align: -0.0123878787878788em; height: 0.788169696969697em"></img>.</span> This fits a
+      philosophy we have to adhere in this note: everything is vector space;
+      everything map is a linear map.
+    </p>
+    <p>
+      It is time to state the first result in this note, a result that we will
+      used later.
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proposition <class style="font-style: normal">A.2.1</class>. </strong><i><class
+      style="font-style: normal"><strong>(linear extension from basis) </strong></class>Let <img
+      src="note_rs-144.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0124121212121212em; margin-right: -0.0124121212121212em; margin-top: -0.0124121212121212em; vertical-align: 0em; height: 0.695078787878788em"></img> be a basis of vector space <span class="no-breaks"><img src="note_rs-145.png"
+      style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0806787878787879em; margin-top: -0.0124121212121212em; vertical-align: -0.0123878787878788em; height: 0.695078787878788em"></img>,</span> <img src="note_rs-146.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0744727272727274em; margin-top: -0.0124121212121212em; vertical-align: -0.0123878787878788em; height: 0.695078787878788em"></img> a vector space, and <img
+      src="note_rs-147.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.074472727272727em; margin-top: -0.0186181818181818em; vertical-align: -0.0123878787878788em; height: 0.726109090909091em"></img> a function. Then there exists a unique linear map
+      <img src="note_rs-148.png" style="margin-left: -0.0124121212121212em; margin-bottom: -0.0248484848484848em; margin-right: -0.0744727272727275em; margin-top: -0.0317333333333333em; vertical-align: -0.0123878787878788em; height: 0.775757575757576em"></img> such that <span class="no-breaks"><img src="note_rs-149.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.00826666666666667em; margin-right: -0.111709090909091em; margin-top: -0.0317333333333333em; vertical-align: -0.161333333333333em; height: 0.891587878787879em"></img>.</span></i>
+    </p>
+    <p>
+      We will need a number of constructions which allows us to create new
+      vector spaces from the existing ones. For example, direct product and
+      direct sum of vector spaces <img src="note_rs-150.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0em; margin-right: -0.0124121212121211em; margin-top: -0.0124121212121212em; vertical-align: -0.153066666666667em; height: 0.835733333333333em"></img> means
+    </p>
+    <center>
+      <img src="note_rs-151.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878786em; margin-right: 0em; margin-top: -0.0248242424242424em; vertical-align: -1.19769696969697em; height: 2.17827878787879em"></img>
+    </center>
+    <p>
+      and
+    </p>
+    <center>
+      <img src="note_rs-152.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878786em; margin-right: 0em; margin-top: -0.0390060606060607em; vertical-align: -1.19769696969697em; height: 2.57284848484849em"></img>
+    </center>
+    <p>
+      respectively. Let us note that for any <span class="no-breaks"><img src="note_rs-153.png" style="margin-left: -0.0124121212121212em; margin-bottom: -2.42424242424249e-5em; margin-right: -0.0124121212121212em; margin-top: -0.00620606060606066em; vertical-align: -0.0123878787878788em; height: 0.477866666666667em"></img>,</span>
+      <img src="note_rs-154.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0124121212121212em; margin-top: -0.0124121212121212em; vertical-align: -0.165454545454545em; height: 0.835733333333333em"></img> is a subspace of <span class="no-breaks"><img src="note_rs-155.png" style="margin-left: -0.0124121212121212em; margin-bottom: 0.0123878787878788em; margin-right: -0.0186181818181819em; margin-top: -0.0248242424242424em; vertical-align: -0.349551515151515em; height: 1.08189090909091em"></img>.</span>
+      Let us also remark that direct product and direct sum can be defined for
+      an uncountable family of vector spaces. However, we only consider
+      countable familys in this note.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
