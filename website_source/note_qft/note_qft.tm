@@ -8,41 +8,34 @@
   <doc-data|<doc-title|<with|color|dark cyan|Note on Weinberg's textbooks on
   QFT>>>
 
-  \;
+  This note is intended to be a comprehensive and pedagogically structured
+  exposition of Steven Weinberg's <em|The Quantum Theory of Fields> (Volumes
+  I\UIII), with a particular emphasis on elaborating the later, more
+  condensed sections of the text. While faithfully following the logic and
+  organization of Weinberg's original formulation, these notes aim to make
+  the material more transparent by supplementing concise derivations,
+  clarifying formal constructions, and expanding on advanced topics \V
+  especially in the second and third volumes, where the presentation becomes
+  highly compressed and assumes significant background.
 
-  <\folded>
-    <with|font-series|bold|<with|color|dark cyan|Abstract.>>\ 
-  <|folded>
-    This note is intended to be a comprehensive and pedagogically structured
-    exposition of Steven Weinberg's <em|The Quantum Theory of Fields>
-    (Volumes I\UIII), with a particular emphasis on elaborating the later,
-    more condensed sections of the text. While faithfully following the logic
-    and organization of Weinberg's original formulation, these notes aim to
-    make the material more transparent by supplementing concise derivations,
-    clarifying formal constructions, and expanding on advanced topics \V
-    especially in the second and third volumes, where the presentation
-    becomes highly compressed and assumes significant background.
+  Volume I is treated systematically, with attention to the foundational
+  structure of relativistic quantum field theory: Lorentz invariance, the
+  spin-statistics connection, and the representation theory of the Poincaré
+  group. Volume II receives special emphasis, as the notes expand Weinberg's
+  treatment of interacting fields, renormalization, and symmetry constraints
+  by providing detailed step-by-step derivations and intuitive explanations
+  that are often left implicit in the text. In Volume III, where the theory
+  of supersymmetry is introduced with great formal elegance, these notes
+  unpack the algebraic constructions and superfield formalism with the goal
+  of making the subject accessible without sacrificing rigor.
 
-    Volume I is treated systematically, with attention to the foundational
-    structure of relativistic quantum field theory: Lorentz invariance, the
-    spin-statistics connection, and the representation theory of the Poincaré
-    group. Volume II receives special emphasis, as the notes expand
-    Weinberg's treatment of interacting fields, renormalization, and symmetry
-    constraints by providing detailed step-by-step derivations and intuitive
-    explanations that are often left implicit in the text. In Volume III,
-    where the theory of supersymmetry is introduced with great formal
-    elegance, these notes unpack the algebraic constructions and superfield
-    formalism with the goal of making the subject accessible without
-    sacrificing rigor.
-
-    Throughout, the objective is not to simplify the material, but to make
-    its formal structure more transparent, especially in those sections where
-    Weinberg's exposition is terse or assumes expert familiarity. These notes
-    are written for mathematically literate readers \V particularly graduate
-    students and researchers \V who wish to engage deeply with Weinberg's
-    approach, and who seek not just to follow the theory, but to truly
-    understand it.
-  </folded>
+  Throughout, the objective is not to simplify the material, but to make its
+  formal structure more transparent, especially in those sections where
+  Weinberg's exposition is terse or assumes expert familiarity. These notes
+  are written for mathematically literate readers \V particularly graduate
+  students and researchers \V who wish to engage deeply with Weinberg's
+  approach, and who seek not just to follow the theory, but to truly
+  understand it.
 
   \;
 
@@ -2364,7 +2357,7 @@
     <associate|2.5.7|<tuple|1.5.7|17>>
     <associate|2.5.8|<tuple|1.5.8|17>>
     <associate|8.1.2|<tuple|2.1.1|?>>
-    <associate|8.1.3|<tuple|2.1.6|?>>
+    <associate|8.1.3|<tuple|2.1.2|?>>
     <associate|8.1.4|<tuple|2.1.4|?>>
     <associate|8.1.5|<tuple|2.1.5|?>>
     <associate|Chap:2|<tuple|1|7>>
