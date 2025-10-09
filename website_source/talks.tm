@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.1>
 
 <style|<tuple|article|pagella-font|stylefile>>
 
@@ -208,9 +208,3 @@
     <associate|par-columns|1>
   </collection>
 </initial>
-
-<\references>
-  <\collection>
-    <associate|auto-1|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-  </collection>
-</references>
