@@ -8,6 +8,40 @@
   <doc-data|<doc-title|<with|color|dark cyan|Note on Weinberg's textbooks on
   QFT>>>
 
+<<<<<<< HEAD
+=======
+  This note is intended to be a comprehensive and pedagogically structured
+  exposition of Steven Weinberg's <em|The Quantum Theory of Fields> (Volumes
+  I\UIII), with a particular emphasis on elaborating the later, more
+  condensed sections of the text. While faithfully following the logic and
+  organization of Weinberg's original formulation, these notes aim to make
+  the material more transparent by supplementing concise derivations,
+  clarifying formal constructions, and expanding on advanced topics \V
+  especially in the second and third volumes, where the presentation becomes
+  highly compressed and assumes significant background.
+
+  Volume I is treated systematically, with attention to the foundational
+  structure of relativistic quantum field theory: Lorentz invariance, the
+  spin-statistics connection, and the representation theory of the Poincaré
+  group. Volume II receives special emphasis, as the notes expand Weinberg's
+  treatment of interacting fields, renormalization, and symmetry constraints
+  by providing detailed step-by-step derivations and intuitive explanations
+  that are often left implicit in the text. In Volume III, where the theory
+  of supersymmetry is introduced with great formal elegance, these notes
+  unpack the algebraic constructions and superfield formalism with the goal
+  of making the subject accessible without sacrificing rigor.
+
+  Throughout, the objective is not to simplify the material, but to make its
+  formal structure more transparent, especially in those sections where
+  Weinberg's exposition is terse or assumes expert familiarity. These notes
+  are written for mathematically literate readers \V particularly graduate
+  students and researchers \V who wish to engage deeply with Weinberg's
+  approach, and who seek not just to follow the theory, but to truly
+  understand it.
+
+  \;
+
+>>>>>>> 7d7bc18b945198077421b03314981cfef2e69456
   \;
 
   <no-indent><with|color|dark cyan|<strong|Notation.>> The Latin indices such
@@ -1894,7 +1928,11 @@
   transformation
 
   <\equation>
+<<<<<<< HEAD
     A<rsub|\<mu\>><around*|(|x|)>\<rightarrow\>A<rsub|\<mu\>><around*|(|x|)>+\<partial\><rsub|\<mu\>>\<epsilon\><around*|(|x|)><label|8.1.3>
+=======
+    A<rsub|\<mu\>><around*|(|x|)>\<rightarrow\>A<rsub|\<mu\>><around*|(|x|)>+\<partial\><rsub|\<mu\>>\<varepsilon\><around*|(|x|)><label|8.1.3>
+>>>>>>> 7d7bc18b945198077421b03314981cfef2e69456
   </equation>
 
   a theory built entirely from <math|F<rsub|\<mu\>\<nu\>>> and its
@@ -1928,11 +1966,19 @@
   affect physical observables, even though
   <math|A<rsub|\<mu\>><around*|(|x|)>> itself is not gauge invariant. If we
   allow <math|A<rsup|\<mu\>><around*|(|x|)>> to shift by
+<<<<<<< HEAD
   <math|\<partial\><rsup|\<mu\>>\<epsilon\><around*|(|x|)>>, then the
   variation of <math|I<rsub|M>> is given formally by:
 
   <\equation>
     \<delta\>I<rsub|M>=<big|int>\<mathd\><rsup|4>x<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>\<delta\>A<rsub|\<mu\>><around*|(|x|)>=<big|int>\<mathd\><rsup|4>x<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>\<partial\><rsub|\<mu\>>\<epsilon\><around*|(|x|)>
+=======
+  <math|\<partial\><rsup|\<mu\>>\<epsilon\><around*|(|x|)>>\<partial\>\<mu\>\<epsilon\>(x),
+  then the variation of <math|I<rsub|M>> is given formally by:
+
+  <\equation>
+    \<delta\>I<rsub|M>=<big|int>\<mathd\><rsup|4>x<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>\<delta\>A<rsub|\<mu\>><around*|(|x|)>=<big|int>\<mathd\><rsup|4>x<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>\<partial\><rsub|\<mu\>>\<varepsilon\><around*|(|x|)>
+>>>>>>> 7d7bc18b945198077421b03314981cfef2e69456
     .
   </equation>
 
@@ -1946,7 +1992,11 @@
   rapidly at infinity so that boundary terms can be neglected. This gives:
 
   <\equation*>
+<<<<<<< HEAD
     \<delta\>I<rsub|M>=-<big|int>\<mathd\><rsup|4>x\<epsilon\><around*|(|x|)>\<partial\><rsub|\<mu\>><around*|(|<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>|)>.
+=======
+    \<delta\>I<rsub|M>=-<big|int>\<mathd\><rsup|4>x\<varepsilon\><around*|(|x|)>\<partial\><rsub|\<mu\>><around*|(|<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>|)>.
+>>>>>>> 7d7bc18b945198077421b03314981cfef2e69456
   </equation*>
 
   For the action to be gauge invariant, i.e., for
@@ -2041,6 +2091,7 @@
   between matter and gauge fields \V one that is often interpreted (in later
   steps) as the conservation of a physical current.
 
+<<<<<<< HEAD
   The question is what sort of matter theory provides conserved currents
   suitable for coupling to a vector field
   <math|A<rsub|\<mu\>><around*|(|x|)>>. As established earlier, infinitesimal
@@ -2433,6 +2484,235 @@
   constraint was
 
   \;
+=======
+  \;
+
+  \;
+
+  the variation <math|<frac|\<delta\>F<rsub|\<rho\>\<sigma\>><around*|(|y|)>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>>
+  involves derivatives of delta functions, leading to:
+
+  <\equation*>
+    <frac|\<delta\>F<rsub|\<rho\>\<sigma\>><around*|(|y|)>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>=\<delta\><rsup|\<mu\>><rsub|\<sigma\>>\<partial\><rsub|\<rho\>>\<delta\><rsup|4><around*|(|y-x|)>-\<delta\><rsup|\<mu\>><rsub|\<rho\>>\<partial\><rsub|\<sigma\>>\<delta\><rsup|4><around*|(|y-x|)>.
+  </equation*>
+
+  <\equation*>
+    <frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>=2\<partial\><rsub|\<nu\>><around*|(|<frac|\<delta\>I<rsub|M>|\<delta\>F<rsub|\<mu\>\<nu\>><around*|(|x|)>>|)>.
+  </equation*>
+
+  \;
+
+  A broad class of theories yielding a conserved current arises from an
+  internal global symmetry acting on matter fields
+  <math|\<Psi\><rsub|\<ell\>>>:
+
+  <\equation>
+    \<delta\>*\<Psi\><rsub|\<ell\>><around|(|x|)>=i*<space|0.17em>\<epsilon\><around|(|x|)>*<space|0.17em>q<rsub|\<ell\>>*<space|0.17em>\<Psi\><rsub|\<ell\>><around|(|x|)>.<label|eq:8.1.6><space|1em><text|(no
+    summation over <math|\<ell\>>)>
+  </equation>
+
+  When <math|\<epsilon\>> is constant, the action is invariant; promoting
+  <math|\<epsilon\>\<to\>\<epsilon\><around|(|x|)>> gives
+
+  <\equation>
+    \<delta\>*I<rsub|M>=-<big|int>d<rsup|4>*x*<space|0.17em>J<rsup|\<mu\>><around|(|x|)>*<space|0.17em>\<partial\><rsub|\<mu\>>*\<epsilon\><around|(|x|)>.<label|eq:8.1.7>
+  </equation>
+
+  so on the equations of motion the current is conserved,
+
+  <\equation>
+    \<partial\><rsub|\<mu\>>*J<rsup|\<mu\>><around|(|x|)>=0.<label|eq:8.1.8>
+  </equation>
+
+  The corresponding generator acts on fields as
+
+  <\equation>
+    <around|[|Q,\<Psi\><rsub|\<ell\>><around|(|x|)>|]>=-<space|0.17em>q<rsub|\<ell\>>*<space|0.17em>\<Psi\><rsub|\<ell\>><around|(|x|)>,<label|eq:8.1.9>
+  </equation>
+
+  with time-independent conserved charge
+
+  <\equation>
+    Q=<big|int>d<rsup|3>*x*<space|0.17em>J<rsup|0><around|(|x|)>.<label|eq:8.1.10>
+  </equation>
+
+  Coupling the conserved current to a vector field gives a Lorentz-invariant
+  theory if we choose the normalization
+
+  <\equation>
+    <frac|\<delta\>*I<rsub|M>|\<delta\>*A<rsub|\<mu\>><around|(|x|)>>=J<rsup|\<mu\>><around|(|x|)>,<label|eq:8.1.11>
+  </equation>
+
+  which fixes the overall charge units (a common rescaling of all
+  <math|q<rsub|\<ell\>>> can be absorbed into <math|A<rsub|\<mu\>>>).
+
+  Equation <eqref|eq:8.1.11> is equivalent to the invariance of the matter
+  action under the <em|local> transformations
+
+  <\align>
+    <tformat|<table|<row|<cell|\<delta\>*A<rsub|\<mu\>><around|(|x|)>>|<cell|=\<partial\><rsub|\<mu\>>*\<epsilon\><around|(|x|)>,<eq-number><label|eq:8.1.12>>>|<row|<cell|\<delta\>*\<Psi\><rsub|\<ell\>><around|(|x|)>>|<cell|=i*<space|0.17em>\<epsilon\><around|(|x|)>*<space|0.17em>q<rsub|\<ell\>>*<space|0.17em>\<Psi\><rsub|\<ell\>><around|(|x|)>,<eq-number><label|eq:8.1.13>>>>>
+  </align>
+
+  i.e. gauge invariance of the second kind (the first kind refers to the
+  global case).
+
+  For the gauge field itself we take the standard Maxwell action,
+
+  <\equation>
+    I<rsub|\<gamma\>>=-<frac|1|4>*<big|int>d<rsup|4>*x*<space|0.17em>F<rsub|\<mu\>*\<nu\>>*F<rsup|\<mu\>*\<nu\>>,<space|2em>F<rsub|\<mu\>*\<nu\>>\<equiv\>\<partial\><rsub|\<mu\>>*A<rsub|\<nu\>>-\<partial\><rsub|\<nu\>>*A<rsub|\<mu\>>,<label|eq:8.1.14>
+  </equation>
+
+  which (up to normalization and total derivatives, and with at most two
+  derivatives) is the unique local, gauge-invariant quadratic functional of
+  <math|F<rsub|\<mu\>*\<nu\>>>. Varying the total action
+  <math|I=I<rsub|\<gamma\>>+I<rsub|M>> with respect to <math|A<rsub|\<nu\>>>
+  gives the inhomogeneous Maxwell equations,
+
+  <\equation>
+    0=<frac|\<delta\>|\<delta\>*A<rsub|\<nu\>>>*<space|0.17em><around|[|<space|0.17em>I<rsub|\<gamma\>>+I<rsub|M><space|0.17em>|]>=\<partial\><rsub|\<mu\>>*F<rsup|\<mu\>*\<nu\>><around|(|x|)>+J<rsup|\<nu\>><around|(|x|)>,<label|eq:8.1.15>
+  </equation>
+
+  together with the homogeneous Bianchi identity,
+
+  <\equation>
+    0=\<partial\><rsub|\<mu\>>*F<rsub|\<nu\>*\<rho\>>+\<partial\><rsub|\<rho\>>*F<rsub|\<mu\>*\<nu\>>+\<partial\><rsub|\<nu\>>*F<rsub|\<rho\>*\<mu\>>.<label|eq:8.1.16>
+  </equation>
+
+  It is often convenient to <em|derive> gauge interactions by \Plocalizing\Q
+  a global symmetry. Starting from the global transformation
+
+  <\equation>
+    \<delta\>*\<Psi\><rsub|\<ell\>><around|(|x|)>=i*<space|0.17em>\<epsilon\>*<space|0.17em>q<rsub|\<ell\>>*<space|0.17em>\<Psi\><rsub|\<ell\>><around|(|x|)>,<label|eq:8.1.17>
+  </equation>
+
+  we promote it to
+
+  <\equation>
+    \<delta\>*\<Psi\><rsub|\<ell\>><around|(|x|)>=i*<space|0.17em>\<epsilon\><around|(|x|)>*<space|0.17em>q<rsub|\<ell\>>*<space|0.17em>\<Psi\><rsub|\<ell\>><around|(|x|)>.<label|eq:8.1.18>
+  </equation>
+
+  If the matter Lagrangian depended only on the fields (no derivatives),
+  global invariance would imply local invariance automatically. With
+  derivatives present, the transformation of
+  <math|\<partial\><rsub|\<mu\>>*\<Psi\><rsub|\<ell\>>> acquires an extra
+  term:
+
+  <\equation>
+    \<delta\>*<around*|(|\<partial\><rsub|\<mu\>>*\<Psi\><rsub|\<ell\>><around|(|x|)>|)>=i*<space|0.17em>q<rsub|\<ell\>>*<around*|[|\<partial\><rsub|\<mu\>>*\<epsilon\><around|(|x|)>|]>*\<Psi\><rsub|\<ell\>><around|(|x|)>+i*<space|0.17em>\<epsilon\><around|(|x|)>*<space|0.17em>q<rsub|\<ell\>>*<space|0.17em>\<partial\><rsub|\<mu\>>*\<Psi\><rsub|\<ell\>><around|(|x|)>.<label|eq:8.1.19>
+  </equation>
+
+  To cancel the inhomogeneous piece proportional to
+  <math|\<partial\><rsub|\<mu\>>*\<epsilon\>>, introduce a gauge field
+  <math|A<rsub|\<mu\>>> transforming as
+
+  <\equation>
+    \<delta\>*A<rsub|\<mu\>><around|(|x|)>=\<partial\><rsub|\<mu\>>*\<epsilon\><around|(|x|)>,<label|eq:8.1.20>
+  </equation>
+
+  and define the covariant derivative
+
+  <\equation>
+    D<rsub|\<mu\>>*\<Psi\><rsub|\<ell\>><around|(|x|)>\<equiv\><around*|[|\<partial\><rsub|\<mu\>>-i*<space|0.17em>q<rsub|\<ell\>>*<space|0.17em>A<rsub|\<mu\>><around|(|x|)>|]>*\<Psi\><rsub|\<ell\>><around|(|x|)>,<label|eq:8.1.21>
+  </equation>
+
+  for which <math|\<delta\>*<around|(|D<rsub|\<mu\>>*\<Psi\><rsub|\<ell\>>|)>=i*<space|0.17em>\<epsilon\><around|(|x|)>*<space|0.17em>q<rsub|\<ell\>>*<space|0.17em>D<rsub|\<mu\>>*\<Psi\><rsub|\<ell\>>>
+  transforms homogeneously. Replacing all <math|\<partial\><rsub|\<mu\>>> by
+  <math|D<rsub|\<mu\>>> in <math|L<rsub|M>> and adding the gauge kinetic term
+  <eqref|eq:8.1.14> yields a locally gauge-invariant electrodynamics with
+  universal minimal coupling <eqref|eq:8.1.11>; the equations of motion are
+  <eqref|eq:8.1.15>\U<eqref|eq:8.1.16>.
+
+  <with|color|dark cyan|<section|Constraints and Gauge Conditions>>
+
+  In canonical quantization of electrodynamics we meet obstructions absent
+  for massive vector theories. As usual, define the canonical momentum
+  conjugate to the four-potential:
+
+  <\equation>
+    \<Pi\><rsub|\<mu\>><around|(|x|)>\<equiv\><frac|\<partial\>*L|\<partial\>*<around|(|\<partial\><rsub|0>*A<rsup|\<mu\>><around|(|x|)>|)>>.<label|eq:8.2.1>
+  </equation>
+
+  Naively one would impose canonical equal-time commutators, but
+  electrodynamics carries constraints, so the naive set is inconsistent.
+
+  The <em|primary constraint> follows because the Lagrangian has no time
+  derivative of <math|A<rsub|0>>:
+
+  <\equation>
+    \<Pi\><rsub|0><around|(|<math-bf|x>,t|)>=0.<label|eq:8.2.2>
+  </equation>
+
+  A <em|secondary constraint> arises from the Euler\ULagrange equations
+  subject to the primary one. Using <math|F<rsub|i*0>=\<partial\><rsub|i>*A<rsub|0>-\<partial\><rsub|0>*A<rsub|i>>
+  and the matter coupling, one finds
+
+  <\equation>
+    \<partial\><rsub|i>*\<Pi\><rsub|i>=-<space|0.17em>\<partial\><rsub|i><frac|\<partial\>*L|\<partial\>*F<rsub|i*0>>=-<space|0.17em><frac|\<partial\>*L|\<partial\>*A<rsub|0>>=-<space|0.17em>J<rsub|0>,<label|eq:8.2.3>
+  </equation>
+
+  where <math|J<rsup|\<mu\>>> is the conserved matter current. In terms of
+  canonical matter variables <math|<around|{|Q<rsub|n>,P<rsub|n>|}>>
+  (collecting all charged fields <math|\<Psi\><rsub|\<ell\>>> with charges
+  <math|q<rsub|\<ell\>>>),
+
+  <\equation>
+    J<rsub|0>=-<space|0.17em>i*<big|sum><rsub|\<ell\>><frac|\<partial\>*L|\<partial\>*<around|(|\<partial\><rsub|0>*\<Psi\><rsub|\<ell\>>|)>>*<space|0.17em>q<rsub|\<ell\>>*<space|0.17em>\<Psi\><rsub|\<ell\>>=-<space|0.17em>i*<big|sum><rsub|n>P<rsub|n>*<space|0.17em>q<rsub|n>*<space|0.17em>Q<rsub|n>.<label|eq:8.2.4>
+  </equation>
+
+  Differentiating the field equations and using current conservation yields
+  the identity
+
+  <\equation>
+    \<partial\><rsub|0>*<space|-0.17em><around*|[|<space|0.17em>\<partial\><rsub|i><frac|\<partial\>*L|\<partial\>*F<rsub|i*0>>-J<rsub|0>|]>=0,<label|eq:8.2.5>
+  </equation>
+
+  which shows that if the secondary constraint holds at one time, it holds
+  for all times. Thus <math|A<rsub|0>> is not a dynamical degree of freedom.
+
+  Because the theory has a local gauge symmetry, we cannot determine a unique
+  evolution from initial data unless we <em|fix a gauge> by a finite
+  transformation
+
+  <\equation*>
+    A<rsub|\<mu\>><around|(|x|)>\<to\>A<rsub|\<mu\>><around|(|x|)>+\<partial\><rsub|\<mu\>>*\<lambda\><around|(|x|)>,<space|2em>\<Psi\><rsub|\<ell\>><around|(|x|)>\<to\>e<rsup|i*q<rsub|\<ell\>>*\<lambda\><around|(|x|)>>*\<Psi\><rsub|\<ell\>><around|(|x|)>,
+  </equation*>
+
+  and then impose a condition on <math|A<rsub|\<mu\>>> (examples: Lorenz,
+  Coulomb, temporal, axial, unitary gauges). For canonical work it is
+  convenient to adopt the Coulomb gauge,
+
+  <\equation>
+    \<nabla\><space|-0.17em>\<cdot\><space|-0.17em><math-bf|A>=0.<label|eq:8.2.6>
+  </equation>
+
+  In the common class of theories where <math|L<rsub|M>> depends on matter
+  fields, their time-derivatives, and <math|A<rsub|\<mu\>>> but not on
+  derivatives of <math|A<rsub|\<mu\>>>, the only
+  <math|F<rsub|\<mu\>*\<nu\>>>-dependence is the photon kinetic term
+  <math|-<tfrac|1|4>F<rsub|\<mu\>*\<nu\>>*F<rsup|\<mu\>*\<nu\>>>. Then the
+  secondary constraint <eqref|eq:8.2.3> is just Gauss's law,
+
+  <\equation>
+    -\<partial\><rsub|i>*F<rsup|<space|0.17em>i*0>=J<rsup|0>.<label|eq:8.2.7>
+  </equation>
+
+  Together with <eqref|eq:8.2.6> this yields the Poisson equation for the
+  nondynamical scalar potential,
+
+  <\equation>
+    -\<nabla\><rsup|2>*A<rsub|0>=J<rsub|0>.<label|eq:8.2.8>
+  </equation>
+
+  Thus <math|A<rsub|0>> is determined instantaneously by the charge density:
+
+  <\equation>
+    A<rsub|0><around|(|<math-bf|x>,t|)>=<big|int>d<rsup|3><math-bf|y><space|0.27em><frac|J<rsub|0><around|(|<math-bf|y>,t|)>|4*\<pi\>*<space|0.17em><around|\||<math-bf|x>-<math-bf|y>|\|>>.<label|eq:8.2.9>
+  </equation>
+
+  After fixing <eqref|eq:8.2.6> the remaining independent degrees of freedom
+  are the transverse <math|<math-bf|A>> components, while <math|A<rsub|0>> is
+  an auxiliary field algebraically fixed by <eqref|eq:8.2.9>.
+>>>>>>> 7d7bc18b945198077421b03314981cfef2e69456
 </body>
 
 <\initial>
@@ -2444,6 +2724,7 @@
 
 <\references>
   <\collection>
+<<<<<<< HEAD
     <associate|2.2.10|<tuple|1.2.10|7>>
     <associate|2.2.11|<tuple|1.2.11|7>>
     <associate|2.2.14|<tuple|1.2.14|7>>
@@ -2564,6 +2845,110 @@
     <associate|eq:8.2.7|<tuple|2.2.7|27>>
     <associate|eq:8.2.8|<tuple|2.2.8|28>>
     <associate|eq:8.2.9|<tuple|2.2.9|28>>
+=======
+    <associate|2.2.10|<tuple|1.2.10|9>>
+    <associate|2.2.11|<tuple|1.2.11|9>>
+    <associate|2.2.14|<tuple|1.2.14|10>>
+    <associate|2.2.15|<tuple|1.2.15|10>>
+    <associate|2.2.16|<tuple|1.2.16|10>>
+    <associate|2.2.18|<tuple|1.2.18|10>>
+    <associate|2.2.19|<tuple|1.2.19|10>>
+    <associate|2.2.20|<tuple|1.2.20|10>>
+    <associate|2.2.21|<tuple|1.2.21|10>>
+    <associate|2.2.22|<tuple|1.2.22|11>>
+    <associate|2.2.23|<tuple|1.2.23|11>>
+    <associate|2.2.24|<tuple|1.2.24|11>>
+    <associate|2.2.26|<tuple|1.2.26|11>>
+    <associate|2.2.6|<tuple|1.2.6|9>>
+    <associate|2.3.10|<tuple|1.3.10|12>>
+    <associate|2.3.11|<tuple|1.3.11|12>>
+    <associate|2.3.13|<tuple|1.3.13|13>>
+    <associate|2.3.2|<tuple|1.3.2|11>>
+    <associate|2.3.4|<tuple|1.3.4|12>>
+    <associate|2.3.5|<tuple|1.3.5|12>>
+    <associate|2.3.6|<tuple|1.3.6|12>>
+    <associate|2.3.7|<tuple|1.3.7|12>>
+    <associate|2.3.8|<tuple|1.3.8|12>>
+    <associate|2.3.9|<tuple|1.3.9|12>>
+    <associate|2.4.1|<tuple|1.4.1|13>>
+    <associate|2.4.12|<tuple|1.4.12|15>>
+    <associate|2.4.13|<tuple|1.4.13|15>>
+    <associate|2.4.14|<tuple|1.4.14|15>>
+    <associate|2.4.15|<tuple|1.4.15|?>>
+    <associate|2.4.17|<tuple|1.4.17|?>>
+    <associate|2.4.18|<tuple|1.4.18|15>>
+    <associate|2.4.22|<tuple|1.4.22|?>>
+    <associate|2.4.24|<tuple|1.4.24|15>>
+    <associate|2.4.26|<tuple|1.4.26|15>>
+    <associate|2.4.3|<tuple|1.4.3|14>>
+    <associate|2.4.8|<tuple|1.4.8|14>>
+    <associate|2.4.9|<tuple|1.4.9|14>>
+    <associate|2.5.1|<tuple|1.5.1|16>>
+    <associate|2.5.10|<tuple|1.5.10|18>>
+    <associate|2.5.11|<tuple|1.5.11|18>>
+    <associate|2.5.12|<tuple|1.5.12|18>>
+    <associate|2.5.3|<tuple|1.5.3|17>>
+    <associate|2.5.5|<tuple|1.5.5|17>>
+    <associate|2.5.6|<tuple|1.5.6|17>>
+    <associate|2.5.7|<tuple|1.5.7|17>>
+    <associate|2.5.8|<tuple|1.5.8|17>>
+    <associate|8.1.2|<tuple|2.1.1|?>>
+    <associate|8.1.3|<tuple|2.1.2|?>>
+    <associate|8.1.4|<tuple|2.1.4|?>>
+    <associate|8.1.5|<tuple|2.1.5|?>>
+    <associate|Chap:2|<tuple|1|7>>
+    <associate|Chap:8|<tuple|2|?>>
+    <associate|Sec:2.1|<tuple|1.1|7>>
+    <associate|Sec:2.2|<tuple|1.2|8>>
+    <associate|Sec:2.3|<tuple|1.3|11>>
+    <associate|Sec:2.4|<tuple|1.4|13>>
+    <associate|Sec:2.5|<tuple|1.5|16>>
+    <associate|Sec:8.1|<tuple|2.1|?>>
+    <associate|Tab:2.1|<tuple|1.5.1|18>>
+    <associate|auto-1|<tuple|1|7>>
+    <associate|auto-10|<tuple|2|?>>
+    <associate|auto-11|<tuple|2.1|?>>
+    <associate|auto-12|<tuple|2.2|?>>
+    <associate|auto-13|<tuple|2.2|?>>
+    <associate|auto-2|<tuple|1.1|7>>
+    <associate|auto-3|<tuple|1.2|8>>
+    <associate|auto-4|<tuple|1.3|11>>
+    <associate|auto-5|<tuple|1.4|13>>
+    <associate|auto-6|<tuple|1.5|16>>
+    <associate|auto-7|<tuple|1.5.1|18>>
+    <associate|auto-8|<tuple|1.5.1|20>>
+    <associate|auto-9|<tuple|1.5.2|?>>
+    <associate|eq:8.1.1|<tuple|2.1.1|?>>
+    <associate|eq:8.1.10|<tuple|2.1.10|?>>
+    <associate|eq:8.1.11|<tuple|2.1.11|?>>
+    <associate|eq:8.1.12|<tuple|2.1.12|?>>
+    <associate|eq:8.1.13|<tuple|2.1.13|?>>
+    <associate|eq:8.1.14|<tuple|2.1.14|?>>
+    <associate|eq:8.1.15|<tuple|2.1.15|?>>
+    <associate|eq:8.1.16|<tuple|2.1.16|?>>
+    <associate|eq:8.1.17|<tuple|2.1.17|?>>
+    <associate|eq:8.1.18|<tuple|2.1.18|?>>
+    <associate|eq:8.1.19|<tuple|2.1.19|?>>
+    <associate|eq:8.1.2|<tuple|2.1.6|?>>
+    <associate|eq:8.1.20|<tuple|2.1.20|?>>
+    <associate|eq:8.1.21|<tuple|2.1.21|?>>
+    <associate|eq:8.1.3|<tuple|2.1.7|?>>
+    <associate|eq:8.1.4|<tuple|2.1.8|?>>
+    <associate|eq:8.1.5|<tuple|2.1.9|?>>
+    <associate|eq:8.1.6|<tuple|2.1.6|?>>
+    <associate|eq:8.1.7|<tuple|2.1.7|?>>
+    <associate|eq:8.1.8|<tuple|2.1.8|?>>
+    <associate|eq:8.1.9|<tuple|2.1.9|?>>
+    <associate|eq:8.2.1|<tuple|2.2.1|?>>
+    <associate|eq:8.2.2|<tuple|2.2.2|?>>
+    <associate|eq:8.2.3|<tuple|2.2.3|?>>
+    <associate|eq:8.2.4|<tuple|2.2.4|?>>
+    <associate|eq:8.2.5|<tuple|2.2.5|?>>
+    <associate|eq:8.2.6|<tuple|2.2.6|?>>
+    <associate|eq:8.2.7|<tuple|2.2.7|?>>
+    <associate|eq:8.2.8|<tuple|2.2.8|?>>
+    <associate|eq:8.2.9|<tuple|2.2.9|?>>
+>>>>>>> 7d7bc18b945198077421b03314981cfef2e69456
   </collection>
 </references>
 
