@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|book|termes-font|number-long-article|stylefileqft|std-frame|maxima>>
 
@@ -7,6 +7,8 @@
 
   <doc-data|<doc-title|<with|color|dark cyan|Note on Weinberg's textbooks on
   QFT>>>
+
+  \;
 
   <no-indent><with|color|dark cyan|<strong|Notation.>> The Latin indices such
   as <math|i>, <math|j>, <math|k>, etc., typically span the three spatial
@@ -1773,7 +1775,662 @@
   <math|R<around*|(|<wide|\<b-up-p\>|^>|)>> is a pure rotation that takes the
   three axis into the direction of <math|<wide|\<b-up-p\>|^>>.
 
+  <with|color|dark cyan|<chapter|Quantum Electrodynamics><label|Chap:8>>
+
+  <with|color|dark cyan|<section|Gauge Invariance<label|Sec:8.1>>>
+
+  In constructing covariant free fields for massless particles with helicity
+  <math|\<pm\>1> (such as photons), one encounters a significant
+  complication; see Section <reference|Sec:5.9>. A field like the
+  four-potential <math|a<rsub|\<mu\>><around*|(|x|)>>, as given by Eq.
+  <eqref|5.9.23>, while commonly used, does not transform as a true
+  four-vector under Lorentz transformations. This presents a problem when
+  attempting to write a Lorentz-covariant quantum field theory. But before
+  diving into this issue, let's recall that we can define an antisymmetric
+  tensor field <math|f<rsub|\<mu\>\<nu\>><around*|(|x|)>> for massless spin-1
+  particles without difficulty. This tensor field is related to the
+  four-potential <math|a<rsub|\<mu\>><around*|(|x|)>>a\<mu\>(x) via the
+  well-known expression (just as in classical electromagnetism):
+
+  <\equation>
+    f<rsub|\<mu\>*\<nu\>><around|(|x|)>=\<partial\><rsub|\<mu\>>*a<rsub|\<nu\>><around|(|x|)>-\<partial\><rsub|\<nu\>>*a<rsub|\<mu\>><around|(|x|)>.<label|eq:8.1.1>
+  </equation>
+
+  However, as shown in Eq. <eqref|5.9.31>, the four-potential
+  <math|a<rsub|\<mu\>><around*|(|x|)>> does not transform purely as a
+  four-vector under Lorentz transformations; rather, it transforms as a
+  four-vector only up to a gauge transformation. That is, under a Lorentz
+  transformation <math|\<Lambda\>>, the field transforms according to
+
+  <equation*|U<around*|(|\<Lambda\>|)>a<rsub|\<mu\>><around*|(|x|)>U<rsup|-1><around*|(|\<Lambda\>|)>=\<Lambda\><rsub|\<mu\>><rsup|<text|
+  \ >\<nu\>>a<rsub|\<nu\>><around*|(|\<Lambda\>x|)>+\<partial\><rsub|\<mu\>>\<Omega\><around*|(|x,\<Lambda\>|)>,<label|8.1.2>>
+
+  where <math|\<Omega\><around*|(|x,\<Lambda\>|)>> is a function that depends
+  on the coordinates and the Lorentz transformation, and represents the gauge
+  freedom inherent in the theory. This additional gradient term reflects the
+  non-covariant behavior of <math|a<rsub|\<mu\>><around*|(|x|)>> under
+  Lorentz transformations, a key feature of massless vector fields like the
+  photon. The implication here is profound: even though the field strength
+  <math|f<rsub|\<mu\>\<nu\>><around*|(|x|)>> itself does transform
+  covariantly (since it is gauge-invariant), the potential
+  <math|a<rsub|\<mu\>><around*|(|x|)>> does not. This is a manifestation of
+  the gauge redundancy present in theories of massless spin-1 fields, such as
+  quantum electrodynamics (QED).
+
+  In the case of massless spin-1 particles, such as photons, a significant
+  structural limitation arises when attempting to construct covariant quantum
+  fields. Specifically, it is impossible to build a true Lorentz four-vector
+  field as a linear combination of creation and annihilation operators
+  associated only with helicity <math|\<pm\>1> states. This stands in sharp
+  contrast to the situation for massive spin-1 particles, where the field
+  operator \V such as the Proca field \V can be constructed from the full set
+  of polarization states <math|\<lambda\>=-1,0,+1>, and transforms properly
+  as a four-vector under Lorentz transformations.
+
+  The key issue is that, for massless particles, only the transverse
+  polarizations with helicities <math|\<pm\>1> correspond to physical states.
+  The longitudinal polarization vector, which is essential in the massive
+  case for forming a complete Lorentz vector, becomes unphysical as the mass
+  goes to zero. Although the longitudinal component contributes to the field
+  operator of the massive theory, it ultimately decouples from physical
+  matrix elements due to current conservation. However, this decoupling does
+  not remove its mathematical role in ensuring the Lorentz covariance of the
+  field operator. Therefore, when taking the massless limit
+  <math|m\<rightarrow\>0> one cannot simply discard the longitudinal mode
+  without losing the ability to maintain manifest Lorentz covariance.
+
+  This fact manifests clearly in the propagator of a massive vector field.
+  The propagator for the Proca field takes the form:
+
+  <\equation*>
+    \<Delta\><rsub|\<mu\>\<nu\>><around*|(|x,y|)>=<around*|(|2\<pi\>|)><rsup|-4><big|int>\<mathd\><rsup|4>q
+    \<mathe\><rsup|\<mathi\>q\<cdummy\><around*|(|x-y|)>><frac|\<eta\><rsub|\<mu\>\<nu\>>+q<rsub|\<mu\>>q<rsub|\<nu\>>/m<rsup|2>|q<rsup|2>+m<rsup|2>-\<mathi\>\<varepsilon\>>,
+  </equation*>
+
+  and one immediately sees that the second term in the numerator of the
+  integrand becomes singular as <math|m\<rightarrow\>0>. This divergence is
+  not merely a technical problem; it reflects a deeper physical truth: the
+  longitudinal component required to complete the four-vector structure
+  becomes ill-defined in the massless limit. In other words, the theory does
+  not admit a smooth transition from the massive to the massless case at the
+  level of the covariant field operator.
+
+  The underlying reason for this difficulty lies in the representation theory
+  of the Poincaré group. For massive particles, the little group is
+  <math|SO<around*|(|3|)>>, and one can build covariant fields corresponding
+  to finite-dimensional irreducible representations. In contrast, for
+  massless particles, the little group is <math|ISO<around*|(|2|)>>, which
+  includes not only helicity (rotations around the direction of motion) but
+  also \Ptranslations\Q in the plane transverse to the momentum. These
+  translation-like generators do not act trivially on the polarization
+  vectors and correspond to gauge transformations in field-theoretic
+  language. As a result, any attempt to construct a covariant field from only
+  helicity eigenstates necessarily introduces gauge redundancy: the field can
+  at best transform covariantly up to a gauge transformation.
+
+  This explains why the four-potential <math|a<rsub|\<mu\>><around*|(|x|)>>,
+  though commonly used, does not transform as a true four-vector. Instead,
+  under Lorentz transformations, it picks up an additional gradient term \V a
+  manifestation of gauge freedom. This is a direct reflection of the
+  impossibility of representing helicity <math|\<pm\>1> states within a true
+  vector representation of the Lorentz group. The singularity in the
+  propagator at <math|m=0> is thus not an artifact of poor regularization or
+  bad limits, but a genuine structural signal: it tells us that the massless
+  theory must be formulated differently \V not through a Proca-like field,
+  but via gauge fields with constrained degrees of freedom, such as in
+  quantum electrodynamics.
+
+  We could avoid the complications arising from the non-covariant
+  transformation properties of the gauge potential
+  <math|A<rsup|\<mu\>><around*|(|x|)>> by imposing a strong constraint on the
+  form of the theory: namely, that all interactions should involve only the
+  field strength tensor <math|F<rsub|\<mu\>\<nu\>><around*|(|x|)>=\<partial\><rsub|\<mu\>>A<rsub|\<nu\>><around*|(|x|)>-\<partial\><rsub|\<nu\>>A<rsub|\<mu\>><around*|(|x|)>>
+  (We use <math|A<rsub|\<mu\>>> and <math|F<rsub|\<mu\>\<nu\>>>, instead of
+  <math|a<rsub|\<mu\>>> and <math|f<rsub|\<mu\>\<nu\>>>, for the
+  eletromagnetic potential vector and the field strength tensor because these
+  are interacting fields.) and its derivatives, and not
+  <math|A<rsub|\<mu\>><around*|(|x|)>> itself. Since
+  <math|F<rsub|\<mu\>\<nu\>>> is manifestly gauge invariant under the
+  transformation
+
+  <\equation>
+    A<rsub|\<mu\>><around*|(|x|)>\<rightarrow\>A<rsub|\<mu\>><around*|(|x|)>+\<partial\><rsub|\<mu\>>\<epsilon\><around*|(|x|)><label|8.1.3>
+  </equation>
+
+  a theory built entirely from <math|F<rsub|\<mu\>\<nu\>>> and its
+  derivatives would automatically be invariant under gauge transformations.
+  It would also avoid the problem that <math|A<rsub|\<mu\>><around*|(|x|)>>,
+  as discussed earlier (see Eq. <eqref|5.9.31>), transforms only up to a
+  gauge term under Lorentz transformations.
+
+  However, such a restriction would be overly rigid \V it does not describe
+  the most general class of interactions, and crucially, it is not the
+  structure realized in nature. Physical theories such as quantum
+  electrodynamics (QED) include interaction terms where
+  <math|A<rsup|\<mu\>><around*|(|x|)>> appears explicitly, as in the minimal
+  coupling term
+
+  <\equation*>
+    <wide|\<psi\>|\<bar\>><around*|(|x|)>\<gamma\><rsup|\<mu\>>A<rsub|\<mu\>><around*|(|x|)>\<psi\><around*|(|x|)>,
+  </equation*>
+
+  which cannot be written purely in terms of <math|F<rsub|\<mu\>\<nu\>>>. For
+  this reason, we do not banish <math|A<rsub|\<mu\>><around*|(|x|)>> from the
+  theory. Instead, we retain <math|A<rsub|\<mu\>><around*|(|x|)>> as a
+  dynamical variable, and impose a compensating symmetry requirement: that
+  the matter action, which includes the matter fields and their interaction
+  with the gauge field, must be invariant under general gauge transformations
+  of the form <eqref|8.1.3> at least when the matter fields obey their
+  equations of motion.
+
+  This approach ensures that the unphysical degrees of freedom associated
+  with the gauge redundancy in <math|A<rsub|\<mu\>><around*|(|x|)>> do not
+  affect physical observables, even though
+  <math|A<rsub|\<mu\>><around*|(|x|)>> itself is not gauge invariant. If we
+  allow <math|A<rsup|\<mu\>><around*|(|x|)>> to shift by
+  <math|\<partial\><rsup|\<mu\>>\<epsilon\><around*|(|x|)>>, then the
+  variation of <math|I<rsub|M>> is given formally by:
+
+  <\equation>
+    \<delta\>I<rsub|M>=<big|int>\<mathd\><rsup|4>x<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>\<delta\>A<rsub|\<mu\>><around*|(|x|)>=<big|int>\<mathd\><rsup|4>x<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>\<partial\><rsub|\<mu\>>\<epsilon\><around*|(|x|)>
+    .
+  </equation>
+
+  This expression arises from a general principle in field theory: when a
+  functional depends on a field <math|A<rsup|\<mu\>><around*|(|x|)>>, its
+  variation under a change in that field is obtained by integrating the
+  functional derivative times the variation of the field.
+
+  To proceed, we apply integration by parts to this expression, under the
+  assumption that <math|\<epsilon\><around*|(|x|)>> vanishes sufficiently
+  rapidly at infinity so that boundary terms can be neglected. This gives:
+
+  <\equation*>
+    \<delta\>I<rsub|M>=-<big|int>\<mathd\><rsup|4>x\<epsilon\><around*|(|x|)>\<partial\><rsub|\<mu\>><around*|(|<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>|)>.
+  </equation*>
+
+  For the action to be gauge invariant, i.e., for
+  <math|\<delta\>I<rsub|M>=0>, we need
+
+  <\equation>
+    \<partial\><rsub|\<mu\>><around*|(|<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>|)>=0.<label|8.1.4>
+  </equation>
+
+  This is a condition imposed not on <math|\<epsilon\><around*|(|x|)>>, which
+  is arbitrary, but on the structure of the action itself. It ensures that
+  even though <math|A<rsub|\<mu\>><around*|(|x|)>> transforms inhomogeneously
+  under gauge transformations, the matter action remains invariant. The
+  significance of this condition will become clearer shortly, once we
+  interpret <math|<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>>
+  as the source current for the gauge field.
+
+  In special cases, this condition is trivially satisfied. For example, if
+  the matter action <math|I<rsub|M>> depends only on the gauge-invariant
+  tensor <math|F<rsub|\<mu\>\<nu\>><around*|(|x|)>>, and not on
+  <math|A<rsup|\<mu\>><around*|(|x|)>> itself, then the functional derivative
+  <math|<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>> can
+  be computed explicitly using the chain rule:
+
+  <\equation*>
+    <frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>=<big|int>\<mathd\><rsup|4>y<frac|\<delta\>I<rsub|M>|\<delta\>F<rsub|\<rho\>\<sigma\>><around*|(|y|)>>\<cdummy\><frac|\<delta\>F<rsub|\<rho\>\<sigma\>><around*|(|y|)>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>.
+  </equation*>
+
+  Using <math|F<rsub|\<rho\>\<sigma\>><around*|(|y|)>=\<partial\><rsub|\<rho\>>A<rsub|\<sigma\>><around*|(|y|)>-\<partial\><rsub|\<sigma\>>A<rsub|\<rho\>><around*|(|y|)>>,
+  we vary each term with respect to <math|A<rsub|\<mu\>><around*|(|x|)>>. By
+  definition of functional differentiation,
+  <math|\<delta\>A<rsub|\<alpha\>><around*|(|y|)>/\<delta\>A<rsub|\<mu\>><around*|(|x|)>=\<delta\><rsub|\<alpha\>><rsup|\<mu\>><with|mode|text|
+  >\<delta\><rsup|4><around*|(|y-x|)>>. When a derivative acts on the field,
+  the corresponding functional derivative produces a derivative of the delta
+  function: <math|\<delta\><around*|(|\<partial\><rsub|\<rho\>>A<rsub|\<sigma\>><around*|(|y|)>|)>/\<delta\>A<rsub|\<mu\>><around*|(|x|)>=\<delta\><rsub|\<sigma\>><rsup|\<mu\>><with|mode|text|
+  >\<partial\><rsub|\<rho\>><rsup|<with|mode|text|
+  >y>\<delta\><rsup|4><around*|(|y-x|)>> and similarly
+  <math|\<delta\><around*|(|\<partial\><rsub|\<sigma\>>A<rsub|\<rho\>><around*|(|y|)>|)>/\<delta\>A<rsub|\<mu\>><around*|(|x|)>=\<delta\><rsub|\<rho\>><rsup|\<mu\>><with|mode|text|
+  >\<partial\><rsub|\<sigma\>><rsup|<with|mode|text|
+  >y>\<delta\><rsup|4><around*|(|y-x|)>>. Subtracting these gives
+
+  <\equation*>
+    <frac|\<delta\>F<rsub|\<rho\>\<sigma\>><around*|(|y|)>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>=\<delta\><rsup|\<mu\>><rsub|\<sigma\>>\<partial\><rsup|y><rsub|\<rho\>>\<delta\><rsup|4><around*|(|y-x|)>-\<delta\><rsup|\<mu\>><rsub|\<rho\>>\<partial\><rsup|y><rsub|\<sigma\>>\<delta\><rsup|4><around*|(|y-x|)>.
+  </equation*>
+
+  Substituting this back into the chain rule and collecting indices, we
+  obtain
+
+  <\equation*>
+    <frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>=<big|int>\<mathd\><rsup|4>y<around*|[|<frac|\<delta\>I<rsub|M>|\<delta\>F<rsub|\<rho\>\<mu\>><around*|(|y|)>>\<partial\><rsup|y><rsub|\<rho\>>\<delta\><rsup|4><around*|(|y-x|)>-<frac|\<delta\>I<rsub|M>|\<delta\>F<rsub|\<mu\>\<sigma\>><around*|(|y|)>>\<partial\><rsub|\<sigma\>><rsup|y>\<delta\><rsup|4><around*|(|y-x|)>|]>.
+  </equation*>
+
+  We now integrate by parts in <math|y>, moving derivatives off the delta
+  functions and onto the functional derivatives; surface terms vanish under
+  standard boundary conditions. Using <math|\<big-int\>d<rsup|4>y<with|mode|text|
+  >g<around*|(|y|)><with|mode|text| >\<partial\><rsub|\<rho\>><rsup|<with|mode|text|
+  >y>\<delta\><rsup|4><around*|(|y-x|)>=-\<partial\><rsub|\<rho\>>g<around*|(|x|)>>,
+  the two terms become
+
+  <\equation*>
+    <frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>=-\<partial\><rsub|\<rho\>><around*|(|<frac|\<delta\>I<rsub|M>|\<delta\>F<rsub|\<rho\>\<mu\>><around*|(|x|)>>|)>+\<partial\><rsub|\<sigma\>><around*|(|<frac|\<delta\>I<rsub|M>|\<delta\>F<rsub|\<mu\>\<sigma\>><around*|(|x|)>>|)>.
+  </equation*>
+
+  Because <math|F<rsub|\<mu\>\<nu\>>> is antisymmetric, the functional
+  derivative <math|\<delta\>I<rsub|M>/\<delta\>F<rsub|\<mu\>\<nu\>>> is also
+  antisymmetric: <math|\<delta\>I<rsub|M>/\<delta\>F<rsub|\<rho\>\<mu\>>=-<with|mode|text|
+  >\<delta\>I<rsub|M>/\<delta\>F<rsub|\<mu\>\<rho\>>>. Using this
+  antisymmetry to relabel indices, the two terms add to the same structure
+  and we arrive at
+
+  <equation|<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>=2\<partial\><rsub|\<nu\>><around*|(|<frac|\<delta\>I<rsub|M>|\<delta\>F<rsub|\<mu\>\<nu\>><around*|(|x|)>>|)>.<label|8.1.5>>
+
+  Thus, the functional derivative of the action with respect to
+  <math|A<rsub|\<mu\>>> is given by the divergence of a quantity. Taking
+  another divergence yields:
+
+  <\equation*>
+    \<partial\><rsub|\<mu\>><around*|(|<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>|)>=2\<partial\><rsub|\<mu\>>\<partial\><rsub|\<nu\>><around*|(|<frac|\<delta\>I<rsub|M>|\<delta\>F<rsub|\<mu\>\<nu\>><around*|(|x|)>>|)>=0.
+  </equation*>
+
+  Therefore, if <math|I<rsub|M>> depends only on <math|F<rsub|\<mu\>\<nu\>>>,
+  the condition in Eq. <eqref|8.1.4> is satisfied automatically \U gauge
+  invariance is guaranteed by construction. Moreover, Eq. <eqref|8.1.5> is
+  also true when <math|I<rsub|M>> depends only on <math|F<rsub|\<mu\>\<nu\>>>
+  and its derivatives. But we omit the calculations.
+
+  However, if <math|I<rsub|M>> involves <math|A<rsup|\<mu\>><around*|(|x|)>>
+  itself, the expression <math|<frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>>
+  will generally not be a total derivative, and hence the vanishing of its
+  divergence becomes a non-trivial constraint. In such theories, gauge
+  invariance imposes a dynamical condition on the form of the interaction
+  between matter and gauge fields \V one that is often interpreted (in later
+  steps) as the conservation of a physical current.
+
+  The question is what sort of matter theory provides conserved currents
+  suitable for coupling to a vector field
+  <math|A<rsub|\<mu\>><around*|(|x|)>>. As established earlier, infinitesimal
+  internal symmetries of the matter action <math|I<rsub|M>> yield conserved
+  currents by Noether's theorem.\ 
+
   \;
+
+  Let <math|\<Psi\><rsup|\<ell\>><around*|(|x|)>> be the matter fields
+  carrying a real-valued charge <math|q<rsub|\<ell\>>> under a global
+  <math|U<around*|(|1|)>> internal symmetry. An infinitesimal symmetry
+  transformation is written:
+
+  <\equation>
+    \<delta\>\<Psi\><rsub|\<ell\>><around|(|x|)>=\<mathi\>\<epsilon\><around|(|x|)>q<rsub|\<ell\>>\<Psi\><rsub|\<ell\>><around|(|x|)>.<label|8.1.6><space|1em><text|(no
+    summation over <math|\<ell\>>)>
+  </equation>
+
+  This transformation corresponds to a local phase rotation of the field
+  <math|\<Psi\><rsub|\<ell\>><around*|(|x|)>>, weighted by its charge
+  <math|q<rsub|\<ell\>>>.
+
+  However, suppose we consider only the case where
+  <math|\<epsilon\><around*|(|x|)>> is constant. In that case, we say the
+  symmetry is global, and we assume that this constant transformation leaves
+  the matter action <math|I<rsub|M>> invariant. This invariance under global
+  transformations is sufficient to imply, via Noether's theorem, the
+  existence of a conserved current.
+
+  To extract the form of that current, we allow
+  <math|\<epsilon\><around*|(|x|)>> to vary in spacetime \V i.e., we
+  \Plocalize\Q the symmetry \V and examine how the matter action responds.
+  Since the transformation <eqref|8.1.6> depends on
+  <math|\<epsilon\><around*|(|x|)>>, its spacetime variation introduces
+  derivatives of <math|\<epsilon\><around*|(|x|)>> into the variation of the
+  action. Specifically, the change in the matter action takes the general
+  form
+
+  <equation|\<delta\>I<rsub|M>=-<big|int>\<mathd\><rsup|4>x<with|mode|text|
+  >J<rsup|\<mu\>><around*|(|x|)>\<partial\><rsub|\<mu\>>\<epsilon\><around*|(|x|)>,<label|8.1.7>>
+
+  for some vector function <math|J<rsup|\<mu\>><around*|(|x|)>> constructed
+  from the matter fields and their derivatives. This is the Noether current
+  associated with the internal <math|U<around*|(|1|)>> symmetry. The minus
+  sign and the derivative of <math|\<epsilon\>> follow from integrating by
+  parts during the variation process.
+
+  Now, if we evaluate this variation on shell \V meaning we assume the matter
+  fields satisfy their classical equations of motion \V then the action must
+  be stationary under such variations. Since
+  <math|\<epsilon\><around*|(|x|)>> is arbitrary and smooth, the only way the
+  integral can vanish for all such <math|\<epsilon\><around*|(|x|)>> is if
+  the integrand vanishes:
+
+  <\equation>
+    \<partial\><rsub|\<mu\>>J<rsup|\<mu\>><around*|(|x|)>=0.<label|8.1.8>
+  </equation>
+
+  This is the local conservation law for the current <math|J<rsup|\<mu\>>>,
+  valid when the matter field equations are satisfied.
+
+  In Section <reference|Sec:7.3>, we see how this conserved current arises in
+  practice: if the matter Lagrangian is a function of the fields and their
+  first derivatives \V that is, if <math|I<rsub|M>=\<big-int\>\<mathd\><rsup|4>x<with|mode|text|
+  ><with|font|cal*|L><rsub|M><around*|(|\<Psi\><rsup|\<ell\>>,\<partial\><rsub|\<mu\>>\<Psi\><rsup|\<ell\>>|)>>
+  \V then the current <math|J<rsup|\<mu\>><around*|(|x|)>> can be explicitly
+  constructed by Noether's procedure. The result is a local function of the
+  fields and their derivatives:
+
+  <\equation*>
+    J<rsup|\<mu\>>=-\<mathi\><big|sum><rsub|\<ell\>><frac|\<partial\><with|font|cal*|L><rsub|M>|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<Psi\><rsup|\<ell\>>|)>>q<rsub|\<ell\>>\<Psi\><rsup|\<ell\>>,
+  </equation*>
+
+  and this generates the transformations <eqref|8.1.6> in the sense that
+
+  <\equation>
+    <around*|[|Q,\<Psi\><rsup|\<ell\>><around*|(|x|)>|]>=-q<rsub|\<ell\>>\<Psi\><rsup|\<ell\>><around*|(|x|)>,<label|8.1.9>
+  </equation>
+
+  where <math|Q> is the time-independent charge operator
+
+  <\equation>
+    Q=<big|int>\<mathd\><rsup|3>x J<rsup|0>.<label|8.1.10>
+  </equation>
+
+  This setup now provides a natural and physically meaningful way to
+  introduce interactions with a vector field
+  <math|A<rsub|\<mu\>><around*|(|x|)>>. Since we have a conserved current
+  <math|J<rsup|\<mu\>><around*|(|x|)>>, the simplest Lorentz-invariant and
+  gauge-compatible interaction is to couple the field
+  <math|A<rsub|\<mu\>><around*|(|x|)>> directly to the current. This could be
+  expressed this by identifying the functional derivative of the
+  matter-plus-interaction action with respect to
+  <math|A<rsub|\<mu\>><around*|(|x|)>> as the current:
+
+  <\equation>
+    <frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>><around*|(|x|)>>=J<rsup|\<mu\>><around*|(|x|)>.<label|8.1.11>
+  </equation>
+
+  \;
+
+  The conservation of electric charge only allows us to determine the
+  relative values of the charges assigned to different fields\Vit tells us
+  that the ratios between these charges must remain fixed. However, it does
+  not by itself determine the absolute normalization of the charges. For
+  example, if we know that one field has twice the charge of another, we
+  still need to specify what that \Punit\Q charge is. Conventionally, we
+  define the elementary unit of electric charge, denoted <math|e>, by
+  assigning the value <math|-e> to the electron. All other electric charges
+  in the theory are then measured relative to this fundamental scale.
+  Importantly, it is equation <eqref|8.1.11>, that gives a precise
+  operational meaning to the value of <math|e>: it tells us how the current
+  couples to the gauge field and therefore determines the physical strength
+  of the electromagnetic interaction. Without such a coupling term, the
+  notion of charge would remain abstract\Vpurely a symmetry label without
+  physical consequences.
+
+  This requirement\Vthat the matter action couples to the vector potential
+  via the current\Vis more than just a convenient prescription; it can be
+  restated as a fundamental invariance principle. Specifically, the action is
+  required to be invariant under simultaneous local transformations of both
+  the gauge field and the matter fields. The transformation of the gauge
+  field is given by
+
+  <\equation>
+    \<delta\>A<rsub|\<mu\>><around*|(|x|)>=\<partial\><rsub|\<mu\>>\<epsilon\><around*|(|x|)>,<label|8.1.12>
+  </equation>
+
+  and the matter fields transform as
+
+  <\equation>
+    \<delta\>\<Psi\><rsub|\<ell\>><around*|(|x|)>=\<mathi\>\<epsilon\><around*|(|x|)>q<rsub|\<ell\>>\<Psi\><rsub|\<ell\>><around*|(|x|)>.<label|8.1.13>
+  </equation>
+
+  where <math|\<epsilon\><around*|(|x|)>> is an arbitrary real function on
+  spacetime, and <math|q<rsub|\<ell\>>> is the charge associated with the
+  field <math|\<Psi\><rsub|\<ell\>>>. A symmetry of this kind\Vwhere the
+  transformation parameter is a spacetime function rather than a constant\Vis
+  referred to as a local symmetry, or more precisely, a gauge invariance of
+  the second kind. In contrast, the more familiar case of a transformation
+  with constant <math|\<epsilon\>>\<epsilon\> is called a global symmetry, or
+  a gauge invariance of the first kind.
+
+  Exact local symmetries\Vlike the <math|U<around*|(|1|)>> symmetry of
+  electromagnetism\Vare now known to be fundamental to our best theories of
+  nature. They play an essential role in formulating interactions between
+  fields and are preserved at both the classical and quantum levels. On the
+  other hand, purely global symmetries seem not to be fundamental. They are
+  now often interpreted as accidental consequences of local symmetries and
+  other structural constraints in the theory. Further discussion of this
+  perspective is in Section <reference|Sec:12.5>.
+
+  Up to this point, the discussion has focused on the interaction of matter
+  fields with the gauge field. But to fully specify the dynamics of the
+  system, we must also provide an action for the gauge field itself\Vthat is,
+  for the photon. A natural guess is to use the same form as the action for a
+  massive vector field, but now with the mass set to zero. This leads to the
+  classical electromagnetic action:
+
+  <equation|I<rsub|\<gamma\>>=-<frac|1|4>\<big-int\>\<mathd\><rsup|4>x<with|mode|text|
+  >F<rsub|\<mu\>\<nu\>><around*|(|x|)>F<rsup|\<mu\>\<nu\>><around*|(|x|)>,<label|8.1.14>>
+
+  where <math|F<rsub|\<mu\>\<nu\>>=\<partial\><rsub|\<mu\>>A<rsub|\<nu\>>-\<partial\><rsub|\<nu\>>A<rsub|\<mu\>>>
+  is the antisymmetric field strength tensor. Although this is the same as
+  the Lagrangian used in classical electrodynamics, its real justification
+  comes from quantum field theory: it is, up to a multiplicative constant,
+  the unique Lorentz-invariant and gauge-invariant action that is quadratic
+  in <math|F<rsub|\<mu\>\<nu\>>> and involves no higher derivatives. This
+  minimality ensures both the correct degrees of freedom for a massless
+  spin-1 field and a well-behaved quantum theory. Any other gauge-invariant
+  contributions involving higher-order terms in <math|F<rsub|\<mu\>\<nu\>>>,
+  or additional derivatives, are typically suppressed and treated as
+  effective corrections that can be absorbed into the matter sector of the
+  theory.
+
+  Given the interaction rule (8.1.11) and the free action (8.1.14), we can
+  now derive the field equations for the electromagnetic field by varying the
+  total action with respect to <math|A<rsub|\<mu\>><around*|(|x|)>>. This
+  yields:
+
+  <\equation>
+    0=<frac|\<delta\>|\<delta\>A<rsub|\<nu\>>><around*|[|I<rsub|\<gamma\>>+I<rsub|M>|]>=\<partial\><rsub|\<mu\>>F<rsup|\<mu\>\<nu\>>+J<rsup|\<nu\>>,
+  </equation>
+
+  which are immediately recognized as the inhomogeneous Maxwell equations,
+  where the current <math|J<rsup|\<mu\>><around*|(|x|)>> acts as the source
+  of the electromagnetic field. These equations encapsulate Gauss's law and
+  Ampère's law (with Maxwell's correction) in covariant form.
+
+  In addition to the inhomogeneous Maxwell equations, there are also
+  homogeneous equations that follow directly from the definition of the field
+  strength tensor <math|F<rsub|\<mu\>\<nu\>>>. Specifically, the identity
+
+  <\equation>
+    \<partial\><rsub|\<lambda\>>F<rsub|\<mu\>\<nu\>>+\<partial\><rsub|\<mu\>>F<rsub|\<nu\>\<lambda\>>+\<partial\><rsub|\<nu\>>F<rsub|\<lambda\>\<mu\>>=0
+  </equation>
+
+  not dynamical equations but rather geometric constraints, often referred to
+  as the Bianchi identities. In terms of physical content, they express the
+  absence of magnetic monopoles and encode Faraday's law of induction.
+
+  This framework, built on local gauge invariance, not only reproduces
+  Maxwell's equations as field equations derived from a variational principle
+  but also underpins the full quantum theory of electrodynamics. It makes
+  precise the meaning of electric charge, determines the allowed forms of
+  interactions, and provides a consistent and predictive theory of massless
+  spin-1 fields.
+
+  In the above discussion, we began by postulating the existence of massless
+  spin-one particles, and from this starting point, we were led to infer that
+  the matter action must be invariant under local gauge transformations \V
+  specifically those given by equations <eqref|8.1.12> and <eqref|8.1.13>:
+
+  In this formulation, gauge invariance is a derived consequence \V we infer
+  the structure of local symmetry transformations from the requirement that a
+  massless spin-one field be consistently coupled to a conserved current,
+  while preserving Lorentz invariance and locality. But this logical flow is
+  in fact the reverse of how gauge theory is traditionally presented.
+
+  Ordinarily, one begins not with a massless vector field but with a global
+  internal symmetry of the matter fields. For instance, we may suppose the
+  action is invariant under the transformation:
+
+  <\equation>
+    \<delta\>\<Psi\><rsup|\<ell\>><around*|(|x|)>=\<mathi\>\<epsilon\>q<rsub|\<ell\>>\<Psi\><rsup|\<ell\>><around*|(|x|)><label|8.1.17>
+  </equation>
+
+  where <math|\<epsilon\>> is a real constant. The key question then becomes:
+  how can this symmetry be generalized to allow <math|\<epsilon\>> to depend
+  on spacetime position? That is, what must be done to promote this to a
+  local symmetry:
+
+  <equation|\<delta\>\<Psi\><rsup|\<ell\>><around*|(|x|)>=\<mathi\>\<epsilon\><around*|(|x|)>q<rsub|\<ell\>>\<Psi\><rsup|\<ell\>><around*|(|x|)>.<label|8.1.18>>
+
+  with <math|\<epsilon\><around*|(|x|)>> now an arbitrary smooth function?
+
+  If the matter Lagrangian depended only on the fields
+  <math|\<Psi\><rsup|\<ell\>><around*|(|x|)>>, and not on their derivatives,
+  then it would make no difference whether <math|\<epsilon\>> is constant or
+  a function of <math|x>. In such a purely algebraic theory, invariance under
+  global symmetry would automatically imply invariance under local symmetry.
+  However, realistic field theories always involve derivatives of the fields
+  \V kinetic terms, in particular, are essential both classically and quantum
+  mechanically. And it is in the presence of these derivatives that a problem
+  arises.
+
+  The issue is that derivatives of the fields do not transform in the same
+  way as the fields themselves under a local transformation. Explicitly, we
+  compute:
+
+  <\equation>
+    \<delta\>\<partial\><rsub|\<mu\>>\<Psi\><rsup|\<ell\>><around*|(|x|)>=\<mathi\>\<epsilon\><around*|(|x|)>q<rsub|\<ell\>>\<partial\><rsub|\<mu\>>\<Psi\><rsup|\<ell\>><around*|(|x|)>+\<mathi\>q<rsub|\<ell\>>\<Psi\><rsup|\<ell\>><around*|(|x|)>\<partial\><rsub|\<mu\>>\<epsilon\><around*|(|x|)>.<label|8.1.19>
+  </equation>
+
+  So that <math|\<partial\><rsub|\<mu\>>\<Psi\>> picks up an extra term
+  proportional to <math|\<partial\><rsub|\<mu\>>\<epsilon\><around*|(|x|)>>.
+  This spoils the transformation property needed for local invariance. In a
+  Lagrangian that includes <math|\<partial\><rsub|\<mu\>>\<Psi\>>, this
+  additional term ensures that the action is no longer invariant under local
+  phase rotations, even though it may be invariant under global ones.
+
+  To restore invariance, we introduce a new field
+  <math|A<rsub|\<mu\>><around*|(|x|)>>, which transforms in a way that
+  cancels out the unwanted inhomogeneous term. Specifically, we define:
+
+  <\equation>
+    \<delta\>A<rsub|\<mu\>><around*|(|x|)>=\<partial\><rsub|\<mu\>>\<epsilon\><around*|(|x|)>,<label|8.1.20>
+  </equation>
+
+  and construct the covariant derivative:
+
+  <\equation>
+    D<rsub|\<mu\>>\<Psi\><rsup|\<ell\>>\<equiv\>\<partial\><rsub|\<mu\>>\<Psi\><rsup|\<ell\>>-\<mathi\>q<rsub|\<ell\>>A<rsub|\<mu\>>\<Psi\><rsup|\<ell\>>,
+  </equation>
+
+  which is designed so that under the local transformation <eqref|8.1.18> and
+  <eqref|8.1.20>, we have:
+
+  <\equation>
+    \<delta\>D<rsub|\<mu\>>\<Psi\><rsup|\<ell\>><around*|(|x|)>=\<mathi\>\<epsilon\><around*|(|x|)>q<rsub|\<ell\>>D<rsub|\<mu\>>\<Psi\><rsup|\<ell\>><around*|(|x|)>,<label|8.1.22>
+  </equation>
+
+  exactly matching the transformation law of <math|\<Psi\><rsup|\<ell\>>>
+  itself. The significance of this construction is that any Lagrangian formed
+  solely out of <math|\<Psi\>>, its covariant derivatives
+  <math|D<rsub|\<mu\>>\<Psi\>>, and their conjugates will now be invariant
+  under the local symmetry, provided that it was invariant under the global
+  version.
+
+  A matter Lagrangian density <math|<with|font|cal*|L><rsub|M><around*|(|\<Psi\>,D<rsub|\<mu\>>\<Psi\>|)>>
+  will be invariant under local transformations <eqref|8.1.18> and
+  <eqref|8.1.20>, with <math|\<epsilon\><around*|(|x|)>> an arbitrary
+  function, if it is invariant when <math|\<epsilon\><around*|(|x|)>> is a
+  constant function on the spacetime. We Lagrangian of this form, we have
+
+  <\equation>
+    <frac|\<delta\>I<rsub|M>|\<delta\>A<rsub|\<mu\>>>=<big|sum><rsub|\<ell\>><frac|\<partial\><with|font|cal*|L><rsub|M>|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<Psi\><rsup|\<ell\>>|)>><around*|(|-\<mathi\>q<rsub|\<ell\>>\<Psi\><rsup|\<ell\>>|)>=-\<mathi\><big|sum><rsub|\<ell\>><frac|\<partial\><with|font|cal*|L><rsub|M>|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<Psi\><rsup|\<ell\>>|)>>q<rsub|\<ell\>>\<Psi\><rsup|\<ell\>>,
+  </equation>
+
+  which is the same as Eq. <eqref|8.1.11>. (More generally, one could also
+  include terms involving the field strength <math|F<rsub|\<mu\>\<nu\>>> and
+  its derivatives in the matter Lagrangian, in which case such terms would
+  contribute to <math|J<rsup|\<mu\>>> as well.) Viewed from this perspective,
+  the masslessness of the field <math|A<rsup|\<mu\>>> is not an independent
+  postulate, but rather a direct consequence of gauge invariance. Any attempt
+  to add a mass term of the form <math|-<frac|1|2>m<rsup|2>A<rsup|\<mu\>>A<rsub|\<mu\>>>
+  to the Lagrangian would explicitly break the gauge symmetry, and is
+  therefore forbidden if local gauge invariance is to be maintained.
+
+  <with|color|dark cyan|<section|Constraints and Gauge
+  Conditions><label|Sec:8.2>>
+
+  There are aspects of electrodynamics that obstruct a straightforward
+  canonical quantization of the electromagnetic field in the same way we
+  quantized theories of massive particles in the previous chapter. As usual,
+  we begin by defining the canonical momenta conjugate to the vector
+  potential <math|A<rsub|\<mu\>>>. For the Maxwell\Umatter Lagrangian
+
+  <equation*|<with|font|cal*|L>=-<with|math-display|false|math-level|0|<frac|1|4>>F<rsub|\<mu\>\<nu\>>F<rsup|\<mu\>\<nu\>>+<with|font|cal*|L><rsub|M><around*|(|<with|mode|text|matter<nbsp>fields>,<with|mode|text|
+  >D<rsub|\<mu\>>|)>,F<rsub|\<mu\>\<nu\>>=\<partial\><rsub|\<mu\>>A<rsub|\<nu\>>-\<partial\><rsub|\<nu\>>A<rsub|\<mu\>>,>
+
+  the canonical momentum conjugate to <math|A<rsub|\<mu\>>> is
+
+  <\equation>
+    \<Pi\><rsup|\<mu\>>\<equiv\><frac|\<partial\><with|font|cal*|L>|\<partial\><around*|(|\<partial\><rsub|0>A<rsub|\<mu\>>|)>>.<label|8.2.1>
+  </equation>
+
+  With no constraints, the \Pusual rules\Q would then impose the equal-time
+  canonical commutators
+
+  <\equation*>
+    <around*|[|A<rsub|\<mu\>><around*|(|\<b-up-x\>,t|)>,\<Pi\><rsup|\<nu\>><around*|(|\<b-up-y\>,t|)>|]>=\<mathi\>\<delta\><rsup|\<nu\>><rsub|\<mu\>>\<delta\><rsup|3><around*|(|\<b-up-x\>-\<b-up-y\>|)>.
+  </equation*>
+
+  However this is not possible here, because <math|A<rsub|\<mu\>>> and
+  <math|\<Pi\><rsup|\<nu\>>> are subject to several constraints. The first
+  (primary) constraint is immediate: the Lagrangian density contains no time
+  derivative of <math|A<rsub|0>>, so
+
+  <\equation>
+    \<Pi\><rsup|0><around*|(|x|)>=0.<label|8.2.2>
+  </equation>
+
+  This is \Pprimary constraint\Q in Dirac's sense: it follows directly from
+  the definition of canonical momenta. Demanding that a primary constraint be
+  preserved in time produces an additional (secondary) constraint. The
+  Euler\ULagrange equation obtained by varying the action with respect to
+  <math|A<rsub|0>> reads
+
+  <\equation>
+    <label|8.2.3>\<partial\><rsub|i>\<Pi\><rsup|i>=-\<partial\><rsub|i><frac|\<partial\><with|font|cal*|L>|\<partial\>F<rsub|i0>>=-<frac|\<partial\><with|font|cal*|L>|\<partial\>A<rsub|0>>=-J<rsup|0>,
+  </equation>
+
+  \;
+
+  \;
+
+  Even though the matter Lagrangian may contain <math|A<rsub|0>> explicitly,
+  the charge density <math|J<rsup|0><around*|(|x|)>> is a functional only of
+  the canonical matter variables <math|Q<rsub|n><around*|(|x|)>> and their
+  conjugate momenta <math|P<rsub|n><around*|(|x|)>>; schematically,
+
+  <\equation>
+    J<rsup|0>=-\<mathi\><big|sum><rsub|\<ell\>><frac|\<partial\><with|font|cal*|L>|\<partial\><around*|(|\<partial\><rsub|0>\<Psi\><rsup|\<ell\>>|)>>q<rsub|\<ell\>>\<Psi\><rsup|\<ell\>>=-\<mathi\><big|sum><rsub|n>P<rsub|n>q<rsub|n>Q<rsup|n>.
+  </equation>
+
+  Hence <eqref|8.2.3> is a genuine functional relation among canonical
+  variables, not an equation involving time derivatives that could be used to
+  evolve data. The pair of constraints <eqref|8.2.2> and <eqref|8.2.3> is
+  incompatible with the naive equal-time structure
+  <math|<around*|[|A<rsub|\<mu\>><around*|(|\<b-up-x\>,t|)>,\<Pi\><rsup|\<nu\>><around*|(|\<b-up-y\>,t|)>|]>=i\<delta\><rsub|\<mu\>><rsup|<with|mode|text|<nbsp>>\<nu\>>\<delta\><rsup|3><around*|(|\<b-up-x\>-\<b-up-y\>|)>>
+  and <math|<around*|[|P<rsub|n><around*|(|\<b-up-x\>,t|)>,\<Pi\><rsup|\<nu\>><around*|(|\<b-up-y\>,t|)>|]>>.
+  In particular, if <math|\<Pi\><rsup|0>=0> as an operator constraint, we
+  cannot at the same time have <math|<around*|[|A<rsub|0><around*|(|<with|math-font-series|bold|x>|)>,\<Pi\><rsup|0><around*|(|<with|math-font-series|bold|y>|)>|]>=i\<delta\><rsup|3><around*|(|<with|math-font-series|bold|x>-<with|math-font-series|bold|y>|)>>;
+  and if Gauss's law <math|\<partial\><rsub|i>\<Pi\><rsup|i>+J<rsup|0>=0>
+  holds as an operator identity, the longitudinal part of
+  <math|\<Pi\><rsup|i>> is not an independent degree of freedom and cannot
+  satisfy free canonical commutators with the longitudinal part of
+  <math|A<rsub|i>>.
+
+  We saw a very similar obstruction already in the theory of a massive vector
+  field (the Proca field). There, too, the naive canonical quantization rules
+  were inconsistent because not all components of the vector potential
+  <math|A<rsub|\<mu\>>> were independent dynamical variables. In the massive
+  case, we found two equivalent strategies to resolve this: either to use
+  Dirac brackets, or more directly, to treat only the spatial components
+  <math|A<rsub|i>> and their conjugate momenta <math|\<pi\><rsup|i>>\<pi\>i
+  as independent canonical variables, and then use the analog of Gauss's law
+  to solve for <math|A<rsub|0>> in terms of these. In that case, the
+  constraint was
 
   \;
 </body>
@@ -1787,68 +2444,126 @@
 
 <\references>
   <\collection>
-    <associate|2.2.10|<tuple|1.2.10|9>>
-    <associate|2.2.11|<tuple|1.2.11|9>>
-    <associate|2.2.14|<tuple|1.2.14|10>>
-    <associate|2.2.15|<tuple|1.2.15|10>>
-    <associate|2.2.16|<tuple|1.2.16|10>>
-    <associate|2.2.18|<tuple|1.2.18|10>>
-    <associate|2.2.19|<tuple|1.2.19|10>>
-    <associate|2.2.20|<tuple|1.2.20|10>>
-    <associate|2.2.21|<tuple|1.2.21|10>>
-    <associate|2.2.22|<tuple|1.2.22|11>>
-    <associate|2.2.23|<tuple|1.2.23|11>>
-    <associate|2.2.24|<tuple|1.2.24|11>>
-    <associate|2.2.26|<tuple|1.2.26|11>>
-    <associate|2.2.6|<tuple|1.2.6|9>>
-    <associate|2.3.10|<tuple|1.3.10|12>>
-    <associate|2.3.11|<tuple|1.3.11|12>>
-    <associate|2.3.13|<tuple|1.3.13|13>>
-    <associate|2.3.2|<tuple|1.3.2|11>>
-    <associate|2.3.4|<tuple|1.3.4|12>>
-    <associate|2.3.5|<tuple|1.3.5|12>>
-    <associate|2.3.6|<tuple|1.3.6|12>>
-    <associate|2.3.7|<tuple|1.3.7|12>>
-    <associate|2.3.8|<tuple|1.3.8|12>>
-    <associate|2.3.9|<tuple|1.3.9|12>>
-    <associate|2.4.1|<tuple|1.4.1|13>>
-    <associate|2.4.12|<tuple|1.4.12|15>>
-    <associate|2.4.13|<tuple|1.4.13|15>>
-    <associate|2.4.14|<tuple|1.4.14|15>>
-    <associate|2.4.15|<tuple|1.4.15|?>>
-    <associate|2.4.17|<tuple|1.4.17|?>>
-    <associate|2.4.18|<tuple|1.4.18|15>>
-    <associate|2.4.22|<tuple|1.4.22|?>>
-    <associate|2.4.24|<tuple|1.4.24|15>>
-    <associate|2.4.26|<tuple|1.4.26|15>>
-    <associate|2.4.3|<tuple|1.4.3|14>>
-    <associate|2.4.8|<tuple|1.4.8|14>>
-    <associate|2.4.9|<tuple|1.4.9|14>>
-    <associate|2.5.1|<tuple|1.5.1|16>>
-    <associate|2.5.10|<tuple|1.5.10|18>>
-    <associate|2.5.11|<tuple|1.5.11|18>>
-    <associate|2.5.12|<tuple|1.5.12|18>>
-    <associate|2.5.3|<tuple|1.5.3|17>>
-    <associate|2.5.5|<tuple|1.5.5|17>>
-    <associate|2.5.6|<tuple|1.5.6|17>>
-    <associate|2.5.7|<tuple|1.5.7|17>>
-    <associate|2.5.8|<tuple|1.5.8|17>>
-    <associate|Chap:2|<tuple|1|7>>
-    <associate|Sec:2.1|<tuple|1.1|7>>
-    <associate|Sec:2.2|<tuple|1.2|8>>
-    <associate|Sec:2.3|<tuple|1.3|11>>
-    <associate|Sec:2.4|<tuple|1.4|13>>
-    <associate|Sec:2.5|<tuple|1.5|16>>
-    <associate|Tab:2.1|<tuple|1.5.1|18>>
-    <associate|auto-1|<tuple|1|7>>
-    <associate|auto-2|<tuple|1.1|7>>
-    <associate|auto-3|<tuple|1.2|8>>
-    <associate|auto-4|<tuple|1.3|11>>
-    <associate|auto-5|<tuple|1.4|13>>
-    <associate|auto-6|<tuple|1.5|16>>
-    <associate|auto-7|<tuple|1.5.1|18>>
-    <associate|auto-8|<tuple|1.5.1|20>>
-    <associate|auto-9|<tuple|1.5.2|?>>
+    <associate|2.2.10|<tuple|1.2.10|7>>
+    <associate|2.2.11|<tuple|1.2.11|7>>
+    <associate|2.2.14|<tuple|1.2.14|7>>
+    <associate|2.2.15|<tuple|1.2.15|8>>
+    <associate|2.2.16|<tuple|1.2.16|8>>
+    <associate|2.2.18|<tuple|1.2.18|8>>
+    <associate|2.2.19|<tuple|1.2.19|8>>
+    <associate|2.2.20|<tuple|1.2.20|8>>
+    <associate|2.2.21|<tuple|1.2.21|8>>
+    <associate|2.2.22|<tuple|1.2.22|8>>
+    <associate|2.2.23|<tuple|1.2.23|8>>
+    <associate|2.2.24|<tuple|1.2.24|9>>
+    <associate|2.2.26|<tuple|1.2.26|9>>
+    <associate|2.2.6|<tuple|1.2.6|6>>
+    <associate|2.3.10|<tuple|1.3.10|10>>
+    <associate|2.3.11|<tuple|1.3.11|10>>
+    <associate|2.3.13|<tuple|1.3.13|10>>
+    <associate|2.3.2|<tuple|1.3.2|9>>
+    <associate|2.3.4|<tuple|1.3.4|10>>
+    <associate|2.3.5|<tuple|1.3.5|10>>
+    <associate|2.3.6|<tuple|1.3.6|10>>
+    <associate|2.3.7|<tuple|1.3.7|10>>
+    <associate|2.3.8|<tuple|1.3.8|10>>
+    <associate|2.3.9|<tuple|1.3.9|10>>
+    <associate|2.4.1|<tuple|1.4.1|11>>
+    <associate|2.4.12|<tuple|1.4.12|13>>
+    <associate|2.4.13|<tuple|1.4.13|13>>
+    <associate|2.4.14|<tuple|1.4.14|13>>
+    <associate|2.4.15|<tuple|1.4.15|13>>
+    <associate|2.4.17|<tuple|1.4.17|13>>
+    <associate|2.4.18|<tuple|1.4.18|13>>
+    <associate|2.4.22|<tuple|1.4.22|13>>
+    <associate|2.4.24|<tuple|1.4.24|13>>
+    <associate|2.4.26|<tuple|1.4.26|13>>
+    <associate|2.4.3|<tuple|1.4.3|12>>
+    <associate|2.4.8|<tuple|1.4.8|12>>
+    <associate|2.4.9|<tuple|1.4.9|12>>
+    <associate|2.5.1|<tuple|1.5.1|14>>
+    <associate|2.5.10|<tuple|1.5.10|16>>
+    <associate|2.5.11|<tuple|1.5.11|16>>
+    <associate|2.5.12|<tuple|1.5.12|16>>
+    <associate|2.5.3|<tuple|1.5.3|15>>
+    <associate|2.5.5|<tuple|1.5.5|15>>
+    <associate|2.5.6|<tuple|1.5.6|15>>
+    <associate|2.5.7|<tuple|1.5.7|15>>
+    <associate|2.5.8|<tuple|1.5.8|15>>
+    <associate|8.1.10|<tuple|2.1.10|?>>
+    <associate|8.1.11|<tuple|2.1.11|?>>
+    <associate|8.1.12|<tuple|2.1.12|?>>
+    <associate|8.1.13|<tuple|2.1.13|?>>
+    <associate|8.1.14|<tuple|2.1.14|?>>
+    <associate|8.1.17|<tuple|2.1.17|?>>
+    <associate|8.1.18|<tuple|2.1.18|?>>
+    <associate|8.1.19|<tuple|2.1.19|?>>
+    <associate|8.1.2|<tuple|2.1.1|23>>
+    <associate|8.1.20|<tuple|2.1.20|?>>
+    <associate|8.1.22|<tuple|2.1.22|?>>
+    <associate|8.1.3|<tuple|2.1.2|24>>
+    <associate|8.1.4|<tuple|2.1.4|25>>
+    <associate|8.1.5|<tuple|2.1.5|25>>
+    <associate|8.1.6|<tuple|2.1.6|?>>
+    <associate|8.1.7|<tuple|2.1.7|?>>
+    <associate|8.1.8|<tuple|2.1.8|?>>
+    <associate|8.1.9|<tuple|2.1.9|?>>
+    <associate|8.2.1|<tuple|2.2.1|?>>
+    <associate|8.2.2|<tuple|2.2.2|?>>
+    <associate|8.2.3|<tuple|2.2.3|?>>
+    <associate|Chap:2|<tuple|1|5>>
+    <associate|Chap:8|<tuple|2|23>>
+    <associate|Sec:2.1|<tuple|1.1|5>>
+    <associate|Sec:2.2|<tuple|1.2|6>>
+    <associate|Sec:2.3|<tuple|1.3|9>>
+    <associate|Sec:2.4|<tuple|1.4|11>>
+    <associate|Sec:2.5|<tuple|1.5|14>>
+    <associate|Sec:8.1|<tuple|2.1|23>>
+    <associate|Sec:8.2|<tuple|2.2|?>>
+    <associate|Tab:2.1|<tuple|1.5.1|16>>
+    <associate|auto-1|<tuple|1|5>>
+    <associate|auto-10|<tuple|2|23>>
+    <associate|auto-11|<tuple|2.1|23>>
+    <associate|auto-12|<tuple|2.2|27>>
+    <associate|auto-13|<tuple|2.2|?>>
+    <associate|auto-2|<tuple|1.1|5>>
+    <associate|auto-3|<tuple|1.2|6>>
+    <associate|auto-4|<tuple|1.3|9>>
+    <associate|auto-5|<tuple|1.4|11>>
+    <associate|auto-6|<tuple|1.5|14>>
+    <associate|auto-7|<tuple|1.5.1|16>>
+    <associate|auto-8|<tuple|1.5.1|18>>
+    <associate|auto-9|<tuple|1.5.2|19>>
+    <associate|eq:8.1.1|<tuple|2.1.1|23>>
+    <associate|eq:8.1.10|<tuple|2.1.22|26>>
+    <associate|eq:8.1.11|<tuple|2.1.23|26>>
+    <associate|eq:8.1.12|<tuple|2.1.24|26>>
+    <associate|eq:8.1.13|<tuple|2.1.25|26>>
+    <associate|eq:8.1.14|<tuple|2.1.26|26>>
+    <associate|eq:8.1.15|<tuple|2.1.27|26>>
+    <associate|eq:8.1.16|<tuple|2.1.28|26>>
+    <associate|eq:8.1.17|<tuple|2.1.29|26>>
+    <associate|eq:8.1.18|<tuple|2.1.30|26>>
+    <associate|eq:8.1.19|<tuple|2.1.31|27>>
+    <associate|eq:8.1.2|<tuple|2.1.6|?>>
+    <associate|eq:8.1.20|<tuple|2.1.32|27>>
+    <associate|eq:8.1.21|<tuple|2.1.33|27>>
+    <associate|eq:8.1.3|<tuple|2.1.7|?>>
+    <associate|eq:8.1.4|<tuple|2.1.8|?>>
+    <associate|eq:8.1.5|<tuple|2.1.9|?>>
+    <associate|eq:8.1.6|<tuple|2.1.18|26>>
+    <associate|eq:8.1.7|<tuple|2.1.19|26>>
+    <associate|eq:8.1.8|<tuple|2.1.20|26>>
+    <associate|eq:8.1.9|<tuple|2.1.21|26>>
+    <associate|eq:8.2.1|<tuple|2.2.1|27>>
+    <associate|eq:8.2.2|<tuple|2.2.2|27>>
+    <associate|eq:8.2.3|<tuple|2.2.3|27>>
+    <associate|eq:8.2.4|<tuple|2.2.4|27>>
+    <associate|eq:8.2.5|<tuple|2.2.5|27>>
+    <associate|eq:8.2.6|<tuple|2.2.6|27>>
+    <associate|eq:8.2.7|<tuple|2.2.7|27>>
+    <associate|eq:8.2.8|<tuple|2.2.8|28>>
+    <associate|eq:8.2.9|<tuple|2.2.9|28>>
   </collection>
 </references>
 
@@ -1902,6 +2617,17 @@
       <with|par-left|<quote|1tab>|1.5.2<space|2spc>Mass Zero
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-9>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Quantum
+      Electrodynamics> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10><vspace|0.5fn>
+
+      2.1<space|2spc>Gauge Invariance <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11>
+
+      2.2<space|2spc>Constraints and Gauge Conditions
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-12>
     </associate>
   </collection>
 </auxiliary>
