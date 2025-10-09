@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.1>
 
 <style|<tuple|book|termes-font|number-long-article|stylefileqft|std-frame|maxima>>
 
@@ -1758,7 +1758,7 @@
 
   <\equation*>
     B<around*|(|u|)>=<matrix|<tformat|<table|<row|<cell|1>|<cell|0>|<cell|0>|<cell|0>>|<row|<cell|0>|<cell|1>|<cell|0>|<cell|0>>|<row|<cell|0>|<cell|0>|<cell|<frac|u<rsup|2>+1|2u>>|<cell|<frac|u<rsup|2>-1|2u>>>|<row|<cell|0>|<cell|0>|<cell|<frac|u<rsup|2>-1|2u>>|<cell|<frac|u<rsup|2>+1|2u>>>>>>
-  </equation*>
+    </equation*>
 
   is a pure boost along the three-direction and
 
@@ -2525,7 +2525,6 @@
     <associate|auto-10|<tuple|2|23>>
     <associate|auto-11|<tuple|2.1|23>>
     <associate|auto-12|<tuple|2.2|27>>
-    <associate|auto-13|<tuple|2.2|?>>
     <associate|auto-2|<tuple|1.1|5>>
     <associate|auto-3|<tuple|1.2|6>>
     <associate|auto-4|<tuple|1.3|9>>
@@ -2535,35 +2534,6 @@
     <associate|auto-8|<tuple|1.5.1|18>>
     <associate|auto-9|<tuple|1.5.2|19>>
     <associate|eq:8.1.1|<tuple|2.1.1|23>>
-    <associate|eq:8.1.10|<tuple|2.1.22|26>>
-    <associate|eq:8.1.11|<tuple|2.1.23|26>>
-    <associate|eq:8.1.12|<tuple|2.1.24|26>>
-    <associate|eq:8.1.13|<tuple|2.1.25|26>>
-    <associate|eq:8.1.14|<tuple|2.1.26|26>>
-    <associate|eq:8.1.15|<tuple|2.1.27|26>>
-    <associate|eq:8.1.16|<tuple|2.1.28|26>>
-    <associate|eq:8.1.17|<tuple|2.1.29|26>>
-    <associate|eq:8.1.18|<tuple|2.1.30|26>>
-    <associate|eq:8.1.19|<tuple|2.1.31|27>>
-    <associate|eq:8.1.2|<tuple|2.1.6|?>>
-    <associate|eq:8.1.20|<tuple|2.1.32|27>>
-    <associate|eq:8.1.21|<tuple|2.1.33|27>>
-    <associate|eq:8.1.3|<tuple|2.1.7|?>>
-    <associate|eq:8.1.4|<tuple|2.1.8|?>>
-    <associate|eq:8.1.5|<tuple|2.1.9|?>>
-    <associate|eq:8.1.6|<tuple|2.1.18|26>>
-    <associate|eq:8.1.7|<tuple|2.1.19|26>>
-    <associate|eq:8.1.8|<tuple|2.1.20|26>>
-    <associate|eq:8.1.9|<tuple|2.1.21|26>>
-    <associate|eq:8.2.1|<tuple|2.2.1|27>>
-    <associate|eq:8.2.2|<tuple|2.2.2|27>>
-    <associate|eq:8.2.3|<tuple|2.2.3|27>>
-    <associate|eq:8.2.4|<tuple|2.2.4|27>>
-    <associate|eq:8.2.5|<tuple|2.2.5|27>>
-    <associate|eq:8.2.6|<tuple|2.2.6|27>>
-    <associate|eq:8.2.7|<tuple|2.2.7|27>>
-    <associate|eq:8.2.8|<tuple|2.2.8|28>>
-    <associate|eq:8.2.9|<tuple|2.2.9|28>>
   </collection>
 </references>
 
